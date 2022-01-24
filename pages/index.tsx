@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.scss';
 
+// eslint-disable-next-line max-lines-per-function
 const Home: NextPage = () => {
   return (
     <Layout>
