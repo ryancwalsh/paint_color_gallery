@@ -1,44 +1,68 @@
-import type { NextPage } from 'next';
+import type { GetServerSidePropsContext, NextPage } from 'next';
+import fs from 'fs';
+import { GetServerSideProps } from 'next';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.scss';
 
-// eslint-disable-next-line max-lines-per-function
-const Home: NextPage = () => {
+const colornerdDir = './node_modules/colornerd';
+const dir = `${colornerdDir}/_dev/`;
+
+export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext) => {
+  // https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props#getserversideprops-with-typescript
+  const bookFileDetailObjects = JSON.parse(fs.readFileSync(`${dir}books.json`, 'utf8'));
+  console.log({ bookFileDetailObjects });
+  const books: any = {};
+  bookFileDetailObjects.forEach(function (bookFileDetailObject: any) {
+    const filename = `${colornerdDir}/json/${bookFileDetailObject.filename}.json`;
+    const records = JSON.parse(fs.readFileSync(`${filename}`, 'utf8'));
+    console.log({ records });
+    books[filename] = records;
+  });
+  return {
+    props: { books }, // will be passed to the page component as props
+  };
+};
+
+function ColorCell({ key, color }: any): JSX.Element {
+  return (
+    <div key={key} style={{ background: color.hex, padding: '1rem' }}>
+      {color.name}
+    </div>
+  );
+}
+function ColorBook({ key, books, filename }: any): JSX.Element {
+  const colorsInBook = books[filename];
+  return (
+    <div key={key}>
+      <h2>{filename}</h2>
+      <div className="colors">
+        {colorsInBook.map((color: any) => (
+          <ColorCell key={color.hex} color={color} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ColorBooks({ books }: any): JSX.Element {
+  return (
+    <>
+      {Object.keys(books).map((filename: any) => (
+        <ColorBook key={filename} books={books} filename={filename} />
+      ))}
+    </>
+  );
+}
+
+const Home: NextPage = ({ books }: any) => {
+  console.log({ books });
+
   return (
     <Layout>
-      <h1 className={styles.title}>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+      <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
 
-      <p className={styles.description}>
-        Get started by editing <code className={styles.code}>pages/index.js</code>
-      </p>
-
-      <div className={styles.grid}>
-        <a href="https://nextjs.org/docs" className={styles.card}>
-          <h2>Documentation &rarr;</h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-        <a href="https://nextjs.org/learn" className={styles.card}>
-          <h2>Learn &rarr;</h2>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-        <a href="https://github.com/vercel/next.js/tree/master/examples" className={styles.card}>
-          <h2>Examples &rarr;</h2>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-        <a href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" className={styles.card}>
-          <h2>Deploy &rarr;</h2>
-          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-        </a>
-        <a href="https://tailwindcss.com/docs/guides/nextjs" className={styles.card}>
-          <h2>Tailwind</h2>
-          <p className="text-3xl font-bold underline">
-            Demo <span className="text-sky-400/100">here</span>
-          </p>
-          <a href="https://tailwindcss.com/docs/text-color">https://tailwindcss.com/docs/text-color</a>
-        </a>
-      </div>
+      <div className={styles.grid} />
+      <ColorBooks books={books} />
     </Layout>
   );
 };
