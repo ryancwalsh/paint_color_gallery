@@ -32,52 +32,42 @@ export const getServerSideProps: GetServerSideProps = async (context: GetServerS
   };
 };
 
-function getHsl(color: ColorObj) {
-  let hsl;
+function getColorLibObject(color: ColorObj): typeof colorLib {
+  let colorLibObject;
   try {
-    const colorObj = colorLib(color.hex);
-    hsl = colorObj.hsl();
+    colorLibObject = colorLib(color.hex);
   } catch (error) {
     console.error({ error, color });
   }
-  return hsl;
+  return colorLibObject;
 }
 
-function getHue(color: ColorObj) {
-  let hue;
-  try {
-    const colorObj = colorLib(color.hex);
-    hue = colorObj.hue();
-  } catch (error) {
-    console.error({ error, color });
-  }
-  return hue;
-}
-
-function sortArray(array: ColorObj[], compareValueGetter: any) {
+function sortArray(array: ColorObj[]) {
   // https://stackoverflow.com/a/54383087/470749 and I should consider https://tomekdev.com/posts/sorting-colors-in-js too
   array.sort((elem1, elem2) => {
-    const value1 = compareValueGetter(elem1);
-    const value2 = compareValueGetter(elem2);
-    // eslint-disable-next-line no-nested-ternary
-    return value1 > value2 ? 1 : value1 < value2 ? -1 : 0;
+    const value1 = elem1.colorLibObject.hue();
+    const value2 = elem2.colorLibObject.hue();
+
+    if (value1 > value2) return 1;
+    else if (value1 < value2) return -1;
+    else return 0;
   });
 }
 
 function ColorCell({ index, color }: any): JSX.Element {
-  const hsl = getHsl(color);
+  const colorLibObject = getColorLibObject(color);
 
   return (
-    <div key={index} style={{ background: hsl, padding: '0.5rem', display: 'inline-block', width: '100px', height: '100px' }}>
+    <div key={index} style={{ background: colorLibObject.hsl(), padding: '0.5rem', display: 'inline-block', width: '100px', height: '100px' }}>
       {color.name}
     </div>
   );
 }
 function ColorBook({ index, books, filename }: any): JSX.Element {
   const colorsInBook = books[filename].map((color: ColorObj) => {
-    return { ...color, hsl: getHsl(color), hue: getHue(color) };
+    return { ...color, colorLibObject: getColorLibObject(color) };
   });
-  sortArray(colorsInBook, (color: ColorObj) => color.hue);
+  sortArray(colorsInBook);
   return (
     <div key={index}>
       <h2>{filename}</h2>
