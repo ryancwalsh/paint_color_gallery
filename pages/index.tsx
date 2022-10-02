@@ -1,16 +1,13 @@
 import type { GetServerSidePropsContext, NextPage } from 'next';
 import fs from 'fs';
-import { GetServerSideProps } from 'next';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import colorLib from 'color'; // https://github.com/Qix-/color
 import Layout from '../components/Layout';
+import { getColorLibObject, sortWithClusters } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
+// eslint-disable-next-line import/extensions, import/no-unresolved
+import { Cluster, ColorObject, MegaColor } from '../types';
 
 const colornerdDir = './node_modules/colornerd';
 const dir = `${colornerdDir}/_dev/`;
-
-type ColorObj = any;
 
 export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext) => {
   // https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props#getserversideprops-with-typescript
@@ -32,28 +29,6 @@ export const getServerSideProps: GetServerSideProps = async (context: GetServerS
   };
 };
 
-function getColorLibObject(color: ColorObj): typeof colorLib {
-  let colorLibObject;
-  try {
-    colorLibObject = colorLib(color.hex);
-  } catch (error) {
-    console.error({ error, color });
-  }
-  return colorLibObject;
-}
-
-function sortArray(array: ColorObj[]) {
-  // https://stackoverflow.com/a/54383087/470749 and I should consider https://tomekdev.com/posts/sorting-colors-in-js too
-  array.sort((elem1, elem2) => {
-    const value1 = elem1.colorLibObject.hue();
-    const value2 = elem2.colorLibObject.hue();
-
-    if (value1 > value2) return 1;
-    else if (value1 < value2) return -1;
-    else return 0;
-  });
-}
-
 function ColorCell({ index, color }: any): JSX.Element {
   const colorLibObject = getColorLibObject(color);
 
@@ -64,15 +39,20 @@ function ColorCell({ index, color }: any): JSX.Element {
   );
 }
 function ColorBook({ index, books, filename }: any): JSX.Element {
-  const colorsInBook = books[filename].map((color: ColorObj) => {
-    return { ...color, colorLibObject: getColorLibObject(color) };
+  const colorsInBook: MegaColor[] = books[filename].map((colorObject: ColorObject) => {
+    return { ...colorObject, colorLibObject: getColorLibObject(colorObject) };
   });
-  sortArray(colorsInBook);
+  // sortArray(colorsInBook);
+  const sortedClusters = sortWithClusters(colorsInBook);
+  const sortedColorsInBook: Cluster[] = sortedClusters.reduce((acc, curr) => {
+    const colors = curr.colors.map((color) => color);
+    return [...acc, ...colors];
+  }, []);
   return (
     <div key={index}>
       <h2>{filename}</h2>
       <div className="colors">
-        {colorsInBook.map((color: any) => (
+        {sortedColorsInBook.map((color: any) => (
           <ColorCell key={color.hex} color={color} />
         ))}
       </div>
