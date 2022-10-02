@@ -5,7 +5,6 @@ export type MegaColor = {
   colorLibObject: ColorLibObject;
 };
 export type Cluster = {
-  name: string;
   leadColor: ColorLibObject;
   colors: MegaColor[];
 };

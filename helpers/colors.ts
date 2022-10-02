@@ -4,6 +4,8 @@ import colorLib from 'color'; // https://github.com/Qix-/color
 // eslint-disable-next-line import/extensions, import/no-unresolved
 import { Cluster, ColorLibObject, ColorObject, MegaColor } from '../types';
 
+const numClusters = 20;
+
 export function getColorLibObject(colorObject: ColorObject): ColorLibObject {
   let colorLibObject;
   try {
@@ -14,11 +16,15 @@ export function getColorLibObject(colorObject: ColorObject): ColorLibObject {
   return colorLibObject;
 }
 
-const lightnessClusters: Cluster[] = [
-  { name: 'dark', leadColor: colorLib('hsl(0, 0%, 0%, 1)'), colors: [] },
-  { name: 'medium', leadColor: colorLib('hsl(0, 0%, 50%, 1)'), colors: [] },
-  { name: 'light', leadColor: colorLib('hsl(0, 0%, 100%, 1)'), colors: [] },
-];
+const clusters: Cluster[] = [];
+
+for (let i = 0; i < numClusters; i += 1) {
+  const hue = i * (360 / numClusters);
+  clusters.push({
+    colors: [],
+    leadColor: colorLib(`hsl(${hue}, 0%, 0%, 1)`),
+  });
+}
 
 function colorDistance(a: ColorLibObject, b: ColorLibObject): number {
   const x = (a.hue() - b.hue()) ** 2 + (a.saturationl() - b.saturationl()) ** 2 + (a.lightness() - b.lightness()) ** 2;
@@ -52,7 +58,7 @@ export function sortWithClusters(colorsToSort: MegaColor[]) {
     let minDistance: number;
     let minDistanceClusterIndex = 0;
 
-    lightnessClusters.forEach((cluster, clusterIndex) => {
+    clusters.forEach((cluster, clusterIndex) => {
       const distance = colorDistance(megaColor.colorLibObject, cluster.leadColor);
       if (typeof minDistance === 'undefined' || minDistance > distance) {
         minDistance = distance;
@@ -60,15 +66,15 @@ export function sortWithClusters(colorsToSort: MegaColor[]) {
       }
     });
 
-    lightnessClusters[minDistanceClusterIndex].colors.push(megaColor);
+    clusters[minDistanceClusterIndex].colors.push(megaColor);
   });
 
-  lightnessClusters.forEach((cluster) => {
+  clusters.forEach((cluster) => {
     const { colors } = cluster;
     sortArray(colors);
     // eslint-disable-next-line no-param-reassign
     cluster.colors = colors;
   });
 
-  return lightnessClusters;
+  return clusters;
 }
