@@ -32,3 +32,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# TODO
+
+Actually, I don't want to sort an array at all. I want to have an array of colors, and I want to iterate over it and calculate X and Y positions, and then I'll display each color at those positions, even if they collide/overlap. I think I should use hue (like a circle) and convert to X,Y somehow, and distance from center could be either saturation or lightness.
+
+See also https://github.com/jakoivis/color-util
+
+Also should create a tool to find the closest color in another brand book given a specific brand color.
