@@ -33,7 +33,7 @@ function ColorBook({ megaColors }: { megaColors: MegaColor[] }): JSX.Element {
   return (
     <div className="colors">
       {megaColors.map((color: MegaColor) => (
-        <ColorCell key={color.hex} color={color} />
+        <ColorCell key={color.color} color={color} />
       ))}
     </div>
   );

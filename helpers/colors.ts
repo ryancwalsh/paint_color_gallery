@@ -13,7 +13,7 @@ export function getColorLibObject(color: string): ColorLibObject {
 export function getColorLibObjectFromColorNerdRecord(colorObject: ColorNerdRecord): ColorLibObject {
   let colorLibObject;
   try {
-    colorLibObject = colorLib(colorObject.hex);
+    colorLibObject = colorLib(colorObject.color);
   } catch (error) {
     console.error({ error, colorObject });
   }
@@ -39,7 +39,7 @@ function getSortValue(color: ColorLibObject): number {
   return color.lightness() * 5 + color.saturationl() * 2 + color.hue();
 }
 
-function sortArray(array: ColorNerdRecord[]) {
+function sortArray(array: MegaColor[]) {
   // https://stackoverflow.com/a/54383087/470749 and I should consider https://tomekdev.com/posts/sorting-colors-in-js too
   array.sort((elem1, elem2) => {
     // const value1 = elem1.colorLibObject.hue();
@@ -113,7 +113,7 @@ export function getFilteredColors(color: string, megaColors: MegaColor[], tolera
   const results: MegaColor[] = [];
   for (let i = 0; i < megaColors.length; i += 1) {
     const megaColor = megaColors[i];
-    const megaColorLibObject = getColorLibObject(megaColor.hex);
+    const megaColorLibObject = getColorLibObject(megaColor.color);
     if (
       isHueWithinTolerance(megaColorLibObject.hue(), targetColorLibObject.hue(), toleranceH) &&
       isSaturationWithinTolerance(megaColorLibObject.saturationl(), targetColorLibObject.saturationl(), toleranceS) &&
