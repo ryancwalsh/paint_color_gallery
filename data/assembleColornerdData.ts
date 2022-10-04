@@ -11,7 +11,8 @@ export function getMegaColorsFromColornerdJsonFiles() {
   const booksJsonString = fs.readFileSync(`${dir}books.json`, 'utf8');
   const bookFileDetailObjects = JSON.parse(booksJsonString);
   // console.log({ bookFileDetailObjects });
-  let megaColors: MegaColor[] = [];
+  const megaColors: MegaColor[] = [];
+  const keys = new Set<string>();
   bookFileDetailObjects.forEach(function (bookFileDetailObject: BookFileDetailObject) {
     const filename = `${colornerdDir}/json/${bookFileDetailObject.filename}.json`;
     // console.log({ filename });
@@ -19,13 +20,18 @@ export function getMegaColorsFromColornerdJsonFiles() {
     // console.log(bookJsonString);
     const recordsInBook = JSON.parse(bookJsonString);
     //  console.log({ recordsInBook });
-    const labeledRecordsInBook = recordsInBook.map((record: ColorNerdRecord) => {
+    recordsInBook.forEach((record: ColorNerdRecord) => {
       // const colorLibObject = getColorLibObject(record);
-      return { ...record, book: bookFileDetailObject.title };
+      const entry = { ...record, book: bookFileDetailObject.title };
+      const key = `${entry.book}-${entry.hex}`;
+      // console.log({ key, entry });
+      if (!keys.has(key)) {
+        megaColors.push(entry);
+        keys.add(key);
+      }
     });
-    // console.log({ megaColors });
-    megaColors = [...megaColors, ...labeledRecordsInBook];
   });
+  // console.log({ megaColors });
   return megaColors;
 }
 

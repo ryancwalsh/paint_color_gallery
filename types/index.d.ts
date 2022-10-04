@@ -6,7 +6,8 @@ export type BookFileDetailObject = {
 export type ColorNerdRecord = {
   name: string;
   label: string;
-  color: string; // TODO: Use the commented out code below to allow 'color' or 'hex' property.
+  color?: string; // TODO: Use the commented out code below to allow 'color' or 'hex' property.
+  hex?: string; // TODO: Use the commented out code below to allow 'color' or 'hex' property.
 };
 
 // type Only<T, U> = {

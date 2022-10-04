@@ -1806,12 +1806,6 @@
     "book": "Avery"
   },
   {
-    "color": "#ffb600",
-    "label": "927",
-    "name": "Sunflower Yellow",
-    "book": "Avery"
-  },
-  {
     "color": "#ffb700",
     "label": "936",
     "name": "Light Yellow",
@@ -4062,12 +4056,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#ffd3cd",
-    "label": "230C-2",
-    "name": "Shell Coral",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#fabbac",
     "label": "230C-3",
     "name": "Pink Beach",
@@ -4395,12 +4383,6 @@
     "color": "#67513c",
     "label": "250F-7",
     "name": "Melted Chocolate",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#fce9e2",
-    "label": "260A-1",
-    "name": "Feather White",
     "book": "Behr Paints"
   },
   {
@@ -6060,12 +6042,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#fbf9e0",
-    "label": "390A-1",
-    "name": "Star Dust",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#faf8d3",
     "label": "390A-2",
     "name": "Pina Colada",
@@ -7446,12 +7422,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#fafdf7",
-    "label": "50",
-    "name": "Ultra Pure White",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#defff1",
     "label": "500A-1",
     "name": "Glacier Bay",
@@ -7497,12 +7467,6 @@
     "color": "#e4fff4",
     "label": "500C-1",
     "name": "Himalayan Mist",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#defff1",
-    "label": "500C-2",
-    "name": "Aqua Pura",
     "book": "Behr Paints"
   },
   {
@@ -9186,12 +9150,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#e8edfb",
-    "label": "630E-1",
-    "name": "Dreamy Cloud",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#d6e0f7",
     "label": "630E-2",
     "name": "Purple Veil",
@@ -9900,12 +9858,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#f9ecfc",
-    "label": "690C-1",
-    "name": "Sweet Illusion",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#f9e1fd",
     "label": "690C-2",
     "name": "Pink Amour",
@@ -10083,12 +10035,6 @@
     "color": "#625435",
     "label": "700D-7",
     "name": "South Kingston",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#eaf9ec",
-    "label": "700E-1",
-    "name": "Dew Drop",
     "book": "Behr Paints"
   },
   {
@@ -11772,12 +11718,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#eef3ee",
-    "label": "BL-W14",
-    "name": "White Bl-w14",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#f2f8f5",
     "label": "BL-W15",
     "name": "Frost Bl-w15",
@@ -12531,12 +12471,6 @@
     "color": "#b68e78",
     "label": "BXC-46",
     "name": "Mojave Dusk",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f7eedc",
-    "label": "BXC-47",
-    "name": "Marquee White",
     "book": "Behr Paints"
   },
   {
@@ -15786,12 +15720,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#daffeb",
-    "label": "M450-1",
-    "name": "Dew Pointe",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#c4fde0",
     "label": "M450-2",
     "name": "Tidewater",
@@ -18804,12 +18732,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#5b4542",
-    "label": "N150-6",
-    "name": "Coffee Beans",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#4a3934",
     "label": "N150-7",
     "name": "Chocolate Therapy",
@@ -19422,12 +19344,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#ede3ca",
-    "label": "N290-2",
-    "name": "Authentic Tan",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#e4d9bb",
     "label": "N290-3",
     "name": "Comfy Beige",
@@ -19479,12 +19395,6 @@
     "color": "#b7b292",
     "label": "N300-4",
     "name": "Canyon Ouvert",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#b7b292",
-    "label": "N300-4",
-    "name": "Open Canyon",
     "book": "Behr Paints"
   },
   {
@@ -19956,12 +19866,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#92b59e",
-    "label": "N410-4",
-    "name": "Natures Gift",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#70927a",
     "label": "N410-5",
     "name": "Village Green",
@@ -20013,12 +19917,6 @@
     "color": "#476b54",
     "label": "N420-6",
     "name": "Pine Mountain",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#3b5646",
-    "label": "N420-7",
-    "name": "Alpine Trail",
     "book": "Behr Paints"
   },
   {
@@ -20667,12 +20565,6 @@
     "color": "#3c3f4d",
     "label": "N570-7",
     "name": "Black Elegance",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#fcecdf",
-    "label": "OR-W1",
-    "name": "White Blush",
     "book": "Behr Paints"
   },
   {
@@ -21492,12 +21384,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#ffda7d",
-    "label": "P270-4",
-    "name": "Egg Cream",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#ffc64f",
     "label": "P270-5",
     "name": "Fuzzy Duckling",
@@ -21561,12 +21447,6 @@
     "color": "#fff1ba",
     "label": "P290-1",
     "name": "Soft Buttercup",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#feeca1",
-    "label": "P290-2",
-    "name": "Sweet As Honey",
     "book": "Behr Paints"
   },
   {
@@ -22167,12 +22047,6 @@
     "color": "#65ff96",
     "label": "P430-4",
     "name": "Kauai",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#3cf16f",
-    "label": "P430-5",
-    "name": "Enchanted Wells",
     "book": "Behr Paints"
   },
   {
@@ -22842,12 +22716,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#564447",
-    "label": "PPU1-1",
-    "name": "Folklore",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#8a4647",
     "label": "PPU1-10",
     "name": "Forbidden Red",
@@ -22908,69 +22776,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#583e3f",
-    "label": "PPU1-2",
-    "name": "Divine Wine",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#6c4c58",
     "label": "PPU1-20",
     "name": "Spiced Plum",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#786466",
-    "label": "PPU1-3",
-    "name": "Tibetan Temple",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#de8781",
-    "label": "PPU1-4",
-    "name": "Wild Watermelon",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#e08881",
-    "label": "PPU1-4A",
-    "name": "Watermelon Punch",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#cc6359",
-    "label": "PPU1-5",
-    "name": "Japanese Kimono",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#cd6359",
-    "label": "PPU1-5A",
-    "name": "Red Coral",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#a76465",
-    "label": "PPU1-6",
-    "name": "Rose Marquee",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#a14d52",
-    "label": "PPU1-7",
-    "name": "Powder Room",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#915050",
-    "label": "PPU1-8",
-    "name": "Pompeian Red",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#885a56",
-    "label": "PPU1-9",
-    "name": "Red Willow",
     "book": "Behr Paints"
   },
   {
@@ -23028,12 +22836,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#667659",
-    "label": "PPU10-1",
-    "name": "Scallion",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#cac8b6",
     "label": "PPU10-10",
     "name": "Ocean Foam",
@@ -23088,63 +22890,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#747768",
-    "label": "PPU10-19",
-    "name": "Conifer Green",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#7e8760",
-    "label": "PPU10-2",
-    "name": "Tuscany Hillside",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#595f53",
     "label": "PPU10-20",
     "name": "Pastoral",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#809060",
-    "label": "PPU10-3",
-    "name": "Green Energy",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#93a462",
-    "label": "PPU10-4",
-    "name": "New Bamboo",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#a1ac4e",
-    "label": "PPU10-5",
-    "name": "Intoxication",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#acb094",
-    "label": "PPU10-6",
-    "name": "Spring Walk",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#b1b688",
-    "label": "PPU10-7",
-    "name": "Lima Green",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#c0c6a9",
-    "label": "PPU10-8",
-    "name": "Minted Lemon",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#cbd1bb",
-    "label": "PPU10-9",
-    "name": "Chinese Jade",
     "book": "Behr Paints"
   },
   {
@@ -23199,12 +22947,6 @@
     "color": "#b0b5a1",
     "label": "PPU11-09",
     "name": "Environmental",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#5f6c5a",
-    "label": "PPU11-1",
-    "name": "Royal Orchard",
     "book": "Behr Paints"
   },
   {
@@ -23268,57 +23010,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#7a8d73",
-    "label": "PPU11-2",
-    "name": "Shallot Bulb",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#4d6053",
     "label": "PPU11-20",
     "name": "Congo",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#77966e",
-    "label": "PPU11-3",
-    "name": "Botanical Green",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#939a72",
-    "label": "PPU11-4",
-    "name": "Alamosa Green",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#98a98c",
-    "label": "PPU11-5",
-    "name": "Pesto Green",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#a6b291",
-    "label": "PPU11-6",
-    "name": "Willow Grove",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#9fa688",
-    "label": "PPU11-7",
-    "name": "Clary Sage",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#afb797",
-    "label": "PPU11-8",
-    "name": "Moss Print",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#b0b5a1",
-    "label": "PPU11-9",
-    "name": "Environmental",
     "book": "Behr Paints"
   },
   {
@@ -23373,12 +23067,6 @@
     "color": "#a5b4af",
     "label": "PPU12-09",
     "name": "Frozen Pond",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#3d5759",
-    "label": "PPU12-1",
-    "name": "Abysse",
     "book": "Behr Paints"
   },
   {
@@ -23442,57 +23130,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#4f6c6c",
-    "label": "PPU12-2",
-    "name": "Sequoia Lake",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#4e6163",
     "label": "PPU12-20",
     "name": "Underwater",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#72908e",
-    "label": "PPU12-3",
-    "name": "Dragonfly",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#879d9a",
-    "label": "PPU12-4",
-    "name": "Agave",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#93a69f",
-    "label": "PPU12-5",
-    "name": "Lotus Leaf",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#98bbb9",
-    "label": "PPU12-6",
-    "name": "Lap Pool Blue",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#98beb3",
-    "label": "PPU12-7",
-    "name": "Spring Stream",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#9db8b3",
-    "label": "PPU12-8",
-    "name": "Opal Silk",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#a5b4af",
-    "label": "PPU12-9",
-    "name": "Frozen Pond",
     "book": "Behr Paints"
   },
   {
@@ -23547,12 +23187,6 @@
     "color": "#94b8c3",
     "label": "PPU13-09",
     "name": "Tahoe Blue",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#127d88",
-    "label": "PPU13-1",
-    "name": "Caribe",
     "book": "Behr Paints"
   },
   {
@@ -23616,57 +23250,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#547075",
-    "label": "PPU13-2",
-    "name": "Juniper Berries",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#37515e",
     "label": "PPU13-20",
     "name": "Restless Sea",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#5c7885",
-    "label": "PPU13-3",
-    "name": "Catalina Coast",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#70818a",
-    "label": "PPU13-4",
-    "name": "Atlantic Shoreline",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#5e9ea1",
-    "label": "PPU13-5",
-    "name": "Bali Bliss",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#6f8a8d",
-    "label": "PPU13-6",
-    "name": "Polaris Blue",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#709ca5",
-    "label": "PPU13-7",
-    "name": "Voyage",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#85a4a3",
-    "label": "PPU13-8",
-    "name": "Venus Teal",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#94b8c3",
-    "label": "PPU13-9",
-    "name": "Tahoe Blue",
     "book": "Behr Paints"
   },
   {
@@ -23721,12 +23307,6 @@
     "color": "#90a9b9",
     "label": "PPU14-09",
     "name": "Windsurf",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#57728b",
-    "label": "PPU14-1",
-    "name": "Arrowhead Lake",
     "book": "Behr Paints"
   },
   {
@@ -23790,57 +23370,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#587a9c",
-    "label": "PPU14-2",
-    "name": "Glass Sapphire",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#3e4855",
     "label": "PPU14-20",
     "name": "Starless Night",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#52788e",
-    "label": "PPU14-3",
-    "name": "Cayman Bay",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#698ea3",
-    "label": "PPU14-4",
-    "name": "French Court",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#778591",
-    "label": "PPU14-5",
-    "name": "Forever Denim",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#8293a2",
-    "label": "PPU14-6",
-    "name": "Coastal Vista",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#82a1be",
-    "label": "PPU14-7",
-    "name": "Hawaiian Sky",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#91a7bd",
-    "label": "PPU14-8",
-    "name": "Paris",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#90a9b9",
-    "label": "PPU14-9",
-    "name": "Windsurf",
     "book": "Behr Paints"
   },
   {
@@ -23895,12 +23427,6 @@
     "color": "#758aa2",
     "label": "PPU15-09",
     "name": "Hilo Bay",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#41496a",
-    "label": "PPU15-1",
-    "name": "Nobility Blue",
     "book": "Behr Paints"
   },
   {
@@ -23964,57 +23490,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#485381",
-    "label": "PPU15-2",
-    "name": "Mozart",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#4a4e55",
     "label": "PPU15-20",
     "name": "Poppy Seed",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#32578b",
-    "label": "PPU15-3",
-    "name": "Dark Cobalt Blue",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#476387",
-    "label": "PPU15-4",
-    "name": "Mosaic Blue",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#486eae",
-    "label": "PPU15-5",
-    "name": "New Age Blue",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#5c83b5",
-    "label": "PPU15-6",
-    "name": "Neon Blue",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#768195",
-    "label": "PPU15-7",
-    "name": "Tranquil Pond",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#838b9a",
-    "label": "PPU15-8",
-    "name": "River Tour",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#758aa2",
-    "label": "PPU15-9",
-    "name": "Hilo Bay",
     "book": "Behr Paints"
   },
   {
@@ -24069,12 +23547,6 @@
     "color": "#beb7c1",
     "label": "PPU16-09",
     "name": "Aster",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#585683",
-    "label": "PPU16-1",
-    "name": "Aurora Splendor",
     "book": "Behr Paints"
   },
   {
@@ -24138,57 +23610,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#645681",
-    "label": "PPU16-2",
-    "name": "Vigorous Violet",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#434258",
     "label": "PPU16-20",
     "name": "Renaissance",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#79669e",
-    "label": "PPU16-3",
-    "name": "Purple Paradise",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#8c7eaf",
-    "label": "PPU16-4",
-    "name": "Purple Agate",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#9191bc",
-    "label": "PPU16-5",
-    "name": "Lily Of The Nile",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#e4e3e8",
-    "label": "PPU16-6",
-    "name": "Lilac Mist",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#ddd4da",
-    "label": "PPU16-7",
-    "name": "Mystic Fairy",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#d1d5e2",
-    "label": "PPU16-8",
-    "name": "Hint Of Violet",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#beb7c1",
-    "label": "PPU16-9",
-    "name": "Aster",
     "book": "Behr Paints"
   },
   {
@@ -24243,12 +23667,6 @@
     "color": "#d4bec0",
     "label": "PPU17-09",
     "name": "Embroidery",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#55475a",
-    "label": "PPU17-1",
-    "name": "Mata Hari",
     "book": "Behr Paints"
   },
   {
@@ -24318,48 +23736,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#5b4051",
-    "label": "PPU17-3",
-    "name": "Vixen",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#625769",
-    "label": "PPU17-4",
-    "name": "Darkest Grape",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#655865",
-    "label": "PPU17-5",
-    "name": "Preservation Plum",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#e3dcda",
-    "label": "PPU17-6",
-    "name": "Crushed Peony",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#e9d9d5",
-    "label": "PPU17-7",
-    "name": "Vienna Lace",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#d8c1bf",
-    "label": "PPU17-8",
-    "name": "Peony Blush",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#d4bec0",
-    "label": "PPU17-9",
-    "name": "Embroidery",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#4f5152",
     "label": "PPU18-01",
     "name": "Cracked Pepper",
@@ -24411,12 +23787,6 @@
     "color": "#d2ccc5",
     "label": "PPU18-09",
     "name": "Burnished Clay",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#4f5152",
-    "label": "PPU18-1",
-    "name": "Cracked Pepper",
     "book": "Behr Paints"
   },
   {
@@ -24480,57 +23850,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#595d62",
-    "label": "PPU18-2",
-    "name": "Pencil Point",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#434442",
     "label": "PPU18-20",
     "name": "Broadway",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#6e7174",
-    "label": "PPU18-3",
-    "name": "Antique Tin",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#8d9397",
-    "label": "PPU18-4",
-    "name": "Dark Pewter",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#b8bcbe",
-    "label": "PPU18-5",
-    "name": "French Silver",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f8f8f4",
-    "label": "PPU18-6",
-    "name": "Ultra Pure WhiteÂ®",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f0f0e9",
-    "label": "PPU18-7",
-    "name": "Falling Snow",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#e5e1dc",
-    "label": "PPU18-8",
-    "name": "Painter's White",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#d2ccc5",
-    "label": "PPU18-9",
-    "name": "Burnished Clay",
     "book": "Behr Paints"
   },
   {
@@ -24585,12 +23907,6 @@
     "color": "#be8775",
     "label": "PPU2-09",
     "name": "Ginger Rose",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#683e3b",
-    "label": "PPU2-1",
-    "name": "Chipotle Paste",
     "book": "Behr Paints"
   },
   {
@@ -24654,57 +23970,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#7a3f39",
-    "label": "PPU2-2",
-    "name": "Red Pepper",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#75554e",
     "label": "PPU2-20",
     "name": "Oxblood",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#8c423d",
-    "label": "PPU2-3",
-    "name": "Allure",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#e8ded6",
-    "label": "PPU2-4",
-    "name": "Pale Cashmere",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#e3d5cb",
-    "label": "PPU2-5",
-    "name": "Sheer Scarf",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#d9c7bf",
-    "label": "PPU2-6",
-    "name": "Wisp Of Mauve",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#ddc2b7",
-    "label": "PPU2-7",
-    "name": "Coral Stone",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#cfa699",
-    "label": "PPU2-8",
-    "name": "Pink Ginger",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#be8775",
-    "label": "PPU2-9",
-    "name": "Ginger Rose",
     "book": "Behr Paints"
   },
   {
@@ -24759,12 +24027,6 @@
     "color": "#dbb99e",
     "label": "PPU3-09",
     "name": "Pumpkin Cream",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#bf7756",
-    "label": "PPU3-1",
-    "name": "Moroccan Sky",
     "book": "Behr Paints"
   },
   {
@@ -24828,57 +24090,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#c27545",
-    "label": "PPU3-2",
-    "name": "Marmalade Glaze",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#634d45",
     "label": "PPU3-20",
     "name": "Cinnabark",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#d3864f",
-    "label": "PPU3-3",
-    "name": "Flaming Torch",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f2e7da",
-    "label": "PPU3-4",
-    "name": "Ballet White",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f3decd",
-    "label": "PPU3-5",
-    "name": "Splendor",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#e6cdb8",
-    "label": "PPU3-6",
-    "name": "Venetian Mask",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f0d0b5",
-    "label": "PPU3-7",
-    "name": "Pale Coral",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#dcc4ad",
-    "label": "PPU3-8",
-    "name": "Sienna Dust",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#dbb99e",
-    "label": "PPU3-9",
-    "name": "Pumpkin Cream",
     "book": "Behr Paints"
   },
   {
@@ -24933,12 +24147,6 @@
     "color": "#f9e7d5",
     "label": "PPU4-09",
     "name": "Cafe Cream",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#8f6a50",
-    "label": "PPU4-1",
-    "name": "Caramel Swirl",
     "book": "Behr Paints"
   },
   {
@@ -25002,57 +24210,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#9b7758",
-    "label": "PPU4-2",
-    "name": "Coco Rum",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#70553e",
     "label": "PPU4-20",
     "name": "Ancient Root",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#c38551",
-    "label": "PPU4-3",
-    "name": "Butter Rum",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#ae927c",
-    "label": "PPU4-4",
-    "name": "Soft Chamois",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#bea287",
-    "label": "PPU4-5",
-    "name": "Basketry",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#be9b7a",
-    "label": "PPU4-6",
-    "name": "Teatime",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#c9b49c",
-    "label": "PPU4-7",
-    "name": "Mushroom Bisque",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#dbc4ac",
-    "label": "PPU4-8",
-    "name": "Plateau",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f9e7d5",
-    "label": "PPU4-9",
-    "name": "Cafe Cream",
     "book": "Behr Paints"
   },
   {
@@ -25107,12 +24267,6 @@
     "color": "#f3ece3",
     "label": "PPU5-09",
     "name": "Bleached Linen",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#4c443e",
-    "label": "PPU5-1",
-    "name": "Espresso Beans",
     "book": "Behr Paints"
   },
   {
@@ -25176,57 +24330,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#695b4f",
-    "label": "PPU5-2",
-    "name": "Aging Barrel",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#4c423f",
     "label": "PPU5-20",
     "name": "Sweet Molasses",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#7e6c60",
-    "label": "PPU5-3",
-    "name": "Antique Earth",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#827060",
-    "label": "PPU5-4",
-    "name": "Mocha Latte",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#8d7967",
-    "label": "PPU5-5",
-    "name": "Coconut Shell",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#968777",
-    "label": "PPU5-6",
-    "name": "Ethiopia",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#a5978a",
-    "label": "PPU5-7",
-    "name": "Studio Taupe",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#ccc3b6",
-    "label": "PPU5-8",
-    "name": "Sculptor Clay",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f3ece3",
-    "label": "PPU5-9",
-    "name": "Bleached Linen",
     "book": "Behr Paints"
   },
   {
@@ -25281,12 +24387,6 @@
     "color": "#f8edd9",
     "label": "PPU6-09",
     "name": "Polished Pearl",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#9d6c38",
-    "label": "PPU6-1",
-    "name": "Curry Powder",
     "book": "Behr Paints"
   },
   {
@@ -25350,57 +24450,9 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#d39953",
-    "label": "PPU6-2",
-    "name": "Saffron Strands",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#877448",
     "label": "PPU6-20",
     "name": "Eden Prairie",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#ecb370",
-    "label": "PPU6-3",
-    "name": "Sunburst",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#e6b473",
-    "label": "PPU6-4",
-    "name": "Pyramid Gold",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#d9ac7b",
-    "label": "PPU6-5",
-    "name": "Cork",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#ffc368",
-    "label": "PPU6-6",
-    "name": "Honey Locust",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f7c681",
-    "label": "PPU6-7",
-    "name": "Jackfruit",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f4d5ab",
-    "label": "PPU6-8",
-    "name": "Pale Honey",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f8edd9",
-    "label": "PPU6-9",
-    "name": "Polished Pearl",
     "book": "Behr Paints"
   },
   {
@@ -25464,12 +24516,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#67583e",
-    "label": "PPU7-1",
-    "name": "Moss Stone",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#ddd1c0",
     "label": "PPU7-10",
     "name": "Roman Plaster",
@@ -25530,12 +24576,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#726144",
-    "label": "PPU7-2",
-    "name": "Tree Swing",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#cbb08d",
     "label": "PPU7-20",
     "name": "Raffia Ribbon",
@@ -25569,54 +24609,6 @@
     "color": "#685a48",
     "label": "PPU7-25",
     "name": "Clove Brown",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#928169",
-    "label": "PPU7-3",
-    "name": "Macchiato",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#94806c",
-    "label": "PPU7-3A",
-    "name": "Sofisticata",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#9b8368",
-    "label": "PPU7-4",
-    "name": "Collectible",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#a79481",
-    "label": "PPU7-5",
-    "name": "Pure Earth",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#b5a18b",
-    "label": "PPU7-6",
-    "name": "Chateau",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#c0ae97",
-    "label": "PPU7-7",
-    "name": "Riviera Beach",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#d2c1a9",
-    "label": "PPU7-8",
-    "name": "Baja",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#d7cfc1",
-    "label": "PPU7-9",
-    "name": "Aged Beige",
     "book": "Behr Paints"
   },
   {
@@ -25671,12 +24663,6 @@
     "color": "#c7bb99",
     "label": "PPU8-09",
     "name": "Tea Bag",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#7b6c4e",
-    "label": "PPU8-1",
-    "name": "Olive",
     "book": "Behr Paints"
   },
   {
@@ -25740,12 +24726,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#928161",
-    "label": "PPU8-2",
-    "name": "Gingko Tree",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#9d9787",
     "label": "PPU8-20",
     "name": "Dusty Olive",
@@ -25779,48 +24759,6 @@
     "color": "#676150",
     "label": "PPU8-25",
     "name": "Ivy Topiary",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#948972",
-    "label": "PPU8-3",
-    "name": "Dry Pasture",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#968b6f",
-    "label": "PPU8-4",
-    "name": "Urban Safari",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#a89669",
-    "label": "PPU8-5",
-    "name": "Eco Green",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#aa9a7a",
-    "label": "PPU8-6",
-    "name": "Exploring Khaki",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#b4a286",
-    "label": "PPU8-7",
-    "name": "Chamois Tan",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#b9ab86",
-    "label": "PPU8-8",
-    "name": "Kaffir Lime",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#c7bb99",
-    "label": "PPU8-9",
-    "name": "Tea Bag",
     "book": "Behr Paints"
   },
   {
@@ -25875,12 +24813,6 @@
     "color": "#b8b396",
     "label": "PPU9-09",
     "name": "Seedling",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#645f49",
-    "label": "PPU9-1",
-    "name": "Alligator Skin",
     "book": "Behr Paints"
   },
   {
@@ -25944,12 +24876,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#93834c",
-    "label": "PPU9-2",
-    "name": "Lucky Bamboo",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#b3b197",
     "label": "PPU9-20",
     "name": "Dill Seed",
@@ -25983,48 +24909,6 @@
     "color": "#5e5d3e",
     "label": "PPU9-25",
     "name": "Eastern Bamboo",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#958c45",
-    "label": "PPU9-3",
-    "name": "Retro Avocado",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#a69d74",
-    "label": "PPU9-4",
-    "name": "Fresh Olive",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#b1a771",
-    "label": "PPU9-5",
-    "name": "Natchez Moss",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#bfaf66",
-    "label": "PPU9-6",
-    "name": "Riesling Grape",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#c7c077",
-    "label": "PPU9-7",
-    "name": "Fresh Sprout",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#b4ac85",
-    "label": "PPU9-8",
-    "name": "Tarragon Tease",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#b8b396",
-    "label": "PPU9-9",
-    "name": "Seedling",
     "book": "Behr Paints"
   },
   {
@@ -26079,12 +24963,6 @@
     "color": "#f2edf5",
     "label": "PR-W4",
     "name": "Opulent Opal",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f6eff7",
-    "label": "PR-W5",
-    "name": "Sweet Roses",
     "book": "Behr Paints"
   },
   {
@@ -26736,12 +25614,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#ffa600",
-    "label": "S-G-350",
-    "name": "Desert Glow",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#ffcf22",
     "label": "S-G-360",
     "name": "Bright Star",
@@ -26829,12 +25701,6 @@
     "color": "#1d9676",
     "label": "S-G-500",
     "name": "Tropical Waters",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#1d9186",
-    "label": "S-G-510",
-    "name": "Beach Towel",
     "book": "Behr Paints"
   },
   {
@@ -28584,12 +27450,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#7c9950",
-    "label": "S370-5",
-    "name": "Pesto Paste",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#6b833c",
     "label": "S370-6",
     "name": "Seaweed Salad",
@@ -30090,12 +28950,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#fafdf7",
-    "label": "W-B-500",
-    "name": "Ultra Pure White",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#f1fbf1",
     "label": "W-B-510",
     "name": "Frosted Juniper",
@@ -30123,12 +28977,6 @@
     "color": "#efecf3",
     "label": "W-B-620",
     "name": "Frosty Morning",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f2f1e5",
-    "label": "W-B-700",
-    "name": "Swiss Coffee",
     "book": "Behr Paints"
   },
   {
@@ -30183,18 +29031,6 @@
     "color": "#f6f3df",
     "label": "W-D-300",
     "name": "Eggshell Cream(w-d-300)",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f7eedc",
-    "label": "W-D-310",
-    "name": "Linen White",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#ece2c5",
-    "label": "W-D-320",
-    "name": "Navajo White",
     "book": "Behr Paints"
   },
   {
@@ -30288,12 +29124,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#f8f9f2",
-    "label": "W-F-200",
-    "name": "Polar Bear",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#f2f0e6",
     "label": "W-F-210",
     "name": "Nude W-f-210",
@@ -30312,18 +29142,6 @@
     "book": "Behr Paints"
   },
   {
-    "color": "#f4ecd9",
-    "label": "W-F-310",
-    "name": "Cottage White",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#e7e2ca",
-    "label": "W-F-320",
-    "name": "Antique White",
-    "book": "Behr Paints"
-  },
-  {
     "color": "#f7f6ee",
     "label": "W-F-400",
     "name": "Swan Wing",
@@ -30333,18 +29151,6 @@
     "color": "#e9ebdc",
     "label": "W-F-410",
     "name": "Ostrich",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#e7e9d7",
-    "label": "W-F-420",
-    "name": "Off White",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f2f7f5",
-    "label": "W-F-500",
-    "name": "Frost",
     "book": "Behr Paints"
   },
   {
@@ -30369,12 +29175,6 @@
     "color": "#f2f4ef",
     "label": "W-F-610",
     "name": "White Fur",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#eef2ee",
-    "label": "W-F-620",
-    "name": "White",
     "book": "Behr Paints"
   },
   {
@@ -30429,12 +29229,6 @@
     "color": "#e9ebd7",
     "label": "YL-W14",
     "name": "YL-W14",
-    "book": "Behr Paints"
-  },
-  {
-    "color": "#f8f9f3",
-    "label": "YL-W15",
-    "name": "YL-W15",
     "book": "Behr Paints"
   },
   {
@@ -31596,12 +30390,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#eae6d1",
-    "label": "AC-42",
-    "name": "Grand",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#ffd6cc",
     "label": "001",
     "name": "Pink",
@@ -32019,12 +30807,6 @@
     "color": "#c16b47",
     "label": "070",
     "name": "Topaz",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f7d9c5",
-    "label": "071",
-    "name": "Cameo",
     "book": "Benjamin Moore"
   },
   {
@@ -35730,27 +34512,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#a5bcb7",
-    "label": "689",
-    "name": "Rhine",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#8ba49d",
     "label": "690",
     "name": "Grenada",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#758f89",
-    "label": "691",
-    "name": "Dartsmouth",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#5b726a",
-    "label": "692",
-    "name": "Jack",
     "book": "Benjamin Moore"
   },
   {
@@ -37086,21 +35850,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#f3e8d0",
-    "label": "915",
-    "name": "Cameo",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#f7e4c4",
     "label": "916",
     "name": "Cookie",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f3dfbd",
-    "label": "917",
-    "name": "Virginia",
     "book": "Benjamin Moore"
   },
   {
@@ -37146,21 +35898,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#f3f0e0",
-    "label": "925",
-    "name": "Ivory",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#edead9",
     "label": "926",
     "name": "Seashell",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#eae6d1",
-    "label": "927",
-    "name": "White",
     "book": "Benjamin Moore"
   },
   {
@@ -37206,12 +35946,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#efeddc",
-    "label": "935",
-    "name": "Ancient",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#ebebd9",
     "label": "936",
     "name": "Meadow",
@@ -37233,12 +35967,6 @@
     "color": "#eee9d6",
     "label": "939",
     "name": "Royal",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e7e2cc",
-    "label": "940",
-    "name": "Ancient",
     "book": "Benjamin Moore"
   },
   {
@@ -37299,12 +36027,6 @@
     "color": "#e8dfcb",
     "label": "950",
     "name": "Natural",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e8dcc4",
-    "label": "951",
-    "name": "Pale",
     "book": "Benjamin Moore"
   },
   {
@@ -37404,12 +36126,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#edebe1",
-    "label": "968",
-    "name": "Dune",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#e9e6d9",
     "label": "969",
     "name": "Soft",
@@ -37452,27 +36168,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#cbc5b1",
-    "label": "976",
-    "name": "Coastal",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b0a690",
-    "label": "977",
-    "name": "Brandon",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#9e927e",
     "label": "978",
     "name": "Raccoon",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#867b69",
-    "label": "979",
-    "name": "Stampede",
     "book": "Benjamin Moore"
   },
   {
@@ -37572,24 +36270,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#cabfb0",
-    "label": "996",
-    "name": "Ashen",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b8ab9b",
-    "label": "997",
-    "name": "Baja",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a08f7d",
-    "label": "998",
-    "name": "Cabot",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#857663",
     "label": "999",
     "name": "Rustic",
@@ -37617,24 +36297,6 @@
     "color": "#ddd4cb",
     "label": "1003",
     "name": "Kitten",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d3c9be",
-    "label": "1004",
-    "name": "Desert",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c4b9af",
-    "label": "1005",
-    "name": "Hazelwood",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#aa9b8e",
-    "label": "1006",
-    "name": "Creekbed",
     "book": "Benjamin Moore"
   },
   {
@@ -37731,12 +36393,6 @@
     "color": "#84705e",
     "label": "1022",
     "name": "Maple",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e6dccf",
-    "label": "1023",
-    "name": "Cocoa",
     "book": "Benjamin Moore"
   },
   {
@@ -38040,33 +36696,15 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#decaad",
-    "label": "1074",
-    "name": "Alpaca",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#cab495",
     "label": "1075",
     "name": "Fairway",
     "book": "Benjamin Moore"
   },
   {
-    "color": "#c1a888",
-    "label": "1076",
-    "name": "Capilano",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#b1997b",
     "label": "1077",
     "name": "Great",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a18562",
-    "label": "1078",
-    "name": "Hillcrest",
     "book": "Benjamin Moore"
   },
   {
@@ -38364,27 +37002,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#d9c5ac",
-    "label": "1128",
-    "name": "Adobe",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c9ac8c",
-    "label": "1129",
-    "name": "Hidden",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#c6a586",
     "label": "1130",
     "name": "Cafe",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b7916c",
-    "label": "1131",
-    "name": "Autumn",
     "book": "Benjamin Moore"
   },
   {
@@ -38910,27 +37530,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#dbb9a2",
-    "label": "1219",
-    "name": "Clementine",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cba387",
-    "label": "1220",
-    "name": "Grazing",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#ba8867",
     "label": "1221",
     "name": "Potters",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b27e61",
-    "label": "1222",
-    "name": "Lenape",
     "book": "Benjamin Moore"
   },
   {
@@ -38949,24 +37551,6 @@
     "color": "#835b4a",
     "label": "1225",
     "name": "Abbey",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d9beae",
-    "label": "1226",
-    "name": "Crossroads",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c49e88",
-    "label": "1227",
-    "name": "Nutmeg",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b88d76",
-    "label": "1228",
-    "name": "Roman",
     "book": "Benjamin Moore"
   },
   {
@@ -39033,12 +37617,6 @@
     "color": "#605148",
     "label": "1239",
     "name": "Rural",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e9dad5",
-    "label": "1240",
-    "name": "Wild",
     "book": "Benjamin Moore"
   },
   {
@@ -40200,12 +38778,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#757e93",
-    "label": "1434",
-    "name": "In",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#5d6375",
     "label": "1435",
     "name": "Blue",
@@ -40269,12 +38841,6 @@
     "color": "#c5bdc1",
     "label": "1445",
     "name": "Piano",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b5aab0",
-    "label": "1446",
-    "name": "Dusk",
     "book": "Benjamin Moore"
   },
   {
@@ -40392,24 +38958,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#c2c0bb",
-    "label": "1466",
-    "name": "Smoke",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b5b3af",
-    "label": "1467",
-    "name": "Baltic",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a39e97",
-    "label": "1468",
-    "name": "Willow",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#8c857d",
     "label": "1469",
     "name": "Eagle",
@@ -40428,27 +38976,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#c8c8c3",
-    "label": "1472",
-    "name": "Silver",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b7b5ad",
-    "label": "1473",
-    "name": "Gray",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#aeaca3",
     "label": "1474",
     "name": "Cape",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9a968d",
-    "label": "1475",
-    "name": "Graystone",
     "book": "Benjamin Moore"
   },
   {
@@ -40848,24 +39378,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#bfb9af",
-    "label": "1542",
-    "name": "Himalayan",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b7b0a4",
-    "label": "1543",
-    "name": "Plymouth",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a69b8e",
-    "label": "1544",
-    "name": "Waynesboro",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#8c8375",
     "label": "1545",
     "name": "Iron",
@@ -40983,24 +39495,6 @@
     "color": "#b4bfba",
     "label": "1564",
     "name": "Beach",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a4b1af",
-    "label": "1565",
-    "name": "Mount",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#8c9591",
-    "label": "1566",
-    "name": "Stonybrook",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#7b8580",
-    "label": "1567",
-    "name": "Night",
     "book": "Benjamin Moore"
   },
   {
@@ -41400,24 +39894,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#a3b5bb",
-    "label": "1634",
-    "name": "Santorini",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#87999f",
-    "label": "1635",
-    "name": "Water's",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#677a80",
-    "label": "1636",
-    "name": "Providence",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#617178",
     "label": "1637",
     "name": "Blue",
@@ -41727,12 +40203,6 @@
     "color": "#ffe3e8",
     "label": "2001-70",
     "name": "Marshmallow",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ffced9",
-    "label": "2001-60",
-    "name": "Country",
     "book": "Benjamin Moore"
   },
   {
@@ -45894,12 +44364,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#c7aba1",
-    "label": "2100-50",
-    "name": "Pebble",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#a58074",
     "label": "2100-40",
     "name": "Appalachian",
@@ -46728,12 +45192,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#c7ccd0",
-    "label": "2120-60",
-    "name": "White",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#a4abb1",
     "label": "2120-50",
     "name": "Silver",
@@ -46755,12 +45213,6 @@
     "color": "#3b3d3f",
     "label": "2120-20",
     "name": "Black",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#343435",
-    "label": "2120-10",
-    "name": "Jet",
     "book": "Benjamin Moore"
   },
   {
@@ -48486,12 +46938,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#f6eddd",
-    "label": "2162-70",
-    "name": "October",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#edddc6",
     "label": "2162-60",
     "name": "Mystic",
@@ -48948,12 +47394,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#f8e9e3",
-    "label": "2173-70",
-    "name": "Gentle",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#f1d6cf",
     "label": "2173-60",
     "name": "Just",
@@ -49287,12 +47727,6 @@
     "color": "#837c6e",
     "label": "CSP-180",
     "name": "River",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e6e1d1",
-    "label": "CSP-185",
-    "name": "Plaster",
     "book": "Benjamin Moore"
   },
   {
@@ -49944,12 +48378,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#bcc4bc",
-    "label": "CSP-730",
-    "name": "Picnic",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#929f98",
     "label": "CSP-735",
     "name": "Sea",
@@ -50514,87 +48942,15 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#f0dfd3",
-    "label": "AF-250",
-    "name": "Head",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#dbcaac",
-    "label": "HC-39",
-    "name": "Putnam",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#bcb3a2",
-    "label": "AF-100",
-    "name": "Pashmina",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#735742",
-    "label": "AF-165",
-    "name": "Kona",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f3f2e7",
-    "label": "OC-130",
-    "name": "Cloud",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c9cbb3",
-    "label": "2144-40",
-    "name": "Soft",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#0b575b",
-    "label": "2054-20",
-    "name": "Beau",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#2b463e",
-    "label": "2041-10",
-    "name": "Hunter",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#eceeeb",
     "label": "OC-149",
     "name": "Decorator's",
     "book": "Benjamin Moore"
   },
   {
-    "color": "#bbc9ca",
-    "label": "2122-40",
-    "name": "Smoke",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#727d87",
-    "label": "2130-40",
-    "name": "Black",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#444c57",
     "label": "HC-154",
     "name": "Hale",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#dbd7cd",
-    "label": "OC-27",
-    "name": "Balboa",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#bbbeb9",
-    "label": "AF-690",
-    "name": "Metropolitan",
     "book": "Benjamin Moore"
   },
   {
@@ -50616,33 +48972,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#a38a8c",
-    "label": "CC-6",
-    "name": "Muskoka",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c0a5a1",
-    "label": "CC-8",
-    "name": "Frosted",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#edefed",
     "label": "CC-10",
     "name": "Ultra",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#eceeeb",
-    "label": "CC-20",
-    "name": "Decorator's",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f1f2eb",
-    "label": "CC-30",
-    "name": "Oxford",
     "book": "Benjamin Moore"
   },
   {
@@ -50670,24 +49002,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#f3f2e7",
-    "label": "CC-40",
-    "name": "Cloud",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ece7d8",
-    "label": "CC-50",
-    "name": "White",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e3d5c3",
-    "label": "CC-60",
-    "name": "Brandy",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#793a35",
     "label": "CC-62",
     "name": "Sundried",
@@ -50712,651 +49026,15 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#edebe1",
-    "label": "CC-70",
-    "name": "Dune",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e4e0d3",
-    "label": "CC-80",
-    "name": "Gray",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d8ceb8",
-    "label": "CC-90",
-    "name": "Natural",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#994942",
-    "label": "CC-92",
-    "name": "Spanish",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a74d44",
-    "label": "CC-94",
-    "name": "Northern",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b96e53",
-    "label": "CC-96",
-    "name": "Flower",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#be6549",
     "label": "CC-98",
     "name": "Prairie",
     "book": "Benjamin Moore"
   },
   {
-    "color": "#f7f1e2",
-    "label": "CC-100",
-    "name": "Flurry",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e2d7c2",
-    "label": "CC-110",
-    "name": "Muslin",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d0bb9d",
-    "label": "CC-120",
-    "name": "Stone",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#8f514a",
-    "label": "CC-122",
-    "name": "Boxcar",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#8f4031",
     "label": "CC-124",
     "name": "Louisiana",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a65a4f",
-    "label": "CC-126",
-    "name": "Covered",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b46a58",
-    "label": "CC-128",
-    "name": "Red",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f3f0e0",
-    "label": "CC-130",
-    "name": "Ivory",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#eadec6",
-    "label": "CC-140",
-    "name": "Barely",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d4c19e",
-    "label": "CC-150",
-    "name": "Sandy",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#7f4b47",
-    "label": "CC-152",
-    "name": "Laurentian",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c28674",
-    "label": "CC-154",
-    "name": "Smoked",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e7bead",
-    "label": "CC-156",
-    "name": "Tofino",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f3dbcd",
-    "label": "CC-158",
-    "name": "Pink",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f6efd9",
-    "label": "CC-160",
-    "name": "White",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f2e5c5",
-    "label": "CC-170",
-    "name": "Honey",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#eed8a5",
-    "label": "CC-180",
-    "name": "Barley",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#bd8c6f",
-    "label": "CC-182",
-    "name": "Frontenac",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c28973",
-    "label": "CC-184",
-    "name": "Bed",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ddab87",
-    "label": "CC-186",
-    "name": "Indian",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f1caa2",
-    "label": "CC-188",
-    "name": "Butter",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#efe0b8",
-    "label": "CC-190",
-    "name": "Summer",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e9d4a2",
-    "label": "CC-200",
-    "name": "Vellum",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e2c38c",
-    "label": "CC-210",
-    "name": "Dijon",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#fad896",
-    "label": "CC-212",
-    "name": "Danse",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#fbe2a1",
-    "label": "CC-214",
-    "name": "Golden",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#fcecc2",
-    "label": "CC-216",
-    "name": "Butter",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#feefb3",
-    "label": "CC-218",
-    "name": "Corn",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#eee6cf",
-    "label": "CC-220",
-    "name": "Wheat",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ded4b8",
-    "label": "CC-230",
-    "name": "Delaware",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cbb98d",
-    "label": "CC-240",
-    "name": "Late",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e6c58c",
-    "label": "CC-242",
-    "name": "Maple",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ebd0a1",
-    "label": "CC-244",
-    "name": "French",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e4dabc",
-    "label": "CC-246",
-    "name": "Vichyssoise",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e6d8ba",
-    "label": "CC-248",
-    "name": "Papaya",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e3dcc3",
-    "label": "CC-250",
-    "name": "Seaspray",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d6c9a7",
-    "label": "CC-260",
-    "name": "Butter",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c2b798",
-    "label": "CC-270",
-    "name": "Baffin",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9d6f4a",
-    "label": "CC-272",
-    "name": "Spiced",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cba573",
-    "label": "CC-274",
-    "name": "Ginger",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#dbbe99",
-    "label": "CC-276",
-    "name": "Sepia",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ebd3b2",
-    "label": "CC-278",
-    "name": "Kitsilano",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e8dcbc",
-    "label": "CC-280",
-    "name": "Almond",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#dacaa2",
-    "label": "CC-290",
-    "name": "Straw",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cfba86",
-    "label": "CC-300",
-    "name": "Sombrero",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ba9a79",
-    "label": "CC-302",
-    "name": "Rawhide",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#caad87",
-    "label": "CC-304",
-    "name": "Sisal",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e3d3b4",
-    "label": "CC-306",
-    "name": "Cable",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ddcdb4",
-    "label": "CC-308",
-    "name": "Thousand",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#dfd1c1",
-    "label": "CC-310",
-    "name": "Dusty",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d0bda5",
-    "label": "CC-320",
-    "name": "Bar",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#bda78d",
-    "label": "CC-330",
-    "name": "Hillsborough",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#aa8f6a",
-    "label": "CC-332",
-    "name": "Norwester",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b1997b",
-    "label": "CC-334",
-    "name": "Great",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b9a284",
-    "label": "CC-336",
-    "name": "Wild",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cab495",
-    "label": "CC-338",
-    "name": "Bluffs",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e9ddc9",
-    "label": "CC-340",
-    "name": "Lambskin",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e4c4a7",
-    "label": "CC-350",
-    "name": "Sycamore",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ba8867",
-    "label": "CC-360",
-    "name": "Potters",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a68e73",
-    "label": "CC-362",
-    "name": "Elk",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b5a08c",
-    "label": "CC-364",
-    "name": "Shore",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cab099",
-    "label": "CC-366",
-    "name": "Nubuck",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d8c3ae",
-    "label": "CC-368",
-    "name": "Sandpiper",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e2d0b6",
-    "label": "CC-370",
-    "name": "Sea",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d3ac89",
-    "label": "CC-380",
-    "name": "Toffee",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9d6141",
-    "label": "CC-390",
-    "name": "Rusty",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b59d8e",
-    "label": "CC-392",
-    "name": "Muddy",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c4b9af",
-    "label": "CC-394",
-    "name": "Boulevard",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cbbeb0",
-    "label": "CC-396",
-    "name": "Stone",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cbbaa9",
-    "label": "CC-398",
-    "name": "Old",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ebd5b1",
-    "label": "CC-400",
-    "name": "Sundial",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d6b488",
-    "label": "CC-410",
-    "name": "Boardwalk",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b98e61",
-    "label": "CC-420",
-    "name": "Maple",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cdbaae",
-    "label": "CC-422",
-    "name": "Pink",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d4c5bb",
-    "label": "CC-424",
-    "name": "Old",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ddd4cb",
-    "label": "CC-426",
-    "name": "Bone",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e8ded0",
-    "label": "CC-428",
-    "name": "Ice",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e0cfb4",
-    "label": "CC-430",
-    "name": "Moccasin",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c1a888",
-    "label": "CC-440",
-    "name": "Capilano",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9a7d58",
-    "label": "CC-450",
-    "name": "Caramel",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9f8d7d",
-    "label": "CC-452",
-    "name": "Deer",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b8aa9d",
-    "label": "CC-454",
-    "name": "Cobblestone",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cabfb0",
-    "label": "CC-456",
-    "name": "Dufferin",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d4cabe",
-    "label": "CC-458",
-    "name": "Mocha",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cec5b6",
-    "label": "CC-460",
-    "name": "Inukshuk",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b8ab9b",
-    "label": "CC-470",
-    "name": "Rocky",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a08f7d",
-    "label": "CC-480",
-    "name": "Cabot",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#735849",
-    "label": "CC-482",
-    "name": "Chocolate",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#876150",
-    "label": "CC-484",
-    "name": "Hot",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b5977b",
-    "label": "CC-486",
-    "name": "Tiramisu",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c9ad8f",
-    "label": "CC-488",
-    "name": "Biscotti",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c5bbab",
-    "label": "CC-490",
-    "name": "Stone",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#aea391",
-    "label": "CC-500",
-    "name": "Ranchwood",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#85745f",
-    "label": "CC-510",
-    "name": "Buckhorn",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#665a4b",
-    "label": "CC-512",
-    "name": "Marshlands",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9e8875",
-    "label": "CC-514",
-    "name": "Hiking",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#978878",
-    "label": "CC-516",
-    "name": "Flagstone",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a39e97",
-    "label": "CC-518",
-    "name": "Escarpment",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cbc5b1",
-    "label": "CC-520",
-    "name": "Florentine",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b0a690",
-    "label": "CC-530",
-    "name": "Brandon",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#867b69",
-    "label": "CC-540",
-    "name": "Stampede",
     "book": "Benjamin Moore"
   },
   {
@@ -51372,39 +49050,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#8c857d",
-    "label": "CC-546",
-    "name": "Metropolis",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#807e78",
     "label": "CC-548",
     "name": "Asphalt",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b7b9a6",
-    "label": "CC-550",
-    "name": "October",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9b9d88",
-    "label": "CC-560",
-    "name": "Raintree",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#636552",
-    "label": "CC-570",
-    "name": "Forest",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#8c8375",
-    "label": "CC-572",
-    "name": "Barnboard",
     "book": "Benjamin Moore"
   },
   {
@@ -51420,111 +49068,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#d2c6a9",
-    "label": "CC-578",
-    "name": "Hemp",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d7dbc0",
-    "label": "CC-580",
-    "name": "Glazed",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b0b389",
-    "label": "CC-590",
-    "name": "Grasslands",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#7c8169",
-    "label": "CC-600",
-    "name": "Mossy",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a4a088",
-    "label": "CC-602",
-    "name": "Stanley",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#ac9f89",
     "label": "CC-604",
     "name": "Turret",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c6c4af",
-    "label": "CC-606",
-    "name": "Spanish",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e3e8dd",
-    "label": "CC-608",
-    "name": "Dewdrop",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cad1c0",
-    "label": "CC-610",
-    "name": "Tea",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#8d9a86",
-    "label": "CC-620",
-    "name": "High",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#596352",
-    "label": "CC-630",
-    "name": "Backwoods",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9a9376",
-    "label": "CC-632",
-    "name": "Bed",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#afaa90",
-    "label": "CC-634",
-    "name": "Herbes",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c5c3b1",
-    "label": "CC-636",
-    "name": "Mountain",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#dcd7a8",
-    "label": "CC-638",
-    "name": "Sesame",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c3d2c7",
-    "label": "CC-640",
-    "name": "Blue",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#91a494",
-    "label": "CC-650",
-    "name": "Grenadier",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#5b726a",
-    "label": "CC-660",
-    "name": "Jack",
     "book": "Benjamin Moore"
   },
   {
@@ -51534,39 +49080,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#6a6854",
-    "label": "CC-664",
-    "name": "Provincial",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#616342",
     "label": "CC-666",
     "name": "Bonsai",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#979b73",
-    "label": "CC-668",
-    "name": "Misted",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c0c7bc",
-    "label": "CC-670",
-    "name": "Gray",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a8b4ab",
-    "label": "CC-680",
-    "name": "Raindance",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9ea9a2",
-    "label": "CC-690",
-    "name": "Piedmont",
     "book": "Benjamin Moore"
   },
   {
@@ -51576,249 +49092,15 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#868468",
-    "label": "CC-694",
-    "name": "Tapenade",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#969280",
-    "label": "CC-696",
-    "name": "Taiga",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b9b9a2",
-    "label": "CC-698",
-    "name": "Killarney",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c8d0c9",
-    "label": "CC-700",
-    "name": "Smoky",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a4b1af",
-    "label": "CC-710",
-    "name": "Mount",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#7b8580",
-    "label": "CC-720",
-    "name": "Night",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#888973",
-    "label": "CC-722",
-    "name": "Vineland",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#949981",
-    "label": "CC-724",
-    "name": "Homestead",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a6ab93",
-    "label": "CC-726",
-    "name": "Nature",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#bcc7b8",
-    "label": "CC-728",
-    "name": "Maid",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b1cad1",
-    "label": "CC-730",
-    "name": "Blue",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#809ead",
-    "label": "CC-740",
-    "name": "Labrador",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#6c8996",
-    "label": "CC-750",
-    "name": "West",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#31494b",
     "label": "CC-752",
     "name": "Miramichi",
     "book": "Benjamin Moore"
   },
   {
-    "color": "#4f6d6c",
-    "label": "CC-754",
-    "name": "Polar",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#70908f",
-    "label": "CC-756",
-    "name": "Avalon",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9dad9f",
-    "label": "CC-758",
-    "name": "Scenic",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a1bfcf",
-    "label": "CC-760",
-    "name": "Northern",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#86a1b7",
-    "label": "CC-770",
-    "name": "Denim",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#4c5b72",
-    "label": "CC-780",
-    "name": "Kensington",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#547385",
-    "label": "CC-782",
-    "name": "Georgian",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#84b9d1",
-    "label": "CC-784",
-    "name": "Clear",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#98c4e0",
-    "label": "CC-786",
-    "name": "Summer",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#bdd5de",
-    "label": "CC-788",
-    "name": "Watercolor",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ccdee3",
-    "label": "CC-790",
-    "name": "Polar",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#6488a0",
-    "label": "CC-800",
-    "name": "Blue",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#405367",
-    "label": "CC-810",
-    "name": "Hudson",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#82a6c1",
-    "label": "CC-812",
-    "name": "Five",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9bb5c8",
-    "label": "CC-814",
-    "name": "Glace",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b2c0c8",
-    "label": "CC-816",
-    "name": "Athabasca",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9cb2bc",
-    "label": "CC-818",
-    "name": "Early",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b5c6d8",
-    "label": "CC-820",
-    "name": "Airway",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#7786a2",
-    "label": "CC-830",
-    "name": "Stratford",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#5d6b86",
-    "label": "CC-840",
-    "name": "Blue",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#11567e",
     "label": "CC-842",
     "name": "Mistral",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#41739d",
-    "label": "CC-844",
-    "name": "Winter's",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#5f90b7",
-    "label": "CC-846",
-    "name": "Lazy",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#afd4e6",
-    "label": "CC-848",
-    "name": "Mineral",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#bbcce0",
-    "label": "CC-850",
-    "name": "Blue",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#5c6e93",
-    "label": "CC-860",
-    "name": "Blue",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#424b63",
-    "label": "CC-870",
-    "name": "Jet",
     "book": "Benjamin Moore"
   },
   {
@@ -51834,117 +49116,15 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#6c8eb4",
-    "label": "CC-876",
-    "name": "Mariner's",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a2c0d6",
-    "label": "CC-878",
-    "name": "H2O",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cad1d9",
-    "label": "CC-880",
-    "name": "Violet",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#94a1be",
-    "label": "CC-890",
-    "name": "Blue",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#5d6375",
-    "label": "CC-900",
-    "name": "Blue",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#5d7ab4",
     "label": "CC-902",
     "name": "Waterdrop",
     "book": "Benjamin Moore"
   },
   {
-    "color": "#8eaeda",
-    "label": "CC-904",
-    "name": "Cascade",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9eb3d1",
-    "label": "CC-906",
-    "name": "Summer",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a6b8ce",
-    "label": "CC-908",
-    "name": "Frozen",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#dfe3e4",
-    "label": "CC-910",
-    "name": "Whirlpool",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a1a7b7",
-    "label": "CC-920",
-    "name": "Yukon",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#6f7283",
-    "label": "CC-930",
-    "name": "Amethyst",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#2c3c4d",
     "label": "CC-932",
     "name": "North",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#757e93",
-    "label": "CC-934",
-    "name": "In",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#94a7bf",
-    "label": "CC-936",
-    "name": "Citadel",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c8d6e5",
-    "label": "CC-938",
-    "name": "Ice",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#adb4cb",
-    "label": "CC-940",
-    "name": "Blue",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#7d829e",
-    "label": "CC-950",
-    "name": "Queen's",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#6a6e87",
-    "label": "CC-960",
-    "name": "French",
     "book": "Benjamin Moore"
   },
   {
@@ -51969,24 +49149,6 @@
     "color": "#40467e",
     "label": "CC-968",
     "name": "Basic",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a7a7be",
-    "label": "CC-970",
-    "name": "Heather",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#838093",
-    "label": "CC-980",
-    "name": "Purple",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#524d5b",
-    "label": "CC-990",
-    "name": "Super",
     "book": "Benjamin Moore"
   },
   {
@@ -52044,24 +49206,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#dfb967",
-    "label": "HC-10",
-    "name": "Stuart",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e2c579",
-    "label": "HC-11",
-    "name": "Marblehead",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e8ce8e",
-    "label": "HC-12",
-    "name": "Concord",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#b99d5c",
     "label": "HC-13",
     "name": "Millington",
@@ -52080,21 +49224,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#a18c60",
-    "label": "HC-16",
-    "name": "Livingston",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#c2a974",
     "label": "HC-17",
     "name": "Summerdale",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#dbcb9d",
-    "label": "HC-18",
-    "name": "Adams",
     "book": "Benjamin Moore"
   },
   {
@@ -52134,21 +49266,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#c0af8d",
-    "label": "HC-25",
-    "name": "Quincy",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#dbcbab",
     "label": "HC-26",
     "name": "Monroe",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#eae6d1",
-    "label": "HC-27",
-    "name": "Monterey",
     "book": "Benjamin Moore"
   },
   {
@@ -52158,33 +49278,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#dfcfa7",
-    "label": "HC-29",
-    "name": "Dunmore",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#eedeb8",
-    "label": "HC-30",
-    "name": "Philadelphia",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#decb9b",
-    "label": "HC-31",
-    "name": "Waterbury",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#ecdcba",
     "label": "HC-32",
     "name": "Standish",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f5e3c1",
-    "label": "HC-33",
-    "name": "Montgomery",
     "book": "Benjamin Moore"
   },
   {
@@ -52197,42 +49293,6 @@
     "color": "#dfcda8",
     "label": "HC-35",
     "name": "Powell",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f4e6c4",
-    "label": "HC-36",
-    "name": "Hepplewhite",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a8895c",
-    "label": "HC-37",
-    "name": "Mystic",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c2a87e",
-    "label": "HC-38",
-    "name": "Decatur",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#dbcaac",
-    "label": "HC-39",
-    "name": "Putnam",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9c724a",
-    "label": "HC-40",
-    "name": "Greenfield",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#b89264",
-    "label": "HC-41",
-    "name": "Richmond",
     "book": "Benjamin Moore"
   },
   {
@@ -52278,39 +49338,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#9f634e",
-    "label": "HC-49",
-    "name": "Mayflower",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#995a4a",
-    "label": "HC-50",
-    "name": "Georgian",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#af6c56",
     "label": "HC-51",
     "name": "Audubon",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e8b489",
-    "label": "HC-52",
-    "name": "Ansonia",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f2cba8",
-    "label": "HC-53",
-    "name": "Hathaway",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f2d6b8",
-    "label": "HC-54",
-    "name": "Jumel",
     "book": "Benjamin Moore"
   },
   {
@@ -52326,63 +49356,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#ebd4bc",
-    "label": "HC-57",
-    "name": "Sheraton",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d7b4a4",
-    "label": "HC-58",
-    "name": "Chippendale",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e3c9bb",
-    "label": "HC-59",
-    "name": "Odessa",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#f2dac7",
-    "label": "HC-60",
-    "name": "Queen",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#764c4f",
     "label": "HC-61",
     "name": "New",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#9b6e6c",
-    "label": "HC-62",
-    "name": "Somerville",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d1afa0",
-    "label": "HC-63",
-    "name": "Monticello",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#644644",
-    "label": "HC-64",
-    "name": "Townsend",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#784e4b",
-    "label": "HC-65",
-    "name": "Hodley",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#8d5a57",
-    "label": "HC-66",
-    "name": "Garrison",
     "book": "Benjamin Moore"
   },
   {
@@ -52395,12 +49371,6 @@
     "color": "#6a5a4e",
     "label": "HC-68",
     "name": "Middlebury",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#7c6d5e",
-    "label": "HC-69",
-    "name": "Whitall",
     "book": "Benjamin Moore"
   },
   {
@@ -52419,18 +49389,6 @@
     "color": "#61524b",
     "label": "HC-72",
     "name": "Branchport",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#80674f",
-    "label": "HC-73",
-    "name": "Plymouth",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#937355",
-    "label": "HC-74",
-    "name": "Valley",
     "book": "Benjamin Moore"
   },
   {
@@ -52470,12 +49428,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#dcd3bd",
-    "label": "HC-81",
-    "name": "Manchester",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#c3b69b",
     "label": "HC-82",
     "name": "Bennington",
@@ -52506,30 +49458,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#a69b8e",
-    "label": "HC-87",
-    "name": "Ashley",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#988567",
-    "label": "HC-88",
-    "name": "Jamesboro",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ad9d7d",
-    "label": "HC-89",
-    "name": "Northampton",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cfc4a5",
-    "label": "HC-90",
-    "name": "Crown",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#bcac89",
     "label": "HC-91",
     "name": "Danville",
@@ -52554,39 +49482,15 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#b9af96",
-    "label": "HC-95",
-    "name": "Sag",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cfc8ab",
-    "label": "HC-96",
-    "name": "Richmond",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#978e71",
     "label": "HC-97",
     "name": "Hancock",
     "book": "Benjamin Moore"
   },
   {
-    "color": "#ada283",
-    "label": "HC-98",
-    "name": "Providence",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#d7cfb2",
     "label": "HC-99",
     "name": "Abingdon",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#7c7766",
-    "label": "HC-100",
-    "name": "Gloucester",
     "book": "Benjamin Moore"
   },
   {
@@ -52599,18 +49503,6 @@
     "color": "#b3aa91",
     "label": "HC-102",
     "name": "Clarksville",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#807867",
-    "label": "HC-103",
-    "name": "Cromwell",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#928b79",
-    "label": "HC-104",
-    "name": "Copley",
     "book": "Benjamin Moore"
   },
   {
@@ -52650,12 +49542,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#b0ac94",
-    "label": "HC-111",
-    "name": "Nantucket",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#828167",
     "label": "HC-112",
     "name": "Tate",
@@ -52674,27 +49560,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#bab891",
-    "label": "HC-115",
-    "name": "Georgian",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#ccceaf",
     "label": "HC-116",
     "name": "Guilford",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d5dbc0",
-    "label": "HC-117",
-    "name": "Hancock",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#aab696",
-    "label": "HC-118",
-    "name": "Sherwood",
     "book": "Benjamin Moore"
   },
   {
@@ -52740,18 +49608,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#74806b",
-    "label": "HC-126",
-    "name": "Avon",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#64856a",
-    "label": "HC-127",
-    "name": "Fairmont",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#769b81",
     "label": "HC-128",
     "name": "Clearspring",
@@ -52764,45 +49620,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#65816d",
-    "label": "HC-130",
-    "name": "Webster",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#76967e",
-    "label": "HC-131",
-    "name": "Lehigh",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#8bac99",
-    "label": "HC-132",
-    "name": "Harrisburg",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#475b5e",
-    "label": "HC-133",
-    "name": "Yorktowne",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#425853",
     "label": "HC-134",
     "name": "Tarrytown",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#496156",
-    "label": "HC-135",
-    "name": "Lafayette",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#6d9288",
-    "label": "HC-136",
-    "name": "Waterbury",
     "book": "Benjamin Moore"
   },
   {
@@ -52836,27 +49656,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#94aaa1",
-    "label": "HC-142",
-    "name": "Stratton",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#abbfb5",
-    "label": "HC-143",
-    "name": "Wythe",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#c2d2ca",
     "label": "HC-144",
     "name": "Palladian",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#87999f",
-    "label": "HC-145",
-    "name": "Van",
     "book": "Benjamin Moore"
   },
   {
@@ -52890,30 +49692,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#628798",
-    "label": "HC-151",
-    "name": "Buckland",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#779fb1",
-    "label": "HC-152",
-    "name": "Whipple",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#96bac7",
-    "label": "HC-153",
-    "name": "Marlboro",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#444c57",
-    "label": "HC-154",
-    "name": "Hale",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#475667",
     "label": "HC-155",
     "name": "Newburyport",
@@ -52923,24 +49701,6 @@
     "color": "#495c6f",
     "label": "HC-156",
     "name": "Van",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#445256",
-    "label": "HC-157",
-    "name": "Narragansett",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#455a63",
-    "label": "HC-158",
-    "name": "Newburg",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#637986",
-    "label": "HC-159",
-    "name": "Philipsburg",
     "book": "Benjamin Moore"
   },
   {
@@ -52980,12 +49740,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#686763",
-    "label": "HC-166",
-    "name": "Kendall",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#767771",
     "label": "HC-167",
     "name": "Amherst",
@@ -53010,39 +49764,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#d5d9d3",
-    "label": "HC-171",
-    "name": "Wickham",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ccc7b9",
-    "label": "HC-172",
-    "name": "Revere",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#dad4c5",
-    "label": "HC-173",
-    "name": "Edgecomb",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e7e2cc",
-    "label": "HC-174",
-    "name": "Lancaster",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#a1998a",
     "label": "HC-175",
     "name": "Briarwood",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#cabfb0",
-    "label": "HC-176",
-    "name": "Annapolis",
     "book": "Benjamin Moore"
   },
   {
@@ -53124,12 +49848,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#323233",
-    "label": "HC-190",
-    "name": "Black",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#607780",
     "label": "HC-191",
     "name": "Hamilton",
@@ -53187,12 +49905,6 @@
     "color": "#d3ccba",
     "label": "CW-45",
     "name": "York",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#c6bfae",
-    "label": "CW-50",
-    "name": "Tyler",
     "book": "Benjamin Moore"
   },
   {
@@ -53313,18 +50025,6 @@
     "color": "#8b7b67",
     "label": "CW-150",
     "name": "Everard",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#928679",
-    "label": "CW-155",
-    "name": "Revolutionary",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#6a5b4d",
-    "label": "CW-160",
-    "name": "Dixon",
     "book": "Benjamin Moore"
   },
   {
@@ -53496,33 +50196,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#cd756a",
-    "label": "CW-305",
-    "name": "Claret",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#b05d4b",
     "label": "CW-310",
     "name": "China",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#be4739",
-    "label": "CW-315",
-    "name": "Cornwallis",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#ac4931",
-    "label": "CW-320",
-    "name": "Dragons",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#995a4a",
-    "label": "CW-325",
-    "name": "Brickyard",
     "book": "Benjamin Moore"
   },
   {
@@ -53550,21 +50226,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#8d515a",
-    "label": "CW-350",
-    "name": "Barrett",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#744551",
     "label": "CW-355",
     "name": "Carter",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#8f807a",
-    "label": "CW-360",
-    "name": "Powell",
     "book": "Benjamin Moore"
   },
   {
@@ -53640,12 +50304,6 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#bc9a52",
-    "label": "CW-425",
-    "name": "Palace",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#b8a06e",
     "label": "CW-430",
     "name": "Scrivener",
@@ -53670,33 +50328,9 @@
     "book": "Benjamin Moore"
   },
   {
-    "color": "#a7a66d",
-    "label": "CW-450",
-    "name": "Greenhow",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#e8e6be",
-    "label": "CW-455",
-    "name": "Green",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#d4d090",
-    "label": "CW-460",
-    "name": "Green",
-    "book": "Benjamin Moore"
-  },
-  {
     "color": "#b3b36b",
     "label": "CW-465",
     "name": "Parrot",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#6f753b",
-    "label": "CW-470",
-    "name": "Timson",
     "book": "Benjamin Moore"
   },
   {
@@ -53745,12 +50379,6 @@
     "color": "#373b33",
     "label": "CW-510",
     "name": "Waller",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#a4b793",
-    "label": "CW-515",
-    "name": "Sea",
     "book": "Benjamin Moore"
   },
   {
@@ -53883,12 +50511,6 @@
     "color": "#335b7e",
     "label": "CW-625",
     "name": "Prussian",
-    "book": "Benjamin Moore"
-  },
-  {
-    "color": "#314757",
-    "label": "CW-630",
-    "name": "Washington",
     "book": "Benjamin Moore"
   },
   {
@@ -57912,12 +54534,6 @@
     "book": "DIC"
   },
   {
-    "name": "DIC 525s",
-    "label": "525s",
-    "color": "#685e5b",
-    "book": "DIC"
-  },
-  {
     "name": "DIC 526s*",
     "label": "526s",
     "color": "#5d5754",
@@ -58178,12 +54794,6 @@
   {
     "name": "DIC 569s",
     "label": "569s",
-    "color": "#fde100",
-    "book": "DIC"
-  },
-  {
-    "name": "DIC 570s",
-    "label": "570s",
     "color": "#fde100",
     "book": "DIC"
   },
@@ -69966,12 +66576,6 @@
     "book": "Dunn Edwards"
   },
   {
-    "color": "#ffece0",
-    "label": "DE5175",
-    "name": "Organic Fiber",
-    "book": "Dunn Edwards"
-  },
-  {
     "color": "#ffddcd",
     "label": "DE5176",
     "name": "Peaceful Peach",
@@ -70725,12 +67329,6 @@
     "color": "#fffce4",
     "label": "DE5301",
     "name": "Tatami Mat",
-    "book": "Dunn Edwards"
-  },
-  {
-    "color": "#fff9d8",
-    "label": "DE5302",
-    "name": "Warm Light",
     "book": "Dunn Edwards"
   },
   {
@@ -72138,12 +68736,6 @@
     "book": "Dunn Edwards"
   },
   {
-    "color": "#fbf1df",
-    "label": "DEW319",
-    "name": "Damask",
-    "book": "Dunn Edwards"
-  },
-  {
     "color": "#fff8e3",
     "label": "DEW320",
     "name": "Pinch of Pearl",
@@ -72207,12 +68799,6 @@
     "color": "#fff9e2",
     "label": "DEW330",
     "name": "Snug Cottage",
-    "book": "Dunn Edwards"
-  },
-  {
-    "color": "#ffffe9",
-    "label": "DEW331",
-    "name": "Wedding Dress",
     "book": "Dunn Edwards"
   },
   {
@@ -72951,12 +69537,6 @@
     "color": "#fef4eb",
     "label": "VS-9102",
     "name": "Winter Morning",
-    "book": "Dutch Boy Paints"
-  },
-  {
-    "color": "#fef4eb",
-    "label": "VS-9110",
-    "name": "Bora Sand",
     "book": "Dutch Boy Paints"
   },
   {
@@ -74037,12 +70617,6 @@
     "color": "#f1ebe0",
     "label": "3",
     "name": "Nilla Vanilla",
-    "book": "Hallman Lindsay"
-  },
-  {
-    "color": "#f1ebe0",
-    "label": "4",
-    "name": "Child Of Heaven",
     "book": "Hallman Lindsay"
   },
   {
@@ -75768,12 +72342,6 @@
     "book": "Hallman Lindsay"
   },
   {
-    "color": "#f3ead7",
-    "label": "292",
-    "name": "Privileged",
-    "book": "Hallman Lindsay"
-  },
-  {
     "color": "#e8d7bc",
     "label": "293",
     "name": "What Inheritance?",
@@ -75849,12 +72417,6 @@
     "color": "#816945",
     "label": "305",
     "name": "Golden Summer",
-    "book": "Hallman Lindsay"
-  },
-  {
-    "color": "#f3ead5",
-    "label": "306",
-    "name": "Saffron Tint",
     "book": "Hallman Lindsay"
   },
   {
@@ -82662,12 +79224,6 @@
     "book": "Hallman Lindsay"
   },
   {
-    "color": "#ad9986",
-    "label": "historic-winter-meadow",
-    "name": "Winter Meadow",
-    "book": "Hallman Lindsay"
-  },
-  {
     "color": "#c9a985",
     "label": "historic-coastal-sand",
     "name": "Coastal Sand",
@@ -84147,12 +80703,6 @@
     "color": "#007cbf",
     "label": "47-N",
     "name": "HKS 47 N",
-    "book": "HKS"
-  },
-  {
-    "color": "#0081b1",
-    "label": "48-N",
-    "name": "HKS 48 N",
     "book": "HKS"
   },
   {
@@ -90300,12 +86850,6 @@
     "book": "Kilz Paints"
   },
   {
-    "color": "#EDEAE2",
-    "label": "TB-09",
-    "name": "White Modern",
-    "book": "Kilz Paints"
-  },
-  {
     "color": "#F1EFE6",
     "label": "TB-08",
     "name": "Architectural White",
@@ -90327,12 +86871,6 @@
     "color": "#E9E4E2",
     "label": "TB-31",
     "name": "Collector'S White",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#E6E1D8",
-    "label": "TB-07",
-    "name": "Reserved White",
     "book": "Kilz Paints"
   },
   {
@@ -90366,21 +86904,9 @@
     "book": "Kilz Paints"
   },
   {
-    "color": "#F5EDD7",
-    "label": "TB-04",
-    "name": "White Peony",
-    "book": "Kilz Paints"
-  },
-  {
     "color": "#F6EBD8",
     "label": "TB-05",
     "name": "Ivory Porcelain",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#EEE3D6",
-    "label": "TB-06",
-    "name": "Champagne White",
     "book": "Kilz Paints"
   },
   {
@@ -90390,33 +86916,9 @@
     "book": "Kilz Paints"
   },
   {
-    "color": "#E6E1D8",
-    "label": "TB-07",
-    "name": "Reserved White",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#DED8CD",
-    "label": "TB-11",
-    "name": "Flying Dove",
-    "book": "Kilz Paints"
-  },
-  {
     "color": "#CBC9C2",
     "label": "TB-33",
     "name": "Antique Sterling",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#DACCBB",
-    "label": "TB-12",
-    "name": "Papyrus",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#CEBFAB",
-    "label": "TB-13",
-    "name": "Bronze Mist",
     "book": "Kilz Paints"
   },
   {
@@ -90429,12 +86931,6 @@
     "color": "#504A43",
     "label": "TB-20",
     "name": "Binoculars",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#C4BAAB",
-    "label": "TB-14",
-    "name": "Portobello",
     "book": "Kilz Paints"
   },
   {
@@ -90522,12 +87018,6 @@
     "book": "Kilz Paints"
   },
   {
-    "color": "#DED8CD",
-    "label": "TB-11",
-    "name": "Flying Dove",
-    "book": "Kilz Paints"
-  },
-  {
     "color": "#918C87",
     "label": "TB-28",
     "name": "Chalk Suede",
@@ -90606,12 +87096,6 @@
     "book": "Kilz Paints"
   },
   {
-    "color": "#EDE7E5",
-    "label": "TB-21",
-    "name": "Blushing White",
-    "book": "Kilz Paints"
-  },
-  {
     "color": "#F5DDCF",
     "label": "TB-91",
     "name": "Angelic Pink",
@@ -90627,12 +87111,6 @@
     "color": "#8A3234",
     "label": "TB-97",
     "name": "Haute Red",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#E9E4E2",
-    "label": "TB-31",
-    "name": "Collector'S White",
     "book": "Kilz Paints"
   },
   {
@@ -90654,24 +87132,6 @@
     "book": "Kilz Paints"
   },
   {
-    "color": "#EEE7DE",
-    "label": "TB-10",
-    "name": "Windmill White",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#EEE3D6",
-    "label": "TB-06",
-    "name": "Champagne White",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#F5DDCF",
-    "label": "TB-91",
-    "name": "Angelic Pink",
-    "book": "Kilz Paints"
-  },
-  {
     "color": "#C9A78D",
     "label": "TB-93",
     "name": "Pottery Beige",
@@ -90684,39 +87144,9 @@
     "book": "Kilz Paints"
   },
   {
-    "color": "#AD6A53",
-    "label": "TB-96",
-    "name": "Penny Luck",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#F6EBD8",
-    "label": "TB-05",
-    "name": "Ivory Porcelain",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#F4E3CF",
-    "label": "TB-82",
-    "name": "Ancestral",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#CFA974",
-    "label": "TB-87",
-    "name": "Golden Compass",
-    "book": "Kilz Paints"
-  },
-  {
     "color": "#D68A53",
     "label": "TB-95",
     "name": "Bright Marigold",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#F6EBD8",
-    "label": "TB-05",
-    "name": "Ivory Porcelain",
     "book": "Kilz Paints"
   },
   {
@@ -90738,27 +87168,9 @@
     "book": "Kilz Paints"
   },
   {
-    "color": "#F5EDD7",
-    "label": "TB-04",
-    "name": "White Peony",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#E3D7C2",
-    "label": "TB-81",
-    "name": "Spanish Fortress",
-    "book": "Kilz Paints"
-  },
-  {
     "color": "#F7DCA7",
     "label": "TB-84",
     "name": "Yellow Lotus",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#CFA974",
-    "label": "TB-87",
-    "name": "Golden Compass",
     "book": "Kilz Paints"
   },
   {
@@ -90828,21 +87240,9 @@
     "book": "Kilz Paints"
   },
   {
-    "color": "#847D5F",
-    "label": "TB-90",
-    "name": "Grape Arbor",
-    "book": "Kilz Paints"
-  },
-  {
     "color": "#CED3BC",
     "label": "TB-72",
     "name": "Palo Verde",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#ACAC90",
-    "label": "TB-88",
-    "name": "Almost Sage",
     "book": "Kilz Paints"
   },
   {
@@ -90855,30 +87255,6 @@
     "color": "#919B88",
     "label": "TB-77",
     "name": "Weeping Willow",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#BEC5B6",
-    "label": "TB-73",
-    "name": "Loden Frost",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#B6BDB3",
-    "label": "TB-64",
-    "name": "Patio Gray",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#9CA39D",
-    "label": "TB-66",
-    "name": "Stone Cold",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#818A83",
-    "label": "TB-68",
-    "name": "Lincoln Green",
     "book": "Kilz Paints"
   },
   {
@@ -90984,87 +87360,15 @@
     "book": "Kilz Paints"
   },
   {
-    "color": "#BDD3D3",
-    "label": "TB-52",
-    "name": "Almost Aqua",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#B6DEDB",
-    "label": "TB-53",
-    "name": "Sailing Water",
-    "book": "Kilz Paints"
-  },
-  {
     "color": "#5CC1BC",
     "label": "TB-56",
     "name": "Tropical Escape",
     "book": "Kilz Paints"
   },
   {
-    "color": "#6D9093",
-    "label": "TB-57",
-    "name": "Pale Emerald",
-    "book": "Kilz Paints"
-  },
-  {
     "color": "#D2E4DC",
     "label": "TB-51",
     "name": "Misty Morning",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#98C6BD",
-    "label": "TB-54",
-    "name": "Oceanic",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#869B97",
-    "label": "TB-67",
-    "name": "June Gloom",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#395255",
-    "label": "TB-60",
-    "name": "Oceans Deep",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#DFE0E2",
-    "label": "TB-41",
-    "name": "Wind Chime",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#CCCDCE",
-    "label": "TB-32",
-    "name": "Brushed Metal",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#9DA0AB",
-    "label": "TB-34",
-    "name": "Aviator Silver",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#7C878E",
-    "label": "TB-36",
-    "name": "December Nights",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#CCCDCE",
-    "label": "TB-32",
-    "name": "Brushed Metal",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#B2A59F",
-    "label": "TB-26",
-    "name": "Meadow Mauve",
     "book": "Kilz Paints"
   },
   {
@@ -91077,42 +87381,6 @@
     "color": "#392434",
     "label": "TB-100",
     "name": "Beetroot Purple",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#C9D6DD",
-    "label": "TB-42",
-    "name": "Northern Sky",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#A7B9BF",
-    "label": "TB-45",
-    "name": "Chambray Blue",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#9DA0AB",
-    "label": "TB-34",
-    "name": "Aviator Silver",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#8CADCB",
-    "label": "TB-47",
-    "name": "High Tide",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#B6B3B1",
-    "label": "TB-25",
-    "name": "Postcard",
-    "book": "Kilz Paints"
-  },
-  {
-    "color": "#918C87",
-    "label": "TB-28",
-    "name": "Chalk Suede",
     "book": "Kilz Paints"
   },
   {
@@ -92046,12 +88314,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#1d1a44",
-    "label": "MP2103",
-    "name": "Blue Abyss",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#797b89",
     "label": "MP4510",
     "name": "Blue And Grey",
@@ -92982,12 +89244,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#2e6972",
-    "label": "MP6679",
-    "name": "Teal Edge",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#608e94",
     "label": "MP11829",
     "name": "Teal Plastic",
@@ -93264,12 +89520,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#5a3d3d",
-    "label": "MP13335",
-    "name": "Chocolat Noir",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#73544c",
     "label": "MP10161",
     "name": "Chocolate Bliss",
@@ -93321,12 +89571,6 @@
     "color": "#442929",
     "label": "MP11194",
     "name": "Dark Horse",
-    "book": "Matthews Paint Co."
-  },
-  {
-    "color": "#442929",
-    "label": "MP12213",
-    "name": "Dark Roast",
     "book": "Matthews Paint Co."
   },
   {
@@ -93399,12 +89643,6 @@
     "color": "#6c3b1e",
     "label": "MP8137",
     "name": "Nutella",
-    "book": "Matthews Paint Co."
-  },
-  {
-    "color": "#4c2f30",
-    "label": "MP4836",
-    "name": "Obsidian",
     "book": "Matthews Paint Co."
   },
   {
@@ -93552,12 +89790,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#766566",
-    "label": "MP20183",
-    "name": "Auguste Bronze Met.",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#83746f",
     "label": "MP20144",
     "name": "Bank Bronze Met.",
@@ -93657,12 +89889,6 @@
     "color": "#957d62",
     "label": "MP20159",
     "name": "Etruscan Bronze Met.",
-    "book": "Matthews Paint Co."
-  },
-  {
-    "color": "#b5a698",
-    "label": "MP20046",
-    "name": "Frosty Nickel Met.",
     "book": "Matthews Paint Co."
   },
   {
@@ -94488,12 +90714,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#003b4f",
-    "label": "MP25837",
-    "name": "Stormy Blue",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#f7bc00",
     "label": "MP42218SP",
     "name": "Sundance Yellow",
@@ -94782,12 +91002,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#604c44",
-    "label": "MP40366",
-    "name": "Scott Bronze Met.",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#be8c75",
     "label": "MP40495",
     "name": "Soft Copper Met.",
@@ -94869,12 +91083,6 @@
     "color": "#6c544a",
     "label": "MP45519",
     "name": "Ebony Gold Met.",
-    "book": "Matthews Paint Co."
-  },
-  {
-    "color": "#b78759",
-    "label": "MP25618",
-    "name": "Flaxen Gold Met.",
     "book": "Matthews Paint Co."
   },
   {
@@ -94998,12 +91206,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#8b6852",
-    "label": "MP49153",
-    "name": "Henna Gold Met.",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#f7eab9",
     "label": "MP47787",
     "name": "Hint of Gold Pearl",
@@ -95037,12 +91239,6 @@
     "color": "#b09776",
     "label": "MP20353",
     "name": "Noble Gold Met.",
-    "book": "Matthews Paint Co."
-  },
-  {
-    "color": "#96634f",
-    "label": "MP51325",
-    "name": "Nutty Gold Met.",
     "book": "Matthews Paint Co."
   },
   {
@@ -95667,12 +91863,6 @@
     "color": "#3c4737",
     "label": "MP15686",
     "name": "Black On Green",
-    "book": "Matthews Paint Co."
-  },
-  {
-    "color": "#335056",
-    "label": "MP16233",
-    "name": "Bleu Mer",
     "book": "Matthews Paint Co."
   },
   {
@@ -97290,12 +93480,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#4b5b52",
-    "label": "MP14963",
-    "name": "Ural Forest",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#4f5a4f",
     "label": "MP11372",
     "name": "Urban Forest",
@@ -98220,12 +94404,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#bfc1c1",
-    "label": "MP23468",
-    "name": "Hot Plata Basecoat",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#3a6d8e",
     "label": "MP23591-23552",
     "name": "Opal Blue Prl over Black",
@@ -98634,12 +94812,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#5d0010",
-    "label": "MP16105",
-    "name": "Barolo",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#662d44",
     "label": "MP4766",
     "name": "Beetroot",
@@ -98973,18 +95145,6 @@
     "color": "#b43b40",
     "label": "MP8937",
     "name": "Flexi-Flyer Red",
-    "book": "Matthews Paint Co."
-  },
-  {
-    "color": "#c53e56",
-    "label": "MP25001",
-    "name": "Floribunda Red",
-    "book": "Matthews Paint Co."
-  },
-  {
-    "color": "#800000",
-    "label": "MP12009",
-    "name": "Ford Tractor Red",
     "book": "Matthews Paint Co."
   },
   {
@@ -99534,12 +95694,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#d6323c",
-    "label": "MP10241",
-    "name": "Red Camaro",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#ae0027",
     "label": "MP15775",
     "name": "Red Car Line",
@@ -99654,21 +95808,9 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#cd0000",
-    "label": "MP3543",
-    "name": "Ruby Laser",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#af584c",
     "label": "MP4705",
     "name": "Santa Ana Red",
-    "book": "Matthews Paint Co."
-  },
-  {
-    "color": "#cd221e",
-    "label": "MP12602",
-    "name": "Scarlata",
     "book": "Matthews Paint Co."
   },
   {
@@ -99717,12 +95859,6 @@
     "color": "#5f183b",
     "label": "MP8303",
     "name": "Sonoma Shiraz",
-    "book": "Matthews Paint Co."
-  },
-  {
-    "color": "#c35941",
-    "label": "MP192",
-    "name": "Southern Clay",
     "book": "Matthews Paint Co."
   },
   {
@@ -99834,12 +95970,6 @@
     "book": "Matthews Paint Co."
   },
   {
-    "color": "#bd6162",
-    "label": "MP10113",
-    "name": "Watermelon Gelato",
-    "book": "Matthews Paint Co."
-  },
-  {
     "color": "#9d5255",
     "label": "MP16068",
     "name": "Wine Sauce",
@@ -99927,12 +96057,6 @@
     "color": "#d2cdbe",
     "label": "MP18082",
     "name": "Brightray Silver Met.",
-    "book": "Matthews Paint Co."
-  },
-  {
-    "color": "#888783",
-    "label": "MP18146",
-    "name": "Cast Steel Met.",
     "book": "Matthews Paint Co."
   },
   {
@@ -100056,12 +96180,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Sunburst Yellow",
-    "label": "sunburst-yellow",
-    "color": "#ffd000",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Terra Green",
     "label": "terra-green",
     "color": "#bdd832",
@@ -100134,54 +96252,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Natural Felt",
-    "label": "natural-felt",
-    "color": "#e9eac2",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Aged Felt",
-    "label": "aged-felt",
-    "color": "#ecdda4",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Ancient Gold Felt",
-    "label": "ancient-gold-felt",
-    "color": "#fcf195",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Sand Felt",
-    "label": "sand-felt",
-    "color": "#efdcaa",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Shell Felt",
-    "label": "shell-felt",
-    "color": "#fde0dc",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Blue Felt",
-    "label": "blue-felt",
-    "color": "#d8f0e6",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Celadon Felt",
-    "label": "celadon-felt",
-    "color": "#e8fec4",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Gray Felt",
-    "label": "gray-felt",
-    "color": "#e8f4d8",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Neenah Baronial Ivory",
     "label": "baronial-ivory",
     "color": "#fffac2",
@@ -100203,12 +96273,6 @@
     "name": "Neenah Earthstone",
     "label": "earthstone",
     "color": "#f4e9da",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Millstone",
-    "label": "millstone",
-    "color": "#fffac2",
     "book": "Neenah Paper Co."
   },
   {
@@ -100308,96 +96372,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Neenah Cadet Gray",
-    "label": "cadet-gray",
-    "color": "#839bb0",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Charcoal",
-    "label": "charcoal",
-    "color": "#5c5a5e",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Patriot Blue",
-    "label": "patriot-blue",
-    "color": "#00294d",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Epic Black",
-    "label": "epic-black",
-    "color": "#000000",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Red Pepper",
-    "label": "red-pepper",
-    "color": "#cb2127",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Baronial Ivory",
-    "label": "baronial-ivory",
-    "color": "#fffac2",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Antique Gray",
-    "label": "antique-gray",
-    "color": "#f1ede2",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Cool Gray",
-    "label": "cool-gray",
-    "color": "#c5cad4",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Cadet Gray",
-    "label": "cadet-gray",
-    "color": "#839bb0",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Pewter",
-    "label": "pewter",
-    "color": "#7e8082",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Charcoal",
-    "label": "charcoal",
-    "color": "#5c5a5e",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Patriot Blue",
-    "label": "patriot-blue",
-    "color": "#00294d",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Military",
-    "label": "military",
-    "color": "#2d3c16",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Epic Black",
-    "label": "epic-black",
-    "color": "#000000",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Baronial Ivory",
-    "label": "baronial-ivory",
-    "color": "#fffac2",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Neenah Monterey Sand",
     "label": "monterey-sand",
     "color": "#f5edcf",
@@ -100422,195 +96396,9 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Neenah Antique Gray",
-    "label": "antique-gray",
-    "color": "#f1ede2",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Cool Gray",
-    "label": "cool-gray",
-    "color": "#c5cad4",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Cadet Gray",
-    "label": "cadet-gray",
-    "color": "#839bb0",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Pewter",
-    "label": "pewter",
-    "color": "#7e8082",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Charcoal",
-    "label": "charcoal",
-    "color": "#5c5a5e",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Chambray",
-    "label": "chambray",
-    "color": "#1f64b2",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Patriot Blue",
-    "label": "patriot-blue",
-    "color": "#00294d",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Red Pepper",
-    "label": "red-pepper",
-    "color": "#cb2127",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Neenah Burgundy",
     "label": "burgundy",
     "color": "#73002e",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Aubergiene",
-    "label": "aubergiene",
-    "color": "#150425",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Military",
-    "label": "military",
-    "color": "#2d3c16",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Epic Black",
-    "label": "epic-black",
-    "color": "#000000",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Antique Gray",
-    "label": "antique-gray",
-    "color": "#f1ede2",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Cool Gray",
-    "label": "cool-gray",
-    "color": "#c5cad4",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Cadet Gray",
-    "label": "cadet-gray",
-    "color": "#839bb0",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Pewter",
-    "label": "pewter",
-    "color": "#7e8082",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Charcoal",
-    "label": "charcoal",
-    "color": "#5c5a5e",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Cobalt",
-    "label": "cobalt",
-    "color": "#0021ff",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Patriot Blue",
-    "label": "patriot-blue",
-    "color": "#00294d",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Military",
-    "label": "military",
-    "color": "#2d3c16",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Epic Black",
-    "label": "epic-black",
-    "color": "#000000",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Imperial Red",
-    "label": "imperial-red",
-    "color": "#dd0700",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Antique Gray",
-    "label": "antique-gray",
-    "color": "#f1ede2",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Cool Gray",
-    "label": "cool-gray",
-    "color": "#c5cad4",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Cadet Gray",
-    "label": "cadet-gray",
-    "color": "#839bb0",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Pewter",
-    "label": "pewter",
-    "color": "#7e8082",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Charcoal",
-    "label": "charcoal",
-    "color": "#5c5a5e",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Chambray",
-    "label": "chambray",
-    "color": "#1f64b2",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Patriot Blue",
-    "label": "patriot-blue",
-    "color": "#00294d",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Military",
-    "label": "military",
-    "color": "#2d3c16",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Epic Black",
-    "label": "epic-black",
-    "color": "#000000",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Canyon Brown",
-    "label": "canyon-brown",
-    "color": "#220f00",
     "book": "Neenah Paper Co."
   },
   {
@@ -100623,12 +96411,6 @@
     "name": "Neenah Blue",
     "label": "blue",
     "color": "#e0f0f7",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Neenah Ecru",
-    "label": "ecru",
-    "color": "#f7f7db",
     "book": "Neenah Paper Co."
   },
   {
@@ -100884,12 +96666,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Black ",
-    "label": "black-",
-    "color": "#181103",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Blue Chip",
     "label": "blue-chip",
     "color": "#111b2e",
@@ -100971,12 +96747,6 @@
     "name": "Graphite",
     "label": "graphite",
     "color": "#1c2323",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Orange",
-    "label": "orange",
-    "color": "#ff6418",
     "book": "Neenah Paper Co."
   },
   {
@@ -101094,12 +96864,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Eclipse Black Smooth",
-    "label": "eclipse-black-smooth",
-    "color": "#060808",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Ivory Linen",
     "label": "ivory-linen",
     "color": "#f3f4ba",
@@ -101109,12 +96873,6 @@
     "name": "Emerald Green Linen",
     "label": "emerald-green-linen",
     "color": "#0c3e17",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Natural Linen",
-    "label": "natural-linen",
-    "color": "#faf7eb",
     "book": "Neenah Paper Co."
   },
   {
@@ -101136,12 +96894,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Eclipse Black Linen",
-    "label": "eclipse-black-linen",
-    "color": "#060808",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Natural Laid",
     "label": "natural-laid",
     "color": "#fffbec",
@@ -101157,12 +96909,6 @@
     "name": "Gray Laid",
     "label": "gray-laid",
     "color": "#e6e8db",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Eclipse Black Laid",
-    "label": "eclipse-black-laid",
-    "color": "#060808",
     "book": "Neenah Paper Co."
   },
   {
@@ -101733,12 +97479,6 @@
     "name": "Berries",
     "label": "mp5783",
     "color": "#a8c3c9",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Blue Abyss",
-    "label": "mp2103",
-    "color": "#1d1a44",
     "book": "Neenah Paper Co."
   },
   {
@@ -102672,12 +98412,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Teal Edge",
-    "label": "mp6679",
-    "color": "#2e6972",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Teal Plastic",
     "label": "mp11829",
     "color": "#608e94",
@@ -102954,12 +98688,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Chocolat Noir",
-    "label": "mp13335",
-    "color": "#5a3d3d",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Chocolate Bliss",
     "label": "mp10161",
     "color": "#73544c",
@@ -103010,12 +98738,6 @@
   {
     "name": "Dark Horse",
     "label": "mp11194",
-    "color": "#442929",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Dark Roast",
-    "label": "mp12213",
     "color": "#442929",
     "book": "Neenah Paper Co."
   },
@@ -103089,12 +98811,6 @@
     "name": "Nutella",
     "label": "mp8137",
     "color": "#6c3b1e",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Obsidian",
-    "label": "mp4836",
-    "color": "#4c2f30",
     "book": "Neenah Paper Co."
   },
   {
@@ -103242,12 +98958,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Auguste Bronze Met.",
-    "label": "mp20183",
-    "color": "#766566",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Bank Bronze Met.",
     "label": "mp20144",
     "color": "#83746f",
@@ -103347,12 +99057,6 @@
     "name": "Etruscan Bronze Met.",
     "label": "mp20159",
     "color": "#957d62",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Frosty Nickel Met.",
-    "label": "mp20046",
-    "color": "#b5a698",
     "book": "Neenah Paper Co."
   },
   {
@@ -104172,12 +99876,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Stormy Blue",
-    "label": "mp25837",
-    "color": "#003b4f",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Sundance Yellow",
     "label": "mp42218sp",
     "color": "#f7bc00",
@@ -104466,12 +100164,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Scott Bronze Met.",
-    "label": "mp40366",
-    "color": "#604c44",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Soft Copper Met.",
     "label": "mp40495",
     "color": "#be8c75",
@@ -104553,12 +100245,6 @@
     "name": "Ebony Gold Met.",
     "label": "mp45519",
     "color": "#6c544a",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Flaxen Gold Met.",
-    "label": "mp25618",
-    "color": "#b78759",
     "book": "Neenah Paper Co."
   },
   {
@@ -104682,12 +100368,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Henna Gold Met.",
-    "label": "mp49153",
-    "color": "#8b6852",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Hint of Gold Pearl",
     "label": "mp47787",
     "color": "#f7eab9",
@@ -104721,12 +100401,6 @@
     "name": "Noble Gold Met.",
     "label": "mp20353",
     "color": "#b09776",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Nutty Gold Met.",
-    "label": "mp51325",
-    "color": "#96634f",
     "book": "Neenah Paper Co."
   },
   {
@@ -105351,12 +101025,6 @@
     "name": "Black On Green",
     "label": "mp15686",
     "color": "#3c4737",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Bleu Mer",
-    "label": "mp16233",
-    "color": "#335056",
     "book": "Neenah Paper Co."
   },
   {
@@ -106974,12 +102642,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Ural Forest",
-    "label": "mp14963",
-    "color": "#4b5b52",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Urban Forest",
     "label": "mp11372",
     "color": "#4f5a4f",
@@ -107904,12 +103566,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Hot Plata Basecoat",
-    "label": "mp23468",
-    "color": "#bfc1c1",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Opal Blue Prl over Black",
     "label": "mp23591-23552",
     "color": "#3a6d8e",
@@ -108318,12 +103974,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Barolo",
-    "label": "mp16105",
-    "color": "#5d0010",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Beetroot",
     "label": "mp4766",
     "color": "#662d44",
@@ -108657,18 +104307,6 @@
     "name": "Flexi-Flyer Red",
     "label": "mp8937",
     "color": "#b43b40",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Floribunda Red",
-    "label": "mp25001",
-    "color": "#c53e56",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Ford Tractor Red",
-    "label": "mp12009",
-    "color": "#800000",
     "book": "Neenah Paper Co."
   },
   {
@@ -109218,12 +104856,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Red Camaro",
-    "label": "mp10241",
-    "color": "#d6323c",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Red Car Line",
     "label": "mp15775",
     "color": "#ae0027",
@@ -109338,21 +104970,9 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Ruby Laser",
-    "label": "mp3543",
-    "color": "#cd0000",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Santa Ana Red",
     "label": "mp4705",
     "color": "#af584c",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Scarlata",
-    "label": "mp12602",
-    "color": "#cd221e",
     "book": "Neenah Paper Co."
   },
   {
@@ -109401,12 +105021,6 @@
     "name": "Sonoma Shiraz",
     "label": "mp8303",
     "color": "#5f183b",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Southern Clay",
-    "label": "mp192",
-    "color": "#c35941",
     "book": "Neenah Paper Co."
   },
   {
@@ -109518,12 +105132,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Watermelon Gelato",
-    "label": "mp10113",
-    "color": "#bd6162",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Wine Sauce",
     "label": "mp16068",
     "color": "#9d5255",
@@ -109614,12 +105222,6 @@
     "book": "Neenah Paper Co."
   },
   {
-    "name": "Cast Steel Met.",
-    "label": "mp18146",
-    "color": "#888783",
-    "book": "Neenah Paper Co."
-  },
-  {
     "name": "Cessna Black Met.",
     "label": "mp19925",
     "color": "#3b3f41",
@@ -109665,180 +105267,6 @@
     "name": "Vanishing Pearl",
     "label": "vanishing-pearl",
     "color": "#c9bc9c",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Amethyst",
-    "label": "amethyst",
-    "color": "#ac9bc7",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Anthracite",
-    "label": "anthracite",
-    "color": "#404950",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Antique Gold",
-    "label": "antique-gold",
-    "color": "#9c732a",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Aquamarine",
-    "label": "aquamarine",
-    "color": "#cbdfd1",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Azalea",
-    "label": "azalea",
-    "color": "#cf486f",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Bluebell",
-    "label": "bluebell",
-    "color": "#a4d8e1",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Bronze",
-    "label": "bronze",
-    "color": "#512f0b",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Citrine",
-    "label": "citrine",
-    "color": "#f2ecd3",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Copper",
-    "label": "copper",
-    "color": "#bf722f",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Coral",
-    "label": "coral",
-    "color": "#feedd2",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Emerald",
-    "label": "emerald",
-    "color": "#367166",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Fairway",
-    "label": "fairway",
-    "color": "#769f44",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Fine Gold",
-    "label": "fine-gold",
-    "color": "#dcad33",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Flame",
-    "label": "flame",
-    "color": "#ec813b",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Gold",
-    "label": "gold",
-    "color": "#fcca55",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Jupiter",
-    "label": "jupiter",
-    "color": "#c6273a",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Kunzite",
-    "label": "kunzite",
-    "color": "#e0d5e1",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Lagoon",
-    "label": "lagoon",
-    "color": "#8fcdbe",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Lapis Lazuli",
-    "label": "lapis-lazuli",
-    "color": "#123a56",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Mars",
-    "label": "mars",
-    "color": "#a12833",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Onyx",
-    "label": "onyx",
-    "color": "#041012",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Opal",
-    "label": "opal",
-    "color": "#f8f0d2",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Punch",
-    "label": "punch",
-    "color": "#98517e",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Quartz",
-    "label": "quartz",
-    "color": "#f5eed7",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Rose Quartz",
-    "label": "rose-quartz",
-    "color": "#f6c3c1",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Ruby",
-    "label": "ruby",
-    "color": "#6e4b5a",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Sapphire",
-    "label": "sapphire",
-    "color": "#3b537b",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Silver",
-    "label": "silver",
-    "color": "#c9cbc6",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Vista",
-    "label": "vista",
-    "color": "#7899c3",
     "book": "Neenah Paper Co."
   },
   {
@@ -110133,12 +105561,6 @@
     "name": "Wild Brown",
     "label": "wild-brown",
     "color": "#16120f",
-    "book": "Neenah Paper Co."
-  },
-  {
-    "name": "Wild BLack",
-    "label": "wild-black",
-    "color": "#000000",
     "book": "Neenah Paper Co."
   },
   {
@@ -113751,12 +109173,6 @@
     "color": "#967859",
     "label": "1086-7",
     "name": "Cocoa Cupcake",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#eee6db",
-    "label": "1087-1",
-    "name": "Madonna Lily",
     "book": "PPG Paints"
   },
   {
@@ -119970,12 +115386,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#e8efec",
-    "label": "1235-1",
-    "name": "Kiss Me Kate",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#d2e6e8",
     "label": "1235-2",
     "name": "Blue Phlox",
@@ -120345,12 +115755,6 @@
     "color": "#2863ad",
     "label": "1243-7",
     "name": "Rainbow Bright",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#dfe6ea",
-    "label": "1244-1",
-    "name": "Abyss",
     "book": "PPG Paints"
   },
   {
@@ -120822,18 +116226,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#bbc6d9",
-    "label": "10-17",
-    "name": "Blue Opal",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#cbd0dd",
-    "label": "10-18",
-    "name": "Debonaire",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#70777e",
     "label": "10-19",
     "name": "Favorite Flannel",
@@ -120858,27 +116250,9 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#d4dae2",
-    "label": "10-23",
-    "name": "Aster Petal",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#9daab9",
     "label": "10-24",
     "name": "Inevitable",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#d4dddd",
-    "label": "10-25",
-    "name": "Winter's Breath",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#cedde7",
-    "label": "10-26",
-    "name": "Simply Elegant",
     "book": "PPG Paints"
   },
   {
@@ -120909,18 +116283,6 @@
     "color": "#c4d1c6",
     "label": "10-31",
     "name": "White Clover",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#2a4b6e",
-    "label": "10-32",
-    "name": "Blue Tang",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#ecda9e",
-    "label": "11-01",
-    "name": "Demeter",
     "book": "PPG Paints"
   },
   {
@@ -120963,12 +116325,6 @@
     "color": "#6e6a4c",
     "label": "11-08",
     "name": "Olive Orchard",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#dad7ad",
-    "label": "11-09",
-    "name": "Misty Moor",
     "book": "PPG Paints"
   },
   {
@@ -121044,27 +116400,9 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#c5c1a3",
-    "label": "11-22",
-    "name": "Northern Landscape",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#9ca389",
-    "label": "11-23",
-    "name": "Edamame",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#808677",
     "label": "11-24",
     "name": "Smokey Sage",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#656457",
-    "label": "11-25",
-    "name": "Plunge Pool",
     "book": "PPG Paints"
   },
   {
@@ -121074,21 +116412,9 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#d0c6a1",
-    "label": "11-27",
-    "name": "Safari",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#89876a",
     "label": "11-28",
     "name": "Only Oregano",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#afa984",
-    "label": "11-29",
-    "name": "Green Gray Mist",
     "book": "PPG Paints"
   },
   {
@@ -121188,18 +116514,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#d3b78b",
-    "label": "12-14",
-    "name": "Craftsman Gold",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#e1cca6",
-    "label": "12-15",
-    "name": "Hearth",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#c2ae88",
     "label": "12-16",
     "name": "Desert Camel",
@@ -121218,33 +116532,9 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#c1a87c",
-    "label": "12-19",
-    "name": "Antiquity",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#ccb88d",
     "label": "12-20",
     "name": "Canvas Satchel",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#e1cfa5",
-    "label": "12-21",
-    "name": "Foothills",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#cfb989",
-    "label": "12-22",
-    "name": "Appalachian Trail",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#ede1a8",
-    "label": "12-23",
-    "name": "Turning Oakleaf",
     "book": "PPG Paints"
   },
   {
@@ -121263,12 +116553,6 @@
     "color": "#e1d0b2",
     "label": "12-26",
     "name": "Assateague Sand",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#f0e5c7",
-    "label": "12-27",
-    "name": "Soleil",
     "book": "PPG Paints"
   },
   {
@@ -121311,12 +116595,6 @@
     "color": "#824e4a",
     "label": "13-02",
     "name": "Cherokee Red",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#6c403e",
-    "label": "13-03",
-    "name": "Burgundy Wine",
     "book": "PPG Paints"
   },
   {
@@ -121422,18 +116700,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#4a4354",
-    "label": "13-21",
-    "name": "Blackberry",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#6a6472",
-    "label": "13-22",
-    "name": "Silverado",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#a0a0aa",
     "label": "13-23",
     "name": "Amethyst Haze",
@@ -121443,18 +116709,6 @@
     "color": "#817c85",
     "label": "13-24",
     "name": "Magic Dust",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#374874",
-    "label": "13-25",
-    "name": "Daring Indigo",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#2e5169",
-    "label": "13-26",
-    "name": "Blue Lava",
     "book": "PPG Paints"
   },
   {
@@ -121512,12 +116766,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#bab2ab",
-    "label": "14-04",
-    "name": "City Street",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#3d4645",
     "label": "14-05",
     "name": "Dark As Night",
@@ -121533,18 +116781,6 @@
     "color": "#e0dbcd",
     "label": "14-07",
     "name": "Scotch Mist",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#eeeadd",
-    "label": "14-08",
-    "name": "Horseradish",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#c0af92",
-    "label": "14-09",
-    "name": "Rock Cliffs",
     "book": "PPG Paints"
   },
   {
@@ -121620,12 +116856,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#e4d9c5",
-    "label": "14-22",
-    "name": "Bone White",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#eee8d9",
     "label": "14-23",
     "name": "Edelweiss",
@@ -121659,12 +116889,6 @@
     "color": "#aaa492",
     "label": "14-28",
     "name": "Aldabra",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#d1c9ba",
-    "label": "14-29",
-    "name": "Moth Gray",
     "book": "PPG Paints"
   },
   {
@@ -121752,12 +116976,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#c4ad92",
-    "label": "15-12",
-    "name": "Kangaroo",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#6f5746",
     "label": "15-13",
     "name": "Chocolate Truffle",
@@ -121767,24 +116985,6 @@
     "color": "#98754e",
     "label": "15-14",
     "name": "Leather",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#b19576",
-    "label": "15-15",
-    "name": "Coffee Kiss",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#c6b49c",
-    "label": "15-16",
-    "name": "Best Beige",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#8d847f",
-    "label": "15-17",
-    "name": "Elephant Gray",
     "book": "PPG Paints"
   },
   {
@@ -121803,12 +117003,6 @@
     "color": "#887b6e",
     "label": "15-20",
     "name": "Ghost Ship",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#766859",
-    "label": "15-21",
-    "name": "Curlew",
     "book": "PPG Paints"
   },
   {
@@ -121836,12 +117030,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#dacfba",
-    "label": "15-26",
-    "name": "Toasted Almond",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#e5dac8",
     "label": "15-27",
     "name": "Botany Beige",
@@ -121851,12 +117039,6 @@
     "color": "#cbc1b4",
     "label": "15-28",
     "name": "Great Gray",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#b7a696",
-    "label": "15-29",
-    "name": "El Capitan",
     "book": "PPG Paints"
   },
   {
@@ -122028,24 +117210,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#d8a686",
-    "label": "16-26",
-    "name": "Clay Fire",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#c18978",
-    "label": "16-27",
-    "name": "Copper Trail",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#b7735e",
-    "label": "16-28",
-    "name": "Crushed Cinnamon",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#9a5247",
     "label": "16-29",
     "name": "Hunt Club Red",
@@ -122079,24 +117243,6 @@
     "color": "#5072b1",
     "label": "17-02",
     "name": "Cenote",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#314a76",
-    "label": "17-03",
-    "name": "Hacienda Talavera",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#6d86b6",
-    "label": "17-04",
-    "name": "Kimono",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#5868ae",
-    "label": "17-05",
-    "name": "Blue Calico",
     "book": "PPG Paints"
   },
   {
@@ -122139,24 +117285,6 @@
     "color": "#a24041",
     "label": "17-12",
     "name": "Granada",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#c6494c",
-    "label": "17-13",
-    "name": "Burnt Red",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#e66a77",
-    "label": "17-14",
-    "name": "Bleeding Heart",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#df745b",
-    "label": "17-15",
-    "name": "Rustic Pottery",
     "book": "PPG Paints"
   },
   {
@@ -122316,12 +117444,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#f2e9dc",
-    "label": "18-10",
-    "name": "Lotus Petal",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#f3eae3",
     "label": "18-11",
     "name": "Pastel Paper",
@@ -122424,12 +117546,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#e3beb0",
-    "label": "18-28",
-    "name": "Adorable",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#c67976",
     "label": "18-29",
     "name": "Emberglo",
@@ -122454,66 +117570,6 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#8d8752",
-    "label": "FLLW144",
-    "name": "Wright Autumn Green",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#c6494c",
-    "label": "FLLW287",
-    "name": "Wright Tanager Red",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#d8ad39",
-    "label": "FLLW321",
-    "name": "Wright Mustard",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#cc8149",
-    "label": "FLLW325",
-    "name": "Wright Ochre",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#404149",
-    "label": "FLLW36",
-    "name": "Wright Midnight",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#ae6456",
-    "label": "FLLW370",
-    "name": "Wright Deep Rust",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#96af54",
-    "label": "FLLW396",
-    "name": "Wright Spring Green",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#356fad",
-    "label": "FLLW514",
-    "name": "Wright Bluebird",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#1e8ea1",
-    "label": "FLLW518",
-    "name": "Wright Turquoise",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#d78775",
-    "label": "FLLW539",
-    "name": "Wright Pottery Red",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#d1a96b",
     "label": "FLLW568",
     "name": "Wright Gold",
@@ -122526,63 +117582,9 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#a54f5d",
-    "label": "FLLW577",
-    "name": "Wright Raspberry",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#76846b",
     "label": "FLLW618",
     "name": "Wright Quiet Green",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#9da073",
-    "label": "FLLW620",
-    "name": "Wright Green Olive",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#957d6f",
-    "label": "FLLW623",
-    "name": "Wright Oak Bark",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#91493e",
-    "label": "FLLW68",
-    "name": "Wright Cherokee Red Taliesin West",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#c07281",
-    "label": "FLLW705",
-    "name": "Wright Old Rose",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#bbac7d",
-    "label": "FLLW724",
-    "name": "Wright Pale Mustard",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#c8ac89",
-    "label": "FLLW726",
-    "name": "Wright Dark Eggshell",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#6d9a9b",
-    "label": "FLLW741",
-    "name": "Wright Echo Blue",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#6d9185",
-    "label": "FLLW742",
-    "name": "Wright Egyptian Blue",
     "book": "PPG Paints"
   },
   {
@@ -122598,57 +117600,15 @@
     "book": "PPG Paints"
   },
   {
-    "color": "#f7b1a6",
-    "label": "FLLW792",
-    "name": "Wright Flesh Pink",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#cdba99",
-    "label": "FLLW840",
-    "name": "Wright Grey Tan",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#bda496",
     "label": "FLLW858",
     "name": "Wright Stone Grey",
     "book": "PPG Paints"
   },
   {
-    "color": "#96afb7",
-    "label": "FLLW864",
-    "name": "Wright Sky Blue",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#acadad",
-    "label": "FLLW872",
-    "name": "Wright Soft Grey ",
-    "book": "PPG Paints"
-  },
-  {
     "color": "#93c0c5",
     "label": "FLLW892",
     "name": "Wright Blue Mist",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#e3dec6",
-    "label": "FLLW917",
-    "name": "Wright Lemon White",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#dacfba",
-    "label": "FLLW918",
-    "name": "Wright Pearl Gray",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#ecc9ca",
-    "label": "FLLW943",
-    "name": "Wright Shell Pink",
     "book": "PPG Paints"
   },
   {
@@ -122661,12 +117621,6 @@
     "color": "#f5e8d9",
     "label": "FLLW994",
     "name": "Wright Pearl White",
-    "book": "PPG Paints"
-  },
-  {
-    "color": "#e6e0cc",
-    "label": "FLLW999",
-    "name": "Wright Oyster Shell",
     "book": "PPG Paints"
   },
   {
@@ -123927,12 +118881,6 @@
     "color": "#1e1e1d",
     "label": "9017",
     "name": "Traffic Black",
-    "book": "RAL"
-  },
-  {
-    "color": "#d7d7d7",
-    "label": "9018",
-    "name": "Papyrus White",
     "book": "RAL"
   },
   {
@@ -127089,12 +122037,6 @@
     "name": "Cut the Mustard",
     "label": 6384,
     "color": "#BA7F38",
-    "book": "Sherwin Williams"
-  },
-  {
-    "name": "Dover White",
-    "label": 6385,
-    "color": "#F0EADC",
     "book": "Sherwin Williams"
   },
   {
@@ -130440,12 +125382,6 @@
     "book": "Sherwin Williams"
   },
   {
-    "name": "Minute Mauve",
-    "label": 7078,
-    "color": "#CFC9C8",
-    "book": "Sherwin Williams"
-  },
-  {
     "name": "Ponder",
     "label": 7079,
     "color": "#BCB6B6",
@@ -130560,12 +125496,6 @@
     "book": "Sherwin Williams"
   },
   {
-    "name": "Tavern Taupe",
-    "label": 7508,
-    "color": "#9C8A79",
-    "book": "Sherwin Williams"
-  },
-  {
     "name": "Tiki Hut",
     "label": 7509,
     "color": "#826F5E",
@@ -130617,12 +125547,6 @@
     "name": "China Doll",
     "label": 7517,
     "color": "#DBCEBD",
-    "book": "Sherwin Williams"
-  },
-  {
-    "name": "Beach House",
-    "label": 7518,
-    "color": "#C9B29C",
     "book": "Sherwin Williams"
   },
   {
@@ -131562,12 +126486,6 @@
     "book": "Sherwin Williams"
   },
   {
-    "name": "Golden Gate",
-    "label": 7679,
-    "color": "#D9AD7F",
-    "book": "Sherwin Williams"
-  },
-  {
     "name": "Lanyard",
     "label": 7680,
     "color": "#C09972",
@@ -131748,12 +126666,6 @@
     "book": "Sherwin Williams"
   },
   {
-    "name": "Townhouse Tan",
-    "label": 7712,
-    "color": "#DFC8B5",
-    "book": "Sherwin Williams"
-  },
-  {
     "name": "Tawny Tan",
     "label": 7713,
     "color": "#CCB299",
@@ -131877,12 +126789,6 @@
     "name": "Bamboo Shoot",
     "label": 7733,
     "color": "#B3A479",
-    "book": "Sherwin Williams"
-  },
-  {
-    "name": "Olive Grove",
-    "label": 7734,
-    "color": "#857C5D",
     "book": "Sherwin Williams"
   },
   {
@@ -135576,12 +130482,6 @@
     "book": "TOYO"
   },
   {
-    "name": "TOYO 0413",
-    "label": "0413",
-    "color": "#0065b9",
-    "book": "TOYO"
-  },
-  {
     "name": "TOYO 0414",
     "label": "0414",
     "color": "#005bb0",
@@ -135681,12 +130581,6 @@
     "name": "TOYO 0430",
     "label": "0430",
     "color": "#5a80a1",
-    "book": "TOYO"
-  },
-  {
-    "name": "TOYO 0431",
-    "label": "0431",
-    "color": "#005fa2",
     "book": "TOYO"
   },
   {
@@ -144204,12 +139098,6 @@
     "book": "TRUMATCH"
   },
   {
-    "name": "Trumatch 21-g",
-    "label": "21-g",
-    "color": "#f5faf5",
-    "book": "TRUMATCH"
-  },
-  {
     "name": "Trumatch 21-h",
     "label": "21-h",
     "color": "#f9fcf9",
@@ -145632,12 +140520,6 @@
     "book": "TRUMATCH"
   },
   {
-    "name": "Trumatch 27-g",
-    "label": "27-g",
-    "color": "#edf5f7",
-    "book": "TRUMATCH"
-  },
-  {
     "name": "Trumatch 27-a1",
     "label": "27-a1",
     "color": "#0096ab",
@@ -146025,12 +140907,6 @@
     "name": "Trumatch 28-a4",
     "label": "28-a4",
     "color": "#008ca4",
-    "book": "TRUMATCH"
-  },
-  {
-    "name": "Trumatch 28-b4",
-    "label": "28-b4",
-    "color": "#0096ab",
     "book": "TRUMATCH"
   },
   {
@@ -152916,12 +147792,6 @@
     "book": "Valspar Paint"
   },
   {
-    "name": "Camel Ride",
-    "label": "3005-7A",
-    "color": "rgb(177, 138, 82)",
-    "book": "Valspar Paint"
-  },
-  {
     "name": "Fiesta",
     "label": "2008-5A",
     "color": "rgb(182, 107, 70)",
@@ -154326,12 +149196,6 @@
     "book": "Valspar Paint"
   },
   {
-    "name": "Green Sea",
-    "label": "6001-10C",
-    "color": "rgb(0, 150, 120)",
-    "book": "Valspar Paint"
-  },
-  {
     "name": "Elegant Silk",
     "label": "5010-7",
     "color": "rgb(55, 131, 119)",
@@ -154406,12 +149270,6 @@
   {
     "name": "Pine Forest",
     "label": "5007-8C",
-    "color": "rgb(53, 113, 108)",
-    "book": "Valspar Paint"
-  },
-  {
-    "name": "Artisan Green",
-    "label": "5009-7",
     "color": "rgb(53, 113, 108)",
     "book": "Valspar Paint"
   },
@@ -155268,12 +150126,6 @@
     "book": "Valspar Paint"
   },
   {
-    "name": "Snowy Dusk",
-    "label": "7002-3",
-    "color": "rgb(232, 227, 215)",
-    "book": "Valspar Paint"
-  },
-  {
     "name": "Wispy White",
     "label": "7006-1",
     "color": "rgb(229, 226, 217)",
@@ -155546,12 +150398,6 @@
   {
     "name": "Coral Mist",
     "label": "2001-2B",
-    "color": "rgb(251, 209, 197)",
-    "book": "Valspar Paint"
-  },
-  {
-    "name": "Crystal Coral",
-    "label": "2004-4B",
     "color": "rgb(251, 209, 197)",
     "book": "Valspar Paint"
   },
@@ -158886,12 +153732,6 @@
     "book": "Valspar Paint"
   },
   {
-    "name": "Quiet Mint",
-    "label": "5003-1A",
-    "color": "rgb(214, 220, 211)",
-    "book": "Valspar Paint"
-  },
-  {
     "name": "Morning Lake",
     "label": "7004-21",
     "color": "rgb(211, 214, 212)",
@@ -159506,12 +154346,6 @@
   {
     "name": "Adobe Blush",
     "label": "7001-4",
-    "color": "rgb(246, 229, 220)",
-    "book": "Valspar Paint"
-  },
-  {
-    "name": "Perfection",
-    "label": "7001-12",
     "color": "rgb(246, 229, 220)",
     "book": "Valspar Paint"
   },
@@ -165888,12 +160722,6 @@
     "book": "Vista"
   },
   {
-    "color": "#dcd4c7",
-    "label": "C-558",
-    "name": "Always Neutral",
-    "book": "Vista"
-  },
-  {
     "color": "#d3c8ba",
     "label": "C-559",
     "name": "Awakening",
@@ -165921,12 +160749,6 @@
     "color": "#5c5142",
     "label": "C-563",
     "name": "Bad Hair Day",
-    "book": "Vista"
-  },
-  {
-    "color": "#e8e3d8",
-    "label": "C-564",
-    "name": "Eskimo Boot",
     "book": "Vista"
   },
   {
@@ -168114,12 +162936,6 @@
     "book": "Vista"
   },
   {
-    "color": "#f6f1d8",
-    "label": "C-929",
-    "name": "Marshmallow Fluff",
-    "book": "Vista"
-  },
-  {
     "color": "#fcecbe",
     "label": "C-930",
     "name": "Lemon Bubble",
@@ -168261,12 +163077,6 @@
     "color": "#ffbe21",
     "label": "C-953",
     "name": "Mac N Cheese",
-    "book": "Vista"
-  },
-  {
-    "color": "#ffb100",
-    "label": "C-954",
-    "name": "Lemon Whisper",
     "book": "Vista"
   },
   {
@@ -172098,12 +166908,6 @@
     "book": "Vista"
   },
   {
-    "color": "#224b8f",
-    "label": "K-128",
-    "name": "Cascade Twilight",
-    "book": "Vista"
-  },
-  {
     "color": "#297bc1",
     "label": "K-129",
     "name": "Soothing Sapphire",
@@ -174624,12 +169428,6 @@
     "book": "Vista"
   },
   {
-    "color": "#ffedba",
-    "label": "K-549",
-    "name": "Tangerine Twist",
-    "book": "Vista"
-  },
-  {
     "color": "#fcf0ca",
     "label": "K-550",
     "name": "Cornmeal",
@@ -175209,12 +170007,6 @@
     "color": "#fde3db",
     "label": "K-646",
     "name": "Sherry Cream",
-    "book": "Vista"
-  },
-  {
-    "color": "#f9ede6",
-    "label": "K-647",
-    "name": "Gossamer",
     "book": "Vista"
   },
   {
@@ -176262,12 +171054,6 @@
     "book": "Vista"
   },
   {
-    "color": "#d8d6d1",
-    "label": "K-822",
-    "name": "Ice Age",
-    "book": "Vista"
-  },
-  {
     "color": "#e4e2dd",
     "label": "K-823",
     "name": "Snowflake Confetti",
@@ -176904,12 +171690,6 @@
     "book": "Vista"
   },
   {
-    "color": "#6f675c",
-    "label": "K-929",
-    "name": "Castle Dale",
-    "book": "Vista"
-  },
-  {
     "color": "#837b6f",
     "label": "K-930",
     "name": "Hidcote Manor",
@@ -177324,12 +172104,6 @@
     "book": "Vista"
   },
   {
-    "color": "#f4ead0",
-    "label": "K-999",
-    "name": "Cloud of Cream",
-    "book": "Vista"
-  },
-  {
     "color": "#91714a",
     "label": "K-1000",
     "name": "Royal Crown",
@@ -177693,12 +172467,6 @@
     "color": "#eec7a5",
     "label": "K-1060",
     "name": "Beachville",
-    "book": "Vista"
-  },
-  {
-    "color": "#f1cfb0",
-    "label": "K-1061",
-    "name": "Taffy Surprise",
     "book": "Vista"
   },
   {
@@ -178335,12 +173103,6 @@
     "color": "#ebe2df",
     "label": "K-1167",
     "name": "Soothing Spring",
-    "book": "Vista"
-  },
-  {
-    "color": "#463730",
-    "label": "K-1168",
-    "name": "Wrightsford",
     "book": "Vista"
   },
   {
@@ -179064,12 +173826,6 @@
     "book": "Vista"
   },
   {
-    "color": "#eee4cc",
-    "label": "K-1289",
-    "name": "Milk Paint",
-    "book": "Vista"
-  },
-  {
     "color": "#efe7d0",
     "label": "K-1290",
     "name": "Lovely Lace",
@@ -179220,12 +173976,6 @@
     "book": "Vista"
   },
   {
-    "color": "#f5f2e7",
-    "label": "K-1315",
-    "name": "Almost Ivory",
-    "book": "Vista"
-  },
-  {
     "color": "#f1ede3",
     "label": "K-1316",
     "name": "Papier Blanc",
@@ -179241,12 +173991,6 @@
     "color": "#eae6d9",
     "label": "K-1318",
     "name": "Dream Nights",
-    "book": "Vista"
-  },
-  {
-    "color": "#eeeade",
-    "label": "K-1319",
-    "name": "Soft Sesame",
     "book": "Vista"
   }
 ]
