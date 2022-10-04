@@ -37,7 +37,7 @@ function ColorCell({ index, color }: any): JSX.Element {
   const { colorLibObject } = color;
 
   return (
-    <div key={index} style={{ background: colorLibObject.hsl(), padding: '0.5rem', display: 'inline-block', width: '100px', height: '100px' }}>
+    <div key={index} style={{ background: colorLibObject.hsl(), padding: '0.5rem', display: 'inline-block', width: '100px', height: '100px', margin: '2px' }}>
       <div className="colorName">{color.name}</div>
       <div className="book" style={{ fontSize: '0.8rem' }}>
         {color.book}
@@ -65,14 +65,21 @@ function isHueWithinTolerance(hue: number, hueToMatch: number, percentageToleran
 }
 
 function isSaturationWithinTolerance(saturation: number, saturationToMatch: number, percentageTolerance: number): boolean {
-  // TODO: Does this properly handle saturation wrap-around?
   // console.log({ saturation, saturationToMatch, percentageTolerance });
-  const saturationToMatchMin = (saturationToMatch * 100 - saturationToMatch * 100 * percentageTolerance) / 100;
-  const saturationToMatchMax = (saturationToMatch * 100 + saturationToMatch * 100 * percentageTolerance) / 100;
-  return saturation >= saturationToMatchMin && saturation <= saturationToMatchMax;
+  const percentageToleranceWholeNumber = 100 * percentageTolerance;
+  const min = saturationToMatch - percentageToleranceWholeNumber; // It is ok to go below 0 because no results will have <0 anyway.
+  const max = saturationToMatch + percentageToleranceWholeNumber; // It is ok to go over 100 because no results will have >100 anyway.
+  return saturation >= min && saturation <= max;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function isLightnessWithinTolerance(lightness: number, lightnessToMatch: number, percentageTolerance: number): boolean {
+  // console.log({ saturation, saturationToMatch, percentageTolerance });
+  const percentageToleranceWholeNumber = 100 * percentageTolerance;
+  const min = lightnessToMatch - percentageToleranceWholeNumber; // It is ok to go below 0 because no results will have <0 anyway.
+  const max = lightnessToMatch + percentageToleranceWholeNumber; // It is ok to go over 100 because no results will have >100 anyway.
+  return lightness >= min && lightness <= max;
+}
+
 function getFilteredColors(color: string, megaColors: MegaColor[], toleranceH: number, toleranceS: number, toleranceL: number): MegaColor[] {
   const targetColorLibObject = getColorLibObject(color);
   console.log({ targetColorLibObject });
@@ -81,8 +88,9 @@ function getFilteredColors(color: string, megaColors: MegaColor[], toleranceH: n
     const megaColor = megaColors[i];
     const megaColorLibObject = getColorLibObject(megaColor.hex);
     if (
-      isHueWithinTolerance(megaColorLibObject.hue(), targetColorLibObject.hue(), toleranceH)
-      // && isSaturationWithinTolerance(megaColorLibObject.saturationl(), targetColorLibObject.saturationl(), toleranceS)
+      isHueWithinTolerance(megaColorLibObject.hue(), targetColorLibObject.hue(), toleranceH) &&
+      isSaturationWithinTolerance(megaColorLibObject.saturationl(), targetColorLibObject.saturationl(), toleranceS) &&
+      isLightnessWithinTolerance(megaColorLibObject.lightness(), targetColorLibObject.lightness(), toleranceL)
     ) {
       // TODO
       results.push({ ...megaColor, colorLibObject: megaColorLibObject });
@@ -95,18 +103,30 @@ const Home: NextPage = ({ megaColors }: { megaColors: MegaColor[] }) => {
   // console.log({ megaColors });
   const [color, setColor] = useLocalStorage<string>('color', 'hsl(291deg 89% 49%)');
   const toleranceH = 0.1;
-  const toleranceS = 0.1;
-  const toleranceL = 0.05;
-
-  // TODO: filter which books to include
+  const toleranceS = 0.2;
+  const toleranceL = 0.2;
 
   const results = getFilteredColors(color, megaColors, toleranceH, toleranceS, toleranceL);
   return (
     <Layout>
       <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
 
-      <div style={{ width: '100px', height: '100px', backgroundColor: color }} />
-      <ColorBook megaColors={results} />
+      <div style={{ backgroundColor: color }}>
+        <ColorBook megaColors={results} />
+        {/* prettier-ignore */}
+        <pre>
+        TODO: 
+        
+        - add a color picker 
+        - deploy to GH Pages
+        - filter which books to include 
+        - allow clustering by book
+        - add 2 other styles of color picker, synched with the first 
+        - add a tool that allows picking a color from somewhere else on the screen, such as a photo 
+        - add Google Analytics 
+        - get a URL
+        </pre>
+      </div>
     </Layout>
   );
 };
