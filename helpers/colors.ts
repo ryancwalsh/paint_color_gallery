@@ -82,3 +82,46 @@ export function sortWithClusters(colorsToSort: MegaColor[]) {
 
   return clusters;
 }
+
+function isHueWithinTolerance(hue: number, hueToMatch: number, percentageTolerance: number): boolean {
+  // TODO: Does this properly handle hue wrap-around?
+  // console.log({ hue, hueToMatch, percentageTolerance });
+  const hueToMatchMin = hueToMatch - hueToMatch * percentageTolerance;
+  const hueToMatchMax = hueToMatch + hueToMatch * percentageTolerance;
+  return hue >= hueToMatchMin && hue <= hueToMatchMax;
+}
+
+function isSaturationWithinTolerance(saturation: number, saturationToMatch: number, percentageTolerance: number): boolean {
+  // console.log({ saturation, saturationToMatch, percentageTolerance });
+  const percentageToleranceWholeNumber = 100 * percentageTolerance;
+  const min = saturationToMatch - percentageToleranceWholeNumber; // It is ok to go below 0 because no results will have <0 anyway.
+  const max = saturationToMatch + percentageToleranceWholeNumber; // It is ok to go over 100 because no results will have >100 anyway.
+  return saturation >= min && saturation <= max;
+}
+
+function isLightnessWithinTolerance(lightness: number, lightnessToMatch: number, percentageTolerance: number): boolean {
+  // console.log({ saturation, saturationToMatch, percentageTolerance });
+  const percentageToleranceWholeNumber = 100 * percentageTolerance;
+  const min = lightnessToMatch - percentageToleranceWholeNumber; // It is ok to go below 0 because no results will have <0 anyway.
+  const max = lightnessToMatch + percentageToleranceWholeNumber; // It is ok to go over 100 because no results will have >100 anyway.
+  return lightness >= min && lightness <= max;
+}
+
+export function getFilteredColors(color: string, megaColors: MegaColor[], toleranceH: number, toleranceS: number, toleranceL: number): MegaColor[] {
+  const targetColorLibObject = getColorLibObject(color);
+  console.log({ targetColorLibObject });
+  const results: MegaColor[] = [];
+  for (let i = 0; i < megaColors.length; i += 1) {
+    const megaColor = megaColors[i];
+    const megaColorLibObject = getColorLibObject(megaColor.hex);
+    if (
+      isHueWithinTolerance(megaColorLibObject.hue(), targetColorLibObject.hue(), toleranceH) &&
+      isSaturationWithinTolerance(megaColorLibObject.saturationl(), targetColorLibObject.saturationl(), toleranceS) &&
+      isLightnessWithinTolerance(megaColorLibObject.lightness(), targetColorLibObject.lightness(), toleranceL)
+    ) {
+      // TODO
+      results.push({ ...megaColor, colorLibObject: megaColorLibObject });
+    }
+  }
+  return results;
+}
