@@ -114,13 +114,15 @@ export function getFilteredColors(color: string, megaColors: MegaColor[], tolera
   for (let i = 0; i < megaColors.length; i += 1) {
     const megaColor = megaColors[i];
     const megaColorLibObject = getColorLibObject(megaColor.color);
+    // console.log({ megaColorLibObject });
     if (
       isHueWithinTolerance(megaColorLibObject.hue(), targetColorLibObject.hue(), toleranceH) &&
       isSaturationWithinTolerance(megaColorLibObject.saturationl(), targetColorLibObject.saturationl(), toleranceS) &&
       isLightnessWithinTolerance(megaColorLibObject.lightness(), targetColorLibObject.lightness(), toleranceL)
     ) {
-      // TODO
-      results.push({ ...megaColor, colorLibObject: megaColorLibObject });
+      const newRecord = { ...megaColor, colorLibObject: megaColorLibObject };
+      // console.log({ newRecord });
+      results.push(newRecord);
     }
   }
   return results;
