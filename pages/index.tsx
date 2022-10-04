@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Wheel } from '@uiw/react-color'; // https://uiwjs.github.io/react-color/
+import Wheel from '@uiw/react-color-wheel'; // https://uiwjs.github.io/react-color/
 import Layout from '../components/Layout';
 import { getFilteredColors } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
@@ -24,8 +24,9 @@ function ColorCell({ megaColor }: any): JSX.Element {
 function TaskList(): JSX.Element {
   return (
     <pre style={{ maxWidth: '900px', overflow: 'auto' }}>
-      TODO: - fix types in VSC - deploy to GH Pages - support loading new JSON book to localStorage - filter which books to include - allow clustering by book - add 2 other styles
-      of color picker, synched with the first - add a tool that allows picking a color from somewhere else on the screen, such as a photo - add Google Analytics - get a URL
+      TODO: - get color wheel working - fix types in VSC - deploy to GH Pages - support loading new JSON book to localStorage - filter which books to include - allow clustering by
+      book - add 2 other styles of color picker, synched with the first - add a tool that allows picking a color from somewhere else on the screen, such as a photo - add Google
+      Analytics - get a URL
     </pre>
   );
 }
@@ -60,12 +61,13 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
-      {/* <Wheel
+      <Wheel
         color={targetColor}
-        onChange={(color) => {
-          setTargetColor(color.hex);
+        onChange={(colorFromWheel) => {
+          console.log({ colorFromWheel }, colorFromWheel.hex);
+          setTargetColor(colorFromWheel.hex);
         }}
-      /> */}
+      />
       <Sliders {...{ toleranceH, setToleranceH, toleranceS, setToleranceS, toleranceL, setToleranceL }} />
       <div style={{ backgroundColor: targetColor }}>
         <div className="colors">
