@@ -1,33 +1,16 @@
 import type { GetServerSideProps, GetServerSidePropsContext, NextPage } from 'next';
-import fs from 'fs';
 import Layout from '../components/Layout';
 import { getFilteredColors } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import useLocalStorage from '../helpers/localStorage';
-import { BookFileDetailObject, ColorNerdRecord, MegaColor } from '../types/index';
-
-const colornerdDir = './node_modules/colornerd';
-const dir = `${colornerdDir}/_dev/`;
+import { MegaColor } from '../types/index';
+import { getMegaColorsFromColornerdJsonFiles } from '../data/assembleColornerdData';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext) => {
   // https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props#getserversideprops-with-typescript
-  const bookFileDetailObjects = JSON.parse(fs.readFileSync(`${dir}books.json`, 'utf8'));
-  // console.log({ bookFileDetailObjects });
-  let megaColors: MegaColor[] = [];
-  bookFileDetailObjects.forEach(function (bookFileDetailObject: BookFileDetailObject) {
-    const filename = `${colornerdDir}/json/${bookFileDetailObject.filename}.json`;
-    // console.log({ filename });
+  const megaColors = getMegaColorsFromColornerdJsonFiles();
 
-    const recordsInBook = JSON.parse(fs.readFileSync(`${filename}`, 'utf8'));
-    //  console.log({ recordsInBook });
-    const labeledRecordsInBook = recordsInBook.map((record: ColorNerdRecord) => {
-      // const colorLibObject = getColorLibObject(record);
-      return { ...record, book: bookFileDetailObject.title };
-    });
-    // console.log({ megaColors });
-    megaColors = [...megaColors, ...labeledRecordsInBook];
-  });
   return {
     props: { megaColors }, // will be passed to the page component as props
   };
@@ -58,7 +41,7 @@ function ColorBook({ megaColors }: { megaColors: MegaColor[] }): JSX.Element {
 
 const Home: NextPage = ({ megaColors }: { megaColors: MegaColor[] }) => {
   // console.log({ megaColors });
-  const [color, setColor] = useLocalStorage<string>('color', 'hsl(91deg 89% 49%)');
+  const [color, setColor] = useLocalStorage<string>('color', 'hsl(50deg 89% 49%)');
   const toleranceH = 0.1;
   const toleranceS = 0.2;
   const toleranceL = 0.2;
@@ -74,8 +57,8 @@ const Home: NextPage = ({ megaColors }: { megaColors: MegaColor[] }) => {
         <pre style={{ maxWidth: '900px', overflow: 'auto' }}>
         TODO: 
         
-        - add a color picker 
-        - save JSON to local JSON file
+        - import colornerd data from frontend instead of getServerSideProps so that the repo can be deployed as a static site
+        - add a color picker https://iro.js.org/advanced.html
         - deploy to GH Pages
         - support loading new JSON book to localStorage
         - filter which books to include 
