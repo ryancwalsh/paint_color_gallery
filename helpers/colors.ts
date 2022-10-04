@@ -85,9 +85,10 @@ export function sortWithClusters(colorsToSort: MegaColor[]) {
 
 function isHueWithinTolerance(hue: number, hueToMatch: number, percentageTolerance: number): boolean {
   // TODO: Does this properly handle hue wrap-around?
-  // console.log({ hue, hueToMatch, percentageTolerance });
-  const hueToMatchMin = hueToMatch - hueToMatch * percentageTolerance;
-  const hueToMatchMax = hueToMatch + hueToMatch * percentageTolerance;
+  const degreeTolerance = (360 / 100) * percentageTolerance;
+  // console.log({ hue, hueToMatch, percentageTolerance, degreeTolerance });
+  const hueToMatchMin = hueToMatch - degreeTolerance;
+  const hueToMatchMax = hueToMatch + degreeTolerance;
   return hue >= hueToMatchMin && hue <= hueToMatchMax;
 }
 
@@ -107,7 +108,7 @@ function isLightnessWithinTolerance(lightness: number, lightnessToMatch: number,
 
 export function getFilteredColors(color: string, megaColors: MegaColor[], toleranceH: number, toleranceS: number, toleranceL: number): MegaColor[] {
   const targetColorLibObject = getColorLibObject(color);
-  console.log({ targetColorLibObject });
+  // console.log({ targetColorLibObject });
   const results: MegaColor[] = [];
   for (let i = 0; i < megaColors.length; i += 1) {
     const megaColor = megaColors[i];

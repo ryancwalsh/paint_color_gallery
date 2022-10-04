@@ -50,7 +50,7 @@ function Sliders({ toleranceH, setToleranceH, toleranceS, setToleranceS, toleran
 }
 
 const Home: NextPage = () => {
-  console.log({ megaColors });
+  // console.log({ megaColors });
   const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(70deg 89% 49%)');
   const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3);
   const [toleranceS, setToleranceS] = useLocalStorage<number>('toleranceS', 3);
