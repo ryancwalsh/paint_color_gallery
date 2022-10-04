@@ -1,7 +1,7 @@
 // https://nextjs.org/docs/basic-features/layouts#single-shared-layout-with-custom-app
 
 import Head from 'next/head';
-import Image from 'next/image';
+
 import styles from '../styles/Layout.module.scss';
 
 export default function Layout({ children }: { children: JSX.Element | JSX.Element[] }) {
