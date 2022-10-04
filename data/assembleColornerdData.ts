@@ -1,7 +1,7 @@
 // Run via `yarn assembleColornerdData` or `yarn ts-node ./data/assembleColornerdData.ts`.
 
 import fs from 'fs';
-import { BookFileDetailObject, ColorNerdRecord, MegaColor } from '../types/index';
+import { BookFileDetailObject, ColorNerdRecord, MegaColor } from '../types';
 
 const colornerdDir = './node_modules/colornerd';
 const dir = `${colornerdDir}/_dev/`;

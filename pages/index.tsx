@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import { getFilteredColors } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import useLocalStorage from '../helpers/localStorage';
-import { MegaColor } from '../types/index';
+import { MegaColor } from '../types';
 import megaColors from '../data/colornerd.json';
 
 function ColorCell({ megaColor }: any): JSX.Element {
