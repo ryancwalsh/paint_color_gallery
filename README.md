@@ -35,8 +35,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 # TODO
 
-Actually, I don't want to sort an array at all. I want to have an array of colors, and I want to iterate over it and calculate X and Y positions, and then I'll display each color at those positions, even if they collide/overlap. I think I should use hue (like a circle) and convert to X,Y somehow, and distance from center could be either saturation or lightness.
+Forget sorting, especially in 1 dimension. It's difficult and subjective and for these purposes unnecessary anyway.
 
-See also https://github.com/jakoivis/color-util
+The index.tsx should be a tool to find the closest colors (across all brand books) given a specific color code / brand color.
 
-Also should create a tool to find the closest color in another brand book given a specific brand color.
+First, it will ask whether H, S, or L will be "fixed", and then the other 2 dimensions will be pickable via a 2D XY plot.
+
+If hue is fixed, the 2D plot will be a square with white at the top left and black at the bottom left, and then a bright color at the top right. E.g. https://github.com/mrkite/colorpicker
+If saturation is fixed, the 2D plot will be a color wheel varying from white in the center to black at the edge.
+If lightness is fixed, the 2D plot will be a color wheel varying from ? in the center to saturated color at the edge.
+
+There should be input sliders for % tolerance of H, S, and L. So all brand colors whose distances to the chosen color fall within those bounds will be shown.

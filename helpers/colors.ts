@@ -2,11 +2,15 @@
 // @ts-ignore
 import colorLib from 'color'; // https://github.com/Qix-/color
 // eslint-disable-next-line import/extensions, import/no-unresolved
-import { Cluster, ColorLibObject, ColorObject, MegaColor } from '../types';
+import { Cluster, ColorLibObject, ColorNerdRecord, MegaColor } from '../types';
 
 const numClusters = 20;
 
-export function getColorLibObject(colorObject: ColorObject): ColorLibObject {
+export function getColorLibObject(color: string): ColorLibObject {
+  return colorLib(color);
+}
+
+export function getColorLibObjectFromColorNerdRecord(colorObject: ColorNerdRecord): ColorLibObject {
   let colorLibObject;
   try {
     colorLibObject = colorLib(colorObject.hex);
@@ -35,7 +39,7 @@ function getSortValue(color: ColorLibObject): number {
   return color.lightness() * 5 + color.saturationl() * 2 + color.hue();
 }
 
-function sortArray(array: ColorObject[]) {
+function sortArray(array: ColorNerdRecord[]) {
   // https://stackoverflow.com/a/54383087/470749 and I should consider https://tomekdev.com/posts/sorting-colors-in-js too
   array.sort((elem1, elem2) => {
     // const value1 = elem1.colorLibObject.hue();

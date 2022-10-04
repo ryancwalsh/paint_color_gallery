@@ -1,84 +1,112 @@
-import type { GetServerSidePropsContext, NextPage } from 'next';
+import type { GetServerSideProps, GetServerSidePropsContext, NextPage } from 'next';
 import fs from 'fs';
 import Layout from '../components/Layout';
-import { getColorLibObject, sortWithClusters } from '../helpers/colors';
+import { getColorLibObject } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
-// eslint-disable-next-line import/extensions, import/no-unresolved
-import { Cluster, ColorObject, MegaColor } from '../types';
+import useLocalStorage from '../helpers/localStorage';
+import { BookFileDetailObject, ColorNerdRecord, MegaColor } from '../types/index';
 
 const colornerdDir = './node_modules/colornerd';
 const dir = `${colornerdDir}/_dev/`;
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext) => {
   // https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props#getserversideprops-with-typescript
   const bookFileDetailObjects = JSON.parse(fs.readFileSync(`${dir}books.json`, 'utf8'));
   // console.log({ bookFileDetailObjects });
-  const books: any = {};
-  bookFileDetailObjects.forEach(function (bookFileDetailObject: any) {
+  let megaColors: MegaColor[] = [];
+  bookFileDetailObjects.forEach(function (bookFileDetailObject: BookFileDetailObject) {
     const filename = `${colornerdDir}/json/${bookFileDetailObject.filename}.json`;
     // console.log({ filename });
-    if (filename === './node_modules/colornerd/json/sherwin-williams.json') {
-      // TODO Don't filter to filename in a hard-coded way.
-      const records = JSON.parse(fs.readFileSync(`${filename}`, 'utf8'));
-      // console.log({ records });
-      books[filename] = records;
-    }
+
+    const recordsInBook = JSON.parse(fs.readFileSync(`${filename}`, 'utf8'));
+    //  console.log({ recordsInBook });
+    const labeledRecordsInBook = recordsInBook.map((record: ColorNerdRecord) => {
+      // const colorLibObject = getColorLibObject(record);
+      return { ...record, book: bookFileDetailObject.title };
+    });
+    // console.log({ megaColors });
+    megaColors = [...megaColors, ...labeledRecordsInBook];
   });
   return {
-    props: { books }, // will be passed to the page component as props
+    props: { megaColors }, // will be passed to the page component as props
   };
 };
 
 function ColorCell({ index, color }: any): JSX.Element {
-  const colorLibObject = getColorLibObject(color);
+  const { colorLibObject } = color;
 
   return (
     <div key={index} style={{ background: colorLibObject.hsl(), padding: '0.5rem', display: 'inline-block', width: '100px', height: '100px' }}>
-      {color.name}
-    </div>
-  );
-}
-function ColorBook({ index, books, filename }: any): JSX.Element {
-  const colorsInBook: MegaColor[] = books[filename].map((colorObject: ColorObject) => {
-    return { ...colorObject, colorLibObject: getColorLibObject(colorObject) };
-  });
-  // sortArray(colorsInBook);
-  const sortedClusters = sortWithClusters(colorsInBook);
-  const sortedColorsInBook: Cluster[] = sortedClusters.reduce((acc, curr) => {
-    const colors = curr.colors.map((color) => color);
-    return [...acc, ...colors];
-  }, []);
-  return (
-    <div key={index}>
-      <h2>{filename}</h2>
-      <div className="colors">
-        {sortedColorsInBook.map((color: any) => (
-          <ColorCell key={color.hex} color={color} />
-        ))}
+      <div className="colorName">{color.name}</div>
+      <div className="book" style={{ fontSize: '0.8rem' }}>
+        {color.book}
       </div>
     </div>
   );
 }
 
-function ColorBooks({ books }: any): JSX.Element {
+function ColorBook({ megaColors }: { megaColors: MegaColor[] }): JSX.Element {
   return (
-    <>
-      {Object.keys(books).map((filename: any) => (
-        <ColorBook key={filename} books={books} filename={filename} />
+    <div className="colors">
+      {megaColors.map((color: MegaColor) => (
+        <ColorCell key={color.hex} color={color} />
       ))}
-    </>
+    </div>
   );
 }
 
-const Home: NextPage = ({ books }: any) => {
-  // console.log({ books });
+function isHueWithinTolerance(hue: number, hueToMatch: number, percentageTolerance: number): boolean {
+  // TODO: Does this properly handle hue wrap-around?
+  // console.log({ hue, hueToMatch, percentageTolerance });
+  const hueToMatchMin = hueToMatch - hueToMatch * percentageTolerance;
+  const hueToMatchMax = hueToMatch + hueToMatch * percentageTolerance;
+  return hue >= hueToMatchMin && hue <= hueToMatchMax;
+}
 
+function isSaturationWithinTolerance(saturation: number, saturationToMatch: number, percentageTolerance: number): boolean {
+  // TODO: Does this properly handle saturation wrap-around?
+  // console.log({ saturation, saturationToMatch, percentageTolerance });
+  const saturationToMatchMin = (saturationToMatch * 100 - saturationToMatch * 100 * percentageTolerance) / 100;
+  const saturationToMatchMax = (saturationToMatch * 100 + saturationToMatch * 100 * percentageTolerance) / 100;
+  return saturation >= saturationToMatchMin && saturation <= saturationToMatchMax;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function getFilteredColors(color: string, megaColors: MegaColor[], toleranceH: number, toleranceS: number, toleranceL: number): MegaColor[] {
+  const targetColorLibObject = getColorLibObject(color);
+  console.log({ targetColorLibObject });
+  const results: MegaColor[] = [];
+  for (let i = 0; i < megaColors.length; i += 1) {
+    const megaColor = megaColors[i];
+    const megaColorLibObject = getColorLibObject(megaColor.hex);
+    if (
+      isHueWithinTolerance(megaColorLibObject.hue(), targetColorLibObject.hue(), toleranceH)
+      // && isSaturationWithinTolerance(megaColorLibObject.saturationl(), targetColorLibObject.saturationl(), toleranceS)
+    ) {
+      // TODO
+      results.push({ ...megaColor, colorLibObject: megaColorLibObject });
+    }
+  }
+  return results;
+}
+
+const Home: NextPage = ({ megaColors }: { megaColors: MegaColor[] }) => {
+  // console.log({ megaColors });
+  const [color, setColor] = useLocalStorage<string>('color', 'hsl(291deg 89% 49%)');
+  const toleranceH = 0.1;
+  const toleranceS = 0.1;
+  const toleranceL = 0.05;
+
+  // TODO: filter which books to include
+
+  const results = getFilteredColors(color, megaColors, toleranceH, toleranceS, toleranceL);
   return (
     <Layout>
       <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
 
-      <div className={styles.grid} />
-      <ColorBooks books={books} />
+      <div style={{ width: '100px', height: '100px', backgroundColor: color }} />
+      <ColorBook megaColors={results} />
     </Layout>
   );
 };
