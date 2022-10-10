@@ -1,4 +1,8 @@
+/* eslint-disable canonical/filename-match-exported */
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
-}
+  swcMinify: true,
+};
+
+module.exports = nextConfig;

@@ -32,17 +32,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-# TODO
-
-Forget sorting, especially in 1 dimension. It's difficult and subjective and for these purposes unnecessary anyway.
-
-The index.tsx should be a tool to find the closest colors (across all brand books) given a specific color code / brand color.
-
-First, it will ask whether H, S, or L will be "fixed", and then the other 2 dimensions will be pickable via a 2D XY plot.
-
-If hue is fixed, the 2D plot will be a square with white at the top left and black at the bottom left, and then a bright color at the top right. E.g. https://github.com/mrkite/colorpicker
-If saturation is fixed, the 2D plot will be a color wheel varying from white in the center to black at the edge.
-If lightness is fixed, the 2D plot will be a color wheel varying from ? in the center to saturated color at the edge.
-
-There should be input sliders for % tolerance of H, S, and L. So all brand colors whose distances to the chosen color fall within those bounds will be shown.

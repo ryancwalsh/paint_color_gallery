@@ -1,5 +1,5 @@
 {
-  "name": "nextplus",
+  "name": "paint_color_gallery",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,25 +10,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@uiw/react-color-wheel": "^1.1.0",
     "color": "^4.2.3",
     "colornerd": "https://github.com/ryancwalsh/paintcolornerd#main",
-    "fs": "^0.0.1-security",
-    "next": "11.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@nearfoundation/near-prettier-config": "^1.0.1",
-    "@types/react": "17.0.38",
-    "autoprefixer": "^10.4.2",
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.24.0",
     "eslint-config-near": "^1.0.3",
-    "postcss": "^8.4.5",
-    "prettier": "^2.7.1",
-    "sass": "^1.43.5",
-    "tailwindcss": "^3.0.16",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.5.5"
+    "eslint-config-next": "12.3.1",
+    "sass": "^1.55.0",
+    "typescript": "4.8.4"
   },
   "prettier": "@nearfoundation/near-prettier-config"
 }

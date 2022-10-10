@@ -1,25 +1,11 @@
+/* eslint-disable canonical/filename-match-exported */
 import type { NextPage } from 'next';
-import Wheel from '@uiw/react-color-wheel'; // https://uiwjs.github.io/react-color/
+
 import Layout from '../components/Layout';
-import { getFilteredColors } from '../helpers/colors';
-import styles from '../styles/Home.module.scss';
-import useLocalStorage from '../helpers/localStorage';
-import { MegaColor } from '../types';
 import megaColors from '../data/colornerd.json';
-
-function ColorCell({ megaColor }: any): JSX.Element {
-  // console.log({ megaColor });
-  const { colorLibObject } = megaColor;
-
-  return (
-    <div style={{ background: colorLibObject.hsl(), padding: '0.5rem', display: 'inline-block', width: '100px', height: '100px', margin: '2px' }}>
-      <div className="colorName">{megaColor.name}</div>
-      <div className="book" style={{ fontSize: '0.8rem' }}>
-        {megaColor.book}
-      </div>
-    </div>
-  );
-}
+import { getFilteredColors } from '../helpers/colors';
+import useLocalStorage from '../helpers/useLocalStorage';
+import styles from '../styles/Home.module.scss';
 
 function TaskList(): JSX.Element {
   return (
@@ -52,7 +38,7 @@ function Sliders({ toleranceH, setToleranceH, toleranceS, setToleranceS, toleran
 
 const Home: NextPage = () => {
   // console.log({ megaColors });
-  const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(70deg 89% 49%)');
+  const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(20deg 80% 40%)');
   const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3);
   const [toleranceS, setToleranceS] = useLocalStorage<number>('toleranceS', 3);
   const [toleranceL, setToleranceL] = useLocalStorage<number>('toleranceL', 3);
@@ -61,20 +47,10 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
-      <Wheel
-        color={targetColor}
-        onChange={(colorFromWheel) => {
-          console.log({ colorFromWheel }, colorFromWheel.hex);
-          setTargetColor(colorFromWheel.hex);
-        }}
-      />
-      <Sliders {...{ toleranceH, setToleranceH, toleranceS, setToleranceS, toleranceL, setToleranceL }} />
+
+      <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
       <div style={{ backgroundColor: targetColor }}>
-        <div className="colors">
-          {results.map((colorInMap: MegaColor) => (
-            <ColorCell key={`${colorInMap.book}_${colorInMap.color}`} megaColor={colorInMap} />
-          ))}
-        </div>
+        <div className="colors"></div>
         <TaskList />
       </div>
     </Layout>
