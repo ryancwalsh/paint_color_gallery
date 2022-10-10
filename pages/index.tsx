@@ -44,6 +44,7 @@ const Home: NextPage = () => {
   const [toleranceL, setToleranceL] = useLocalStorage<number>('toleranceL', 3);
 
   const results = getFilteredColors(targetColor, megaColors, toleranceH, toleranceS, toleranceL);
+  console.log({ results });
   return (
     <Layout>
       <h1 className={styles.title}>paint_color_gallery using colornerd</h1>

@@ -1,13 +1,13 @@
 export type BookFileDetailObject = {
-  title: string;
   filename: string;
+  title: string;
 };
 
 export type ColorNerdRecord = {
-  name: string;
+  code: string;
+  hex?: string; // TODO: See the commented out code below to allow 'color' or 'hex' property. Figure out how to support ColorNerd using 'hex' property.
   label: string;
-  color?: string; // TODO: Use the commented out code below to allow 'color' or 'hex' property.
-  hex?: string; // TODO: Use the commented out code below to allow 'color' or 'hex' property.
+  name: string;
 };
 
 // type Only<T, U> = {
@@ -38,14 +38,14 @@ export type ColorNerdRecord = {
 
 // export type ColorNerdRecord = Either<ColorNerdRecordWithHex, ColorNerdRecordWithColor>;
 
-export type ColorLibObject = typeof colorLib;
+export type ColorDetailsObject = any; // `typeof colorLib`, where colorLib is whatever is exported from the 'color' dependency. https://github.com/Qix-/color
 
-export type MegaColor = {
-  colorLibObject?: ColorLibObject;
+export type MegaColor = ColorNerdRecord & {
   book?: string;
-} & ColorNerdRecord;
+  colorDetailsObject?: ColorDetailsObject;
+};
 
 export type Cluster = {
-  leadColor: ColorLibObject;
   colors: MegaColor[];
+  leadColor: ColorDetailsObject;
 };

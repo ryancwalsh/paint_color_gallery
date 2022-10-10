@@ -3,23 +3,23 @@
 import colorLib from 'color'; // https://github.com/Qix-/color
 
 // eslint-disable-next-line import/extensions, import/no-unresolved
-import { type Cluster, type ColorLibObject as ColorLibraryObject, type ColorNerdRecord, type MegaColor } from '../types';
+import { type Cluster, type ColorDetailsObject, type ColorNerdRecord, type MegaColor } from '../types';
 
 const numberClusters = 20;
 
-export function getColorLibObject(color: string): ColorLibraryObject {
+export function getColorDetailsObject(color: string): ColorDetailsObject {
   return colorLib(color);
 }
 
-export function getColorLibObjectFromColorNerdRecord(colorObject: ColorNerdRecord): ColorLibraryObject {
-  let colorLibraryObject;
+export function getColorDetailsObjectFromColorNerdRecord(colorNerdRecord: ColorNerdRecord): ColorDetailsObject {
+  let colorDetailsObject;
   try {
-    colorLibraryObject = colorLib(colorObject.color);
+    colorDetailsObject = colorLib(colorNerdRecord.code);
   } catch (error) {
-    console.error({ colorObject, error });
+    console.error({ colorNerdRecord, error });
   }
 
-  return colorLibraryObject;
+  return colorDetailsObject;
 }
 
 const clusters: Cluster[] = [];
@@ -56,18 +56,18 @@ function isLightnessWithinTolerance(lightness: number, lightnessToMatch: number,
 }
 
 export function getFilteredColors(color: string, megaColors: MegaColor[], toleranceH: number, toleranceS: number, toleranceL: number): MegaColor[] {
-  const targetColorLibraryObject = getColorLibObject(color);
+  const targetColorLibraryObject = getColorDetailsObject(color);
   // console.log({ targetColorLibObject });
   const results: MegaColor[] = [];
   for (const megaColor of megaColors) {
-    const megaColorLibraryObject = getColorLibObject(megaColor.color);
+    const megaColorLibraryObject = getColorDetailsObject(megaColor.code);
     // console.log({ megaColorLibObject });
     if (
       isHueWithinTolerance(megaColorLibraryObject.hue(), targetColorLibraryObject.hue(), toleranceH) &&
       isSaturationWithinTolerance(megaColorLibraryObject.saturationl(), targetColorLibraryObject.saturationl(), toleranceS) &&
       isLightnessWithinTolerance(megaColorLibraryObject.lightness(), targetColorLibraryObject.lightness(), toleranceL)
     ) {
-      const newRecord = { ...megaColor, colorLibObject: megaColorLibraryObject };
+      const newRecord = { ...megaColor, colorDetailsObject: megaColorLibraryObject };
       // console.log({ newRecord });
       results.push(newRecord);
     }
