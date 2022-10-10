@@ -44,8 +44,3 @@ export type MegaColor = ColorNerdRecord & {
   book?: string;
   colorDetailsObject?: ColorDetailsObject;
 };
-
-export type Cluster = {
-  colors: MegaColor[];
-  leadColor: ColorDetailsObject;
-};

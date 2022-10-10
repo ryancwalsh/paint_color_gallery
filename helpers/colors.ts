@@ -3,9 +3,7 @@
 import colorLib from 'color'; // https://github.com/Qix-/color
 
 // eslint-disable-next-line import/extensions, import/no-unresolved
-import { type Cluster, type ColorDetailsObject, type ColorNerdRecord, type MegaColor } from '../types';
-
-const numberClusters = 20;
+import { type ColorDetailsObject, type ColorNerdRecord, type MegaColor } from '../types';
 
 export function getColorDetailsObject(color: string): ColorDetailsObject {
   return colorLib(color);
@@ -20,16 +18,6 @@ export function getColorDetailsObjectFromColorNerdRecord(colorNerdRecord: ColorN
   }
 
   return colorDetailsObject;
-}
-
-const clusters: Cluster[] = [];
-
-for (let index = 0; index < numberClusters; index += 1) {
-  const hue = index * (360 / numberClusters);
-  clusters.push({
-    colors: [],
-    leadColor: colorLib(`hsl(${hue}, 0%, 0%, 1)`),
-  });
 }
 
 function isHueWithinTolerance(hue: number, hueToMatch: number, percentageTolerance: number): boolean {
