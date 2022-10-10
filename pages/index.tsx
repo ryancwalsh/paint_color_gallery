@@ -1,8 +1,7 @@
 /* eslint-disable canonical/filename-match-exported */
 import type { NextPage } from 'next';
 import { useEffect, useRef, useState } from 'react';
-// import { useDebounce, useLocalStorage } from 'usehooks-ts';
-import { useDebounce } from 'usehooks-ts';
+import { useDebounce, useLocalStorage } from 'usehooks-ts';
 
 import Layout from '../components/Layout';
 import megaColors from '../data/colornerd.json';
@@ -58,15 +57,17 @@ function Sliders({ toleranceH, setToleranceH, toleranceS, setToleranceS, toleran
 
 const Home: NextPage = () => {
   // console.log({ megaColors });
-  // const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(20deg 80% 40%)');
+  const [loadedMegaColors, setLoadedMegaColors] = useLocalStorage<MegaColor[]>('loadedMegaColors', [...megaColors]); // Eventually, using the hard-coded file will be optional because the user will also be allowed to supply their own JSON.
+  const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(20deg 80% 40%)');
+
   // const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3);
   // const [toleranceS, setToleranceS] = useLocalStorage<number>('toleranceS', 3);
   // const [toleranceL, setToleranceL] = useLocalStorage<number>('toleranceL', 3);
-  const [targetColor, setTargetColor] = useState<string>('hsl(20deg 80% 40%)');
   const [toleranceH, setToleranceH] = useState<number>(3);
   const [toleranceS, setToleranceS] = useState<number>(3);
   const [toleranceL, setToleranceL] = useState<number>(3);
   // console.log({ toleranceH, toleranceL, toleranceS });
+
   const debouncedToleranceH = useDebounce<number>(toleranceH, 1_500);
   const debouncedToleranceS = useDebounce<number>(toleranceS, 1_500);
   const debouncedToleranceL = useDebounce<number>(toleranceL, 1_500);
@@ -74,12 +75,10 @@ const Home: NextPage = () => {
 
   const results = useRef<MegaColor[]>([]);
 
-  const loadedMegaColors = [...megaColors]; // Eventually, using the hard-coded file will be optional because the user will also be allowed to supply their own JSON.
-
   useEffect(() => {
     results.current = getFilteredColors(targetColor, loadedMegaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL);
     console.log({ results: results.current });
-  }, [targetColor, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL]); // Only re-run the effect if a value changes.
+  }, [targetColor, loadedMegaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL]); // Only re-run the effect if a value changes.
 
   return (
     <Layout>
