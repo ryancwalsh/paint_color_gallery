@@ -74,8 +74,10 @@ const Home: NextPage = () => {
 
   const results = useRef<MegaColor[]>([]);
 
+  const loadedMegaColors = [...megaColors]; // Eventually, using the hard-coded file will be optional because the user will also be allowed to supply their own JSON.
+
   useEffect(() => {
-    results.current = getFilteredColors(targetColor, megaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL);
+    results.current = getFilteredColors(targetColor, loadedMegaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL);
     console.log({ results: results.current });
   }, [targetColor, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL]); // Only re-run the effect if a value changes.
 
