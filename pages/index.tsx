@@ -1,6 +1,6 @@
 /* eslint-disable canonical/filename-match-exported */
 import type { NextPage } from 'next';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDebounce, useLocalStorage } from 'usehooks-ts';
 
 import Layout from '../components/Layout';
@@ -28,8 +28,8 @@ function TaskList(): JSX.Element {
   // prettier-ignore-start
   return (
     <pre style={{ maxWidth: '900px', overflow: 'auto' }}>
-      TODO: - get color wheel working - fix types in VSC - deploy to GH Pages - support loading new JSON book to localStorage - filter which books to include - allow clustering by
-      book - add 2 other styles of color picker, synched with the first - add a tool that allows picking a color from somewhere else on the screen, such as a photo - add Google
+      TODO: - fix types in VSC - add a tool that allows picking a color from somewhere else on the screen, such as a photo - get color wheel working - deploy to GH Pages - support
+      loading new JSON book to localStorage - filter which books to include - allow clustering by book - add 2 other styles of color picker, synched with the first - add Google
       Analytics - get a URL
     </pre>
   );
@@ -68,16 +68,21 @@ const Home: NextPage = () => {
   const [toleranceL, setToleranceL] = useState<number>(3);
   // console.log({ toleranceH, toleranceL, toleranceS });
 
-  const debouncedToleranceH = useDebounce<number>(toleranceH, 1_500);
-  const debouncedToleranceS = useDebounce<number>(toleranceS, 1_500);
-  const debouncedToleranceL = useDebounce<number>(toleranceL, 1_500);
-  console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceS });
+  const [results, setResults] = useState<MegaColor[]>([]);
 
-  const results = useRef<MegaColor[]>([]);
+  const debouncedToleranceH = useDebounce<number>(toleranceH, 200);
+  const debouncedToleranceS = useDebounce<number>(toleranceS, 200);
+  const debouncedToleranceL = useDebounce<number>(toleranceL, 200);
+  // console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceS });
 
   useEffect(() => {
-    results.current = getFilteredColors(targetColor, loadedMegaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL);
-    console.log({ results: results.current });
+    console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceS });
+    const filteredColors = getFilteredColors(targetColor, loadedMegaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL);
+    console.log({ filteredColors });
+    setResults(filteredColors);
+    return () => {
+      console.log('cleanup');
+    };
   }, [targetColor, loadedMegaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL]); // Only re-run the effect if a value changes.
 
   return (
@@ -87,7 +92,7 @@ const Home: NextPage = () => {
       <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
       <div style={{ backgroundColor: targetColor }}>
         <div className="colors">
-          {results.current.map((colorInMap: MegaColor) => (
+          {results.map((colorInMap: MegaColor) => (
             <ColorCell key={`${colorInMap.book}_${colorInMap.code}`} megaColor={colorInMap} />
           ))}
         </div>
