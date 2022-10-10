@@ -1,10 +1,12 @@
 /* eslint-disable canonical/filename-match-exported */
 import type { NextPage } from 'next';
+import { useEffect, useRef, useState } from 'react';
+// import { useDebounce, useLocalStorage } from 'usehooks-ts';
+import { useDebounce } from 'usehooks-ts';
 
 import Layout from '../components/Layout';
 import megaColors from '../data/colornerd.json';
 import { getFilteredColors } from '../helpers/colors';
-import useLocalStorage from '../helpers/useLocalStorage';
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
 
@@ -56,14 +58,27 @@ function Sliders({ toleranceH, setToleranceH, toleranceS, setToleranceS, toleran
 
 const Home: NextPage = () => {
   // console.log({ megaColors });
-  const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(20deg 80% 40%)');
-  const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3);
-  const [toleranceS, setToleranceS] = useLocalStorage<number>('toleranceS', 3);
-  const [toleranceL, setToleranceL] = useLocalStorage<number>('toleranceL', 3);
+  // const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(20deg 80% 40%)');
+  // const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3);
+  // const [toleranceS, setToleranceS] = useLocalStorage<number>('toleranceS', 3);
+  // const [toleranceL, setToleranceL] = useLocalStorage<number>('toleranceL', 3);
+  const [targetColor, setTargetColor] = useState<string>('hsl(20deg 80% 40%)');
+  const [toleranceH, setToleranceH] = useState<number>(3);
+  const [toleranceS, setToleranceS] = useState<number>(3);
+  const [toleranceL, setToleranceL] = useState<number>(3);
   // console.log({ toleranceH, toleranceL, toleranceS });
+  const debouncedToleranceH = useDebounce<number>(toleranceH, 1_500);
+  const debouncedToleranceS = useDebounce<number>(toleranceS, 1_500);
+  const debouncedToleranceL = useDebounce<number>(toleranceL, 1_500);
+  console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceS });
 
-  const results = getFilteredColors(targetColor, megaColors, toleranceH, toleranceS, toleranceL);
-  console.log({ results });
+  const results = useRef<MegaColor[]>([]);
+
+  useEffect(() => {
+    results.current = getFilteredColors(targetColor, megaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL);
+    console.log({ results: results.current });
+  }, [targetColor, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL]); // Only re-run the effect if a value changes.
+
   return (
     <Layout>
       <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
@@ -71,7 +86,7 @@ const Home: NextPage = () => {
       <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
       <div style={{ backgroundColor: targetColor }}>
         <div className="colors">
-          {results.map((colorInMap: MegaColor) => (
+          {results.current.map((colorInMap: MegaColor) => (
             <ColorCell key={`${colorInMap.book}_${colorInMap.code}`} megaColor={colorInMap} />
           ))}
         </div>
