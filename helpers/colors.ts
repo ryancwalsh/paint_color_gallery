@@ -84,6 +84,7 @@ export function getFilteredColors(
 ): MegaColor[] {
   // console.log({ targetColorLibObject });
   const results: MegaColor[] = [];
+  const keys = new Set<string>();
   for (const megaColor of megaColors) {
     const megaColorDetailsObject = getColorDetailsObject(megaColor.code);
     // console.log({ megaColorDetailsObject });
@@ -94,7 +95,13 @@ export function getFilteredColors(
     ) {
       const newRecord = { ...megaColor, colorDetailsObject: megaColorDetailsObject };
       // console.log({ newRecord });
-      results.push(newRecord);
+
+      const key = `${newRecord.name}-${newRecord.code}`;
+      // console.log({ key, entry });
+      if (!keys.has(key)) {
+        results.push(newRecord);
+        keys.add(key);
+      }
     }
   }
 

@@ -14,7 +14,10 @@ function ColorCell({ megaColor }: { megaColor: MegaColor }): JSX.Element {
   const { colorDetailsObject } = megaColor;
 
   return (
-    <div style={{ background: colorDetailsObject.hsl(), display: 'inline-block', height: '100px', margin: '2px', padding: '0.5rem', width: '100px' }}>
+    <div
+      style={{ background: colorDetailsObject.hsl(), display: 'inline-block', height: '100px', margin: '2px', padding: '0.5rem', width: '100px' }}
+      data-json={JSON.stringify(megaColor)}
+    >
       <div className="colorName">{megaColor.name}</div>
       <div className="book" style={{ fontSize: '0.8rem' }}>
         {megaColor.book}
@@ -82,7 +85,7 @@ const Home: NextPage = () => {
     const degreeTolerance = (360 / 100) * debouncedToleranceH;
     const [hueMin, hueMax] = getHueTolerance(targetColorDetailsObject.hue(), degreeTolerance);
     const filteredColors = getFilteredColors(targetColorDetailsObject, loadedMegaColors, hueMin, hueMax, debouncedToleranceS, debouncedToleranceL);
-    //  console.log({ filteredColors });
+    // console.log({ filteredColors });
     setResults(filteredColors);
     return () => {
       // console.log('cleanup');
