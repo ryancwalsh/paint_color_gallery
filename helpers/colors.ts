@@ -20,16 +20,46 @@ export function getColorDetailsObjectFromColorNerdRecord(colorNerdRecord: ColorN
   return colorDetailsObject;
 }
 
-function isHueWithinTolerance(hue: number, hueToMatch: number, percentageTolerance: number): boolean {
-  // TODO: Does this properly handle hue wrap-around?
-  const degreeTolerance = (360 / 100) * percentageTolerance;
-  // console.log({ hue, hueToMatch, percentageTolerance, degreeTolerance });
-  const hueToMatchMin = hueToMatch - degreeTolerance;
-  const hueToMatchMax = hueToMatch + degreeTolerance;
-  return hue >= hueToMatchMin && hue <= hueToMatchMax;
+function getCircularWrappedValue(value: number): number {
+  // console.log({ value });
+  if (value < 360) {
+    if (value >= 0) {
+      return value;
+    } else {
+      return value + 360;
+    }
+  } else {
+    return value - 360;
+  }
+}
+
+export function getHueTolerance(hue: number, degreeTolerance: number): [number, number] {
+  // console.log({ hue, hue, percentageTolerance, degreeTolerance });
+  const hueMin = getCircularWrappedValue(hue - degreeTolerance);
+  const hueMax = getCircularWrappedValue(hue + degreeTolerance);
+  // const hueMin = Math.min(boundA, boundB);
+  // const hueMax = Math.max(boundA, boundB);
+  console.log({ degreeTolerance, hueMax, hueMin });
+  return [hueMin, hueMax];
+}
+
+function isWithinTolerance(value: number, min: number, max: number): boolean {
+  return value >= min && value <= max;
+}
+
+export function isWithinCircularTolerance(value: number, min: number, max: number): boolean {
+  if (min <= max) {
+    return value >= min && value <= max;
+  } else {
+    const isWithinLowerRange = value >= 0 && value <= max;
+    const isWithinUpperRange = value >= min && value < 360;
+    // console.log({ isWithinLowerRange, isWithinUpperRange, value });
+    return isWithinLowerRange || isWithinUpperRange;
+  }
 }
 
 function isSaturationWithinTolerance(saturation: number, saturationToMatch: number, percentageTolerance: number): boolean {
+  // TODO Pull this out to index.tsx and use isWithinTolerance here in this file.
   // console.log({ saturation, saturationToMatch, percentageTolerance });
   const min = saturationToMatch - percentageTolerance; // It is ok to go below 0 because no results will have <0 anyway.
   const max = saturationToMatch + percentageTolerance; // It is ok to go over 100 because no results will have >100 anyway.
@@ -37,25 +67,32 @@ function isSaturationWithinTolerance(saturation: number, saturationToMatch: numb
 }
 
 function isLightnessWithinTolerance(lightness: number, lightnessToMatch: number, percentageTolerance: number): boolean {
+  // TODO Pull this out to index.tsx and use isWithinTolerance here in this file.
   // console.log({ saturation, saturationToMatch, percentageTolerance });
   const min = lightnessToMatch - percentageTolerance; // It is ok to go below 0 because no results will have <0 anyway.
   const max = lightnessToMatch + percentageTolerance; // It is ok to go over 100 because no results will have >100 anyway.
   return lightness >= min && lightness <= max;
 }
 
-export function getFilteredColors(color: string, megaColors: MegaColor[], toleranceH: number, toleranceS: number, toleranceL: number): MegaColor[] {
-  const targetColorLibraryObject = getColorDetailsObject(color);
+export function getFilteredColors(
+  targetColorDetailsObject: ColorDetailsObject,
+  megaColors: MegaColor[],
+  hueMin: number,
+  hueMax: number,
+  toleranceS: number,
+  toleranceL: number,
+): MegaColor[] {
   // console.log({ targetColorLibObject });
   const results: MegaColor[] = [];
   for (const megaColor of megaColors) {
-    const megaColorLibraryObject = getColorDetailsObject(megaColor.code);
-    // console.log({ megaColorLibObject });
+    const megaColorDetailsObject = getColorDetailsObject(megaColor.code);
+    // console.log({ megaColorDetailsObject });
     if (
-      isHueWithinTolerance(megaColorLibraryObject.hue(), targetColorLibraryObject.hue(), toleranceH) &&
-      isSaturationWithinTolerance(megaColorLibraryObject.saturationl(), targetColorLibraryObject.saturationl(), toleranceS) &&
-      isLightnessWithinTolerance(megaColorLibraryObject.lightness(), targetColorLibraryObject.lightness(), toleranceL)
+      isWithinCircularTolerance(megaColorDetailsObject.hue(), hueMin, hueMax) &&
+      isSaturationWithinTolerance(megaColorDetailsObject.saturationl(), targetColorDetailsObject.saturationl(), toleranceS) &&
+      isLightnessWithinTolerance(megaColorDetailsObject.lightness(), targetColorDetailsObject.lightness(), toleranceL)
     ) {
-      const newRecord = { ...megaColor, colorDetailsObject: megaColorLibraryObject };
+      const newRecord = { ...megaColor, colorDetailsObject: megaColorDetailsObject };
       // console.log({ newRecord });
       results.push(newRecord);
     }

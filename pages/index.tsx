@@ -5,7 +5,7 @@ import { useDebounce, useLocalStorage } from 'usehooks-ts';
 
 import Layout from '../components/Layout';
 import megaColors from '../data/colornerd.json';
-import { getFilteredColors } from '../helpers/colors';
+import { getFilteredColors, getHueTolerance, getColorDetailsObject } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
 
@@ -40,15 +40,15 @@ function Sliders({ toleranceH, setToleranceH, toleranceS, setToleranceS, toleran
   return (
     <div>
       <label>
-        <input type="range" defaultValue={toleranceH} onChange={(event) => setToleranceH(Number(event.target.value))} min="0" max="100" step="1" />
+        <input type="range" defaultValue={toleranceH} onChange={(event) => setToleranceH(Number(event.target.value))} min="0" max="50" step="1" />
         {toleranceH}
       </label>
       <label>
-        <input type="range" defaultValue={toleranceS} onChange={(event) => setToleranceS(Number(event.target.value))} min="0" max="100" step="1" />
+        <input type="range" defaultValue={toleranceS} onChange={(event) => setToleranceS(Number(event.target.value))} min="0" max="50" step="1" />
         {toleranceS}
       </label>
       <label>
-        <input type="range" defaultValue={toleranceL} onChange={(event) => setToleranceL(Number(event.target.value))} min="0" max="100" step="1" />
+        <input type="range" defaultValue={toleranceL} onChange={(event) => setToleranceL(Number(event.target.value))} min="0" max="50" step="1" />
         {toleranceL}
       </label>
     </div>
@@ -77,11 +77,15 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceS });
-    const filteredColors = getFilteredColors(targetColor, loadedMegaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL);
-    console.log({ filteredColors });
+    const targetColorDetailsObject = getColorDetailsObject(targetColor);
+    console.log({ targetColorDetailsObject });
+    const degreeTolerance = (360 / 100) * debouncedToleranceH;
+    const [hueMin, hueMax] = getHueTolerance(targetColorDetailsObject.hue(), degreeTolerance);
+    const filteredColors = getFilteredColors(targetColorDetailsObject, loadedMegaColors, hueMin, hueMax, debouncedToleranceS, debouncedToleranceL);
+    //  console.log({ filteredColors });
     setResults(filteredColors);
     return () => {
-      console.log('cleanup');
+      // console.log('cleanup');
     };
   }, [targetColor, loadedMegaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL]); // Only re-run the effect if a value changes.
 
