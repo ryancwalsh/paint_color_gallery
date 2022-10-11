@@ -1,13 +1,29 @@
 /* eslint-disable canonical/filename-match-exported */
-import type { NextPage } from 'next';
+import fs from 'fs';
+
+import type { NextPage, GetServerSideProps } from 'next';
 import { useEffect, useState } from 'react';
 import { useDebounce, useLocalStorage } from 'usehooks-ts';
 
 import Layout from '../components/Layout';
-import megaColors from '../data/colornerd.json';
 import { getFilteredColors, getHueTolerance, getColorDetailsObject } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
+
+function loadColorsFromColornerd() {
+  const colornerdFile = './data/colornerd.json';
+  // eslint-disable-next-line unicorn/prefer-json-parse-buffer
+  const colorData = fs.readFileSync(colornerdFile, 'utf8');
+  return JSON.parse(colorData);
+}
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {
+      megaColors: loadColorsFromColornerd(),
+    },
+  };
+};
 
 function ColorCell({ megaColor }: { megaColor: MegaColor }): JSX.Element {
   // console.log({ megaColor });
@@ -31,9 +47,9 @@ function TaskList(): JSX.Element {
   // prettier-ignore-start
   return (
     <pre style={{ maxWidth: '900px', overflow: 'auto' }}>
-      TODO: - fix types in VSC - add a tool that allows picking a color from somewhere else on the screen, such as a photo - get color wheel working - deploy to GH Pages - support
-      loading new JSON book to localStorage - filter which books to include - allow clustering by book - add 2 other styles of color picker, synched with the first - add Google
-      Analytics - get a URL
+      TODO: - add a tool that allows picking a color from somewhere else on the screen, such as a photo - get color wheel working - deploy to GH Pages - support loading new JSON
+      book to localStorage - filter which books to include - allow clustering by book - add 2 other styles of color picker, synched with the first - add Google Analytics - get a
+      URL
     </pre>
   );
   // prettier-ignore-end
@@ -58,7 +74,7 @@ function Sliders({ toleranceH, setToleranceH, toleranceS, setToleranceS, toleran
   );
 }
 
-const Home: NextPage = () => {
+const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
   // console.log({ megaColors });
   const [loadedMegaColors, setLoadedMegaColors] = useLocalStorage<MegaColor[]>('loadedMegaColors', [...megaColors]); // Eventually, using the hard-coded file will be optional because the user will also be allowed to supply their own JSON.
   const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(20deg 80% 40%)');
