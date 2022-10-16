@@ -6,7 +6,7 @@
     "assembleColornerdData": "yarn ts-node ./data/assembleColornerdData.ts",
     "dev": "next dev",
     "build": "next build",
-    "export": "rm -rf docs && next build && next export -o docs && mv docs/_next/ docs/assets",
+    "export": "rm -rf docs && next build && next export -o docs && mkdir docs/assets && mv docs/_next docs/assets/_next",
     "start": "next start",
     "lint": "next lint",
     "test": "jest"
