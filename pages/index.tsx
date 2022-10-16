@@ -43,7 +43,7 @@ const Home: NextPage<{}> = () => {
   const megaColors: MegaColor[] = [];
   const bookNames = getBookNames(megaColors);
   console.log({ bookNames, megaColors });
-  const [selectedBookNames, setSelectedBookNames] = useLocalStorage<string[]>('selectedBookNames', ['Sherwin Williams']);
+  const [selectedBookNames, setSelectedBookNames] = useLocalStorage<string[]>('selectedBookNames', Array.from(bookNames));
   const [loadedMegaColors, setLoadedMegaColors] = useLocalStorage<MegaColor[]>('loadedMegaColors', []);
   const [megaColorsFilteredByBookNames, setMegaColorsFilteredByBookNames] = useState<MegaColor[]>([]);
   const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(80deg 50% 70%)');
@@ -56,7 +56,7 @@ const Home: NextPage<{}> = () => {
 
   const [results, setResults] = useState<MegaColor[]>([]);
 
-  // const [previousColor, setPreviousColor] = useState<MegaColor>(null);
+  const [previousColor, setPreviousColor] = useLocalStorage<string | null>('previousColor', null);
 
   const debouncedToleranceH = useDebounce<number>(toleranceH, 200);
   const debouncedToleranceS = useDebounce<number>(toleranceS, 200);
@@ -68,12 +68,22 @@ const Home: NextPage<{}> = () => {
   });
 
   const onChangeEyedropperColor = ({ hex }: OnChangeEyedrop) => {
+    setPreviousColor(targetColor);
     setTargetColor(hex);
   };
 
   const toggleOnce = () => {
     setEyedropOnce(!eyedropOnce);
   };
+
+  function usePreviousColor() {
+    // TODO: Fix this.
+    if (previousColor) {
+      const colorToSave = targetColor;
+      setTargetColor(previousColor);
+      setPreviousColor(colorToSave);
+    }
+  }
 
   useEffect(() => {
     if (loadedMegaColors.length === 0) {
@@ -124,6 +134,7 @@ const Home: NextPage<{}> = () => {
 
           <p>Once: {eyedropOnce.toString()}</p>
           <button onClick={toggleOnce}>Toggle `once` prop</button>
+          <button onClick={usePreviousColor}>Use previous color</button>
         </div>
         <div style={{ backgroundColor: targetColor, marginTop: '1rem', padding: '1rem' }}>
           <div className="colors">

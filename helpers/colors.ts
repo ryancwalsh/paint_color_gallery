@@ -116,7 +116,7 @@ export function getBookNames(megaColors: MegaColor[]): Set<string> {
 }
 
 export function getMegaColorsFilteredByBookNames(megaColors: MegaColor[], bookNames: string[]): MegaColor[] {
-  return megaColors.filter((megaColor) => bookNames.includes(megaColor.book));
+  return megaColors.filter((megaColor) => bookNames.length === 0 || bookNames.includes(megaColor.book));
 }
 
 export async function getDefaultColors(): Promise<MegaColor[]> {
