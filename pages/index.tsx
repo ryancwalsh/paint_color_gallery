@@ -1,5 +1,5 @@
 /* eslint-disable canonical/filename-match-exported */
-import fs from 'fs';
+// import fs from 'fs';
 
 import type { NextPage, GetServerSideProps } from 'next';
 import { useEffect, useState } from 'react';
@@ -15,20 +15,20 @@ import { getFilteredColors, getHueTolerance, getColorDetailsObject, getBookNames
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
 
-function loadColorsFromColornerd() {
-  const colornerdFile = './data/colornerd.json';
-  // eslint-disable-next-line unicorn/prefer-json-parse-buffer
-  const colorData = fs.readFileSync(colornerdFile, 'utf8');
-  return JSON.parse(colorData);
-}
+// function loadColorsFromColornerd() {
+//   const colornerdFile = './data/colornerd.json';
+//   // eslint-disable-next-line unicorn/prefer-json-parse-buffer
+//   const colorData = fs.readFileSync(colornerdFile, 'utf8');
+//   return JSON.parse(colorData);
+// }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  return {
-    props: {
-      megaColors: loadColorsFromColornerd(),
-    },
-  };
-};
+// export const getServerSideProps: GetServerSideProps = async () => {
+//   return {
+//     props: {
+//       megaColors: loadColorsFromColornerd(),
+//     },
+//   };
+// };
 
 function ColorCell({ megaColor }: { megaColor: MegaColor }): JSX.Element {
   // console.log({ megaColor });
@@ -53,7 +53,9 @@ function ColorCell({ megaColor }: { megaColor: MegaColor }): JSX.Element {
   );
 }
 
-const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
+// const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
+const Home: NextPage<{}> = () => {
+  const megaColors: MegaColor[] = [];
   const bookNames = getBookNames(megaColors);
   console.log({ bookNames, megaColors });
   const [selectedBookNames, setSelectedBookNames] = useLocalStorage<string[]>('selectedBookNames', ['Sherwin Williams']);

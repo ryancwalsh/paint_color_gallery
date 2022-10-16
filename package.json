@@ -6,6 +6,7 @@
     "assembleColornerdData": "yarn ts-node ./data/assembleColornerdData.ts",
     "dev": "next dev",
     "build": "next build",
+    "export": "DISABLE_ESLINT_PLUGIN=true next build && DISABLE_ESLINT_PLUGIN=true next export",
     "start": "next start",
     "lint": "next lint",
     "test": "jest"

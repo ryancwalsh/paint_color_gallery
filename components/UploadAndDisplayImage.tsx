@@ -13,7 +13,7 @@ const UploadAndDisplayImage = ({ maxWidth }: { maxWidth?: string }) => {
   const images = selectedFiles.map((selectedImage, index) => {
     return (
       <div key={selectedImage.name}>
-        <img src={URL.createObjectURL(selectedImage)} style={{ maxWidth }} />
+        <img alt="uploaded image" src={URL.createObjectURL(selectedImage)} style={{ maxWidth }} />
         <br />
         <button onClick={() => removeFileByIndex(index)}>Remove</button>
       </div>
