@@ -5,7 +5,6 @@ export default function TaskList(): JSX.Element {
     <pre style={{ maxWidth: '900px', overflow: 'auto' }}>
       TODO: 
     - get color wheel working https://iro.js.org/
-    - deploy to GH Pages 
     - support loading new JSON book to localStorage 
     - filter which books to include 
     - allow clustering by book 
