@@ -31,3 +31,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 `main` branch `/docs` folder automatically deploys to https://ryancwalsh.github.io/paint_color_gallery/ via https://github.com/ryancwalsh/paint_color_gallery/actions https://github.com/ryancwalsh/paint_color_gallery/settings/pages because of the `yarn export` script and https://github.com/vercel/next.js/issues/2581#issuecomment-628307796
 https://github.com/mpetrovich/stylemark/issues/65#issuecomment-492130126
+Maybe https://stackoverflow.com/a/72544945/470749 will help.
