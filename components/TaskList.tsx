@@ -3,16 +3,15 @@ export default function TaskList(): JSX.Element {
   // prettier-ignore
   return (
     <pre style={{ maxWidth: '900px', overflow: 'auto' }}>
-        TODO:
-        - add a tool that allows picking a color from somewhere else on the screen, such as a photo
-        - get color wheel working
-        - deploy to GH Pages
-        - support loading new JSON book to localStorage
-        - filter which books to include
-        - allow clustering by book
-        - add 2 other styles of color picker, synched with the first
-        - add Google Analytics
-        - get a URL
+      TODO: 
+    - get color wheel working https://iro.js.org/
+    - deploy to GH Pages 
+    - support loading new JSON book to localStorage 
+    - filter which books to include 
+    - allow clustering by book 
+    - add 2 other styles of color picker, synched with the first 
+    - add Google Analytics 
+    - get a URL
     </pre>
   );
 }

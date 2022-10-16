@@ -3,6 +3,7 @@ import fs from 'fs';
 
 import type { NextPage, GetServerSideProps } from 'next';
 import { useEffect, useState } from 'react';
+import { useEyeDrop, EyeDropper, OnChangeEyedrop } from 'react-eyedrop';
 import { useDebounce, useLocalStorage } from 'usehooks-ts';
 
 import ClientOnly from '../components/ClientOnly';
@@ -58,6 +59,7 @@ const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
   const [selectedBookNames, setSelectedBookNames] = useLocalStorage<string[]>('selectedBookNames', ['Sherwin Williams']);
   const [loadedMegaColors, setLoadedMegaColors] = useLocalStorage<MegaColor[]>('loadedMegaColors', [...getMegaColorsFilteredByBookNames(megaColors, selectedBookNames)]); // Eventually, using the hard-coded file will be optional because the user will also be allowed to supply their own JSON.
   const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(80deg 50% 70%)');
+  const [eyedropOnce, setEyedropOnce] = useLocalStorage<boolean>('eyedropOnce', false);
 
   const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3); // https://stackoverflow.com/questions/74022328/how-to-solve-react-hydration-error-in-next-js-when-using-uselocalstorage-and
   const [toleranceS, setToleranceS] = useLocalStorage<number>('toleranceS', 3);
@@ -70,6 +72,18 @@ const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
   const debouncedToleranceS = useDebounce<number>(toleranceS, 200);
   const debouncedToleranceL = useDebounce<number>(toleranceL, 200);
   // console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceS });
+
+  const [colors, pickColor, cancelPickColor] = useEyeDrop({
+    once: eyedropOnce,
+  });
+
+  const onChangeEyedropperColor = ({ hex }: OnChangeEyedrop) => {
+    setTargetColor(hex);
+  };
+
+  const toggleOnce = () => {
+    setEyedropOnce(!eyedropOnce);
+  };
 
   useEffect(() => {
     console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceS });
@@ -92,6 +106,14 @@ const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
 
         <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
         <UploadAndDisplayImage />
+        <div className="eyedrop-wrapper">
+          <EyeDropper once={eyedropOnce} onChange={onChangeEyedropperColor}>
+            Pick Color
+          </EyeDropper>
+
+          <p>Once: {eyedropOnce.toString()}</p>
+          <button onClick={toggleOnce}>Toggle `once` prop</button>
+        </div>
         <div style={{ backgroundColor: targetColor, marginTop: '1rem', padding: '1rem' }}>
           <div className="colors">
             {results.map((colorInMap: MegaColor) => (
