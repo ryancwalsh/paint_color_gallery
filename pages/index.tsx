@@ -9,7 +9,7 @@ import ClientOnly from '../components/ClientOnly';
 import Layout from '../components/Layout';
 import Sliders from '../components/Sliders';
 import TaskList from '../components/TaskList';
-import { getFilteredColors, getHueTolerance, getColorDetailsObject } from '../helpers/colors';
+import { getFilteredColors, getHueTolerance, getColorDetailsObject, getBookNames, getMegaColorsFilteredByBookNames } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
 
@@ -46,8 +46,10 @@ function ColorCell({ megaColor }: { megaColor: MegaColor }): JSX.Element {
 }
 
 const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
-  // console.log({ megaColors });
-  const [loadedMegaColors, setLoadedMegaColors] = useLocalStorage<MegaColor[]>('loadedMegaColors', [...megaColors]); // Eventually, using the hard-coded file will be optional because the user will also be allowed to supply their own JSON.
+  const bookNames = getBookNames(megaColors);
+  console.log({ bookNames, megaColors });
+  const [selectedBookNames, setSelectedBookNames] = useLocalStorage<string[]>('selectedBookNames', ['Sherwin Williams']);
+  const [loadedMegaColors, setLoadedMegaColors] = useLocalStorage<MegaColor[]>('loadedMegaColors', [...getMegaColorsFilteredByBookNames(megaColors, selectedBookNames)]); // Eventually, using the hard-coded file will be optional because the user will also be allowed to supply their own JSON.
   const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(20deg 80% 40%)');
 
   const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3); // https://stackoverflow.com/questions/74022328/how-to-solve-react-hydration-error-in-next-js-when-using-uselocalstorage-and

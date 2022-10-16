@@ -41,6 +41,6 @@ export type ColorNerdRecord = {
 export type ColorDetailsObject = any; // `typeof colorLib`, where colorLib is whatever is exported from the 'color' dependency. https://github.com/Qix-/color
 
 export type MegaColor = ColorNerdRecord & {
-  book?: string;
+  book: string;
   colorDetailsObject?: ColorDetailsObject;
 };

@@ -43,10 +43,6 @@ export function getHueTolerance(hue: number, degreeTolerance: number): [number, 
   return [hueMin, hueMax];
 }
 
-function isWithinTolerance(value: number, min: number, max: number): boolean {
-  return value >= min && value <= max;
-}
-
 export function isWithinCircularTolerance(value: number, min: number, max: number): boolean {
   if (min <= max) {
     return value >= min && value <= max;
@@ -106,4 +102,17 @@ export function getFilteredColors(
   }
 
   return results;
+}
+
+export function getBookNames(megaColors: MegaColor[]): Set<string> {
+  const bookNames = new Set<string>();
+  for (const megaColor of megaColors) {
+    bookNames.add(megaColor.book);
+  }
+
+  return bookNames;
+}
+
+export function getMegaColorsFilteredByBookNames(megaColors: MegaColor[], bookNames: string[]): MegaColor[] {
+  return megaColors.filter((megaColor) => bookNames.includes(megaColor.book));
 }
