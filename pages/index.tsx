@@ -5,6 +5,7 @@ import type { NextPage, GetServerSideProps } from 'next';
 import { useEffect, useState } from 'react';
 import { useDebounce, useLocalStorage } from 'usehooks-ts';
 
+import ClientOnly from '../components/ClientOnly';
 import Layout from '../components/Layout';
 import { getFilteredColors, getHueTolerance, getColorDetailsObject } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
@@ -79,12 +80,9 @@ const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
   const [loadedMegaColors, setLoadedMegaColors] = useLocalStorage<MegaColor[]>('loadedMegaColors', [...megaColors]); // Eventually, using the hard-coded file will be optional because the user will also be allowed to supply their own JSON.
   const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(20deg 80% 40%)');
 
-  // const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3);
-  // const [toleranceS, setToleranceS] = useLocalStorage<number>('toleranceS', 3);
-  // const [toleranceL, setToleranceL] = useLocalStorage<number>('toleranceL', 3);
-  const [toleranceH, setToleranceH] = useState<number>(3);
-  const [toleranceS, setToleranceS] = useState<number>(3);
-  const [toleranceL, setToleranceL] = useState<number>(3);
+  const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3); // https://stackoverflow.com/questions/74022328/how-to-solve-react-hydration-error-in-next-js-when-using-uselocalstorage-and
+  const [toleranceS, setToleranceS] = useLocalStorage<number>('toleranceS', 3);
+  const [toleranceL, setToleranceL] = useLocalStorage<number>('toleranceL', 3);
   // console.log({ toleranceH, toleranceL, toleranceS });
 
   const [results, setResults] = useState<MegaColor[]>([]);
@@ -109,19 +107,21 @@ const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
   }, [targetColor, loadedMegaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL]); // Only re-run the effect if a value changes.
 
   return (
-    <Layout>
-      <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
+    <ClientOnly>
+      <Layout>
+        <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
 
-      <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
-      <div style={{ backgroundColor: targetColor }}>
-        <div className="colors">
-          {results.map((colorInMap: MegaColor) => (
-            <ColorCell key={`${colorInMap.book}_${colorInMap.code}`} megaColor={colorInMap} />
-          ))}
+        <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
+        <div style={{ backgroundColor: targetColor }}>
+          <div className="colors">
+            {results.map((colorInMap: MegaColor) => (
+              <ColorCell key={`${colorInMap.book}_${colorInMap.code}`} megaColor={colorInMap} />
+            ))}
+          </div>
+          <TaskList />
         </div>
-        <TaskList />
-      </div>
-    </Layout>
+      </Layout>
+    </ClientOnly>
   );
 };
 
