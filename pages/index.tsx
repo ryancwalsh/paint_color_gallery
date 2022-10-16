@@ -9,6 +9,7 @@ import ClientOnly from '../components/ClientOnly';
 import Layout from '../components/Layout';
 import Sliders from '../components/Sliders';
 import TaskList from '../components/TaskList';
+import UploadAndDisplayImage from '../components/UploadAndDisplayImage';
 import { getFilteredColors, getHueTolerance, getColorDetailsObject, getBookNames, getMegaColorsFilteredByBookNames } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
@@ -90,6 +91,7 @@ const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
         <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
 
         <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
+        <UploadAndDisplayImage />
         <div style={{ backgroundColor: targetColor, marginTop: '1rem', padding: '1rem' }}>
           <div className="colors">
             {results.map((colorInMap: MegaColor) => (
