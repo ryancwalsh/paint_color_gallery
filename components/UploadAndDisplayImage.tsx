@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const UploadAndDisplayImage = () => {
+const UploadAndDisplayImage = ({ maxWidth }: { maxWidth?: string }) => {
   // https://stackoverflow.com/a/68979570/470749
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
 
@@ -13,7 +13,7 @@ const UploadAndDisplayImage = () => {
   const images = selectedFiles.map((selectedImage, index) => {
     return (
       <div key={selectedImage.name}>
-        <img src={URL.createObjectURL(selectedImage)} />
+        <img src={URL.createObjectURL(selectedImage)} style={{ maxWidth }} />
         <br />
         <button onClick={() => removeFileByIndex(index)}>Remove</button>
       </div>

@@ -105,7 +105,7 @@ const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
         <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
 
         <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
-        <UploadAndDisplayImage />
+        <UploadAndDisplayImage maxWidth={'600px'} />
         <div className="eyedrop-wrapper">
           <EyeDropper once={eyedropOnce} onChange={onChangeEyedropperColor}>
             Pick Color
