@@ -7,6 +7,8 @@ import { useDebounce, useLocalStorage } from 'usehooks-ts';
 
 import ClientOnly from '../components/ClientOnly';
 import Layout from '../components/Layout';
+import Sliders from '../components/Sliders';
+import TaskList from '../components/TaskList';
 import { getFilteredColors, getHueTolerance, getColorDetailsObject } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
@@ -39,38 +41,6 @@ function ColorCell({ megaColor }: { megaColor: MegaColor }): JSX.Element {
       <div className="book" style={{ fontSize: '0.8rem' }}>
         {megaColor.book}
       </div>
-    </div>
-  );
-}
-
-function TaskList(): JSX.Element {
-  // TODO: https://stackoverflow.com/questions/74020543/how-to-disable-prettier-for-pre-or-code-blocks-so-that-new-lines-line-break
-  // prettier-ignore-start
-  return (
-    <pre style={{ maxWidth: '900px', overflow: 'auto' }}>
-      TODO: - add a tool that allows picking a color from somewhere else on the screen, such as a photo - get color wheel working - deploy to GH Pages - support loading new JSON
-      book to localStorage - filter which books to include - allow clustering by book - add 2 other styles of color picker, synched with the first - add Google Analytics - get a
-      URL
-    </pre>
-  );
-  // prettier-ignore-end
-}
-
-function Sliders({ toleranceH, setToleranceH, toleranceS, setToleranceS, toleranceL, setToleranceL }: any): JSX.Element {
-  return (
-    <div>
-      <label>
-        <input type="range" defaultValue={toleranceH} onChange={(event) => setToleranceH(Number(event.target.value))} min="0" max="50" step="1" />
-        {toleranceH}
-      </label>
-      <label>
-        <input type="range" defaultValue={toleranceS} onChange={(event) => setToleranceS(Number(event.target.value))} min="0" max="50" step="1" />
-        {toleranceS}
-      </label>
-      <label>
-        <input type="range" defaultValue={toleranceL} onChange={(event) => setToleranceL(Number(event.target.value))} min="0" max="50" step="1" />
-        {toleranceL}
-      </label>
     </div>
   );
 }
