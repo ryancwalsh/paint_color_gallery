@@ -7,7 +7,10 @@ const ColorLibraryFileChooser = ({ setLoadedMegaColors }: any) => {
 
   return (
     <div className="colorLibraryFileChooser">
-      Load from {defaultColorsJson}
+      Load from{' '}
+      <a className="jsonLink" href={defaultColorsJson} target="_blank" rel="noreferrer" style={{ display: 'inline-block', maxWidth: '200px', overflow: 'auto' }}>
+        {defaultColorsJson}
+      </a>
       <input
         type="file"
         name="colorLibraryFileChooserInput"
