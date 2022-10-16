@@ -34,12 +34,18 @@ function ColorCell({ megaColor }: { megaColor: MegaColor }): JSX.Element {
 
   return (
     <div
-      style={{ background: colorDetailsObject.hsl(), display: 'inline-block', height: '100px', margin: '2px', padding: '0.5rem', width: '100px' }}
+      style={{ background: colorDetailsObject.hsl(), display: 'inline-block', height: '150px', margin: '2px', padding: '0.5rem', width: '150px' }}
       data-json={JSON.stringify(megaColor)}
     >
       <div className="colorName">{megaColor.name}</div>
       <div className="book" style={{ fontSize: '0.8rem' }}>
         {megaColor.book}
+      </div>
+      <div className="hsl" style={{ fontSize: '0.7rem' }}>
+        {megaColor.colorDetailsObject
+          .hsl()
+          .color.map((value: number) => value.toFixed(1))
+          .join(', ')}
       </div>
     </div>
   );
@@ -50,7 +56,7 @@ const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
   console.log({ bookNames, megaColors });
   const [selectedBookNames, setSelectedBookNames] = useLocalStorage<string[]>('selectedBookNames', ['Sherwin Williams']);
   const [loadedMegaColors, setLoadedMegaColors] = useLocalStorage<MegaColor[]>('loadedMegaColors', [...getMegaColorsFilteredByBookNames(megaColors, selectedBookNames)]); // Eventually, using the hard-coded file will be optional because the user will also be allowed to supply their own JSON.
-  const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(20deg 80% 40%)');
+  const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(80deg 50% 70%)');
 
   const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3); // https://stackoverflow.com/questions/74022328/how-to-solve-react-hydration-error-in-next-js-when-using-uselocalstorage-and
   const [toleranceS, setToleranceS] = useLocalStorage<number>('toleranceS', 3);
@@ -84,7 +90,7 @@ const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
         <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
 
         <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
-        <div style={{ backgroundColor: targetColor }}>
+        <div style={{ backgroundColor: targetColor, marginTop: '1rem', padding: '1rem' }}>
           <div className="colors">
             {results.map((colorInMap: MegaColor) => (
               <ColorCell key={`${colorInMap.book}_${colorInMap.code}`} megaColor={colorInMap} />
