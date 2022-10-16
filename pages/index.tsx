@@ -8,10 +8,11 @@ import { useDebounce, useLocalStorage } from 'usehooks-ts';
 import ClientOnly from '../components/ClientOnly';
 import ColorLibraryFileChooser from '../components/ColorLibraryFileChooser';
 import Layout from '../components/Layout';
+import SelectBookNames from '../components/SelectBookNames';
 import Sliders from '../components/Sliders';
 import TaskList from '../components/TaskList';
 import UploadAndDisplayImage from '../components/UploadAndDisplayImage';
-import { getFilteredColors, getHueTolerance, getColorDetailsObject, getBookNames, getMegaColorsFilteredByBookNames, getDefaultColors } from '../helpers/colors';
+import { getFilteredColors, getHueTolerance, getColorDetailsObject, getMegaColorsFilteredByBookNames, getDefaultColors } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
 
@@ -38,12 +39,8 @@ function ColorCell({ megaColor }: { megaColor: MegaColor }): JSX.Element {
   );
 }
 
-// const Home: NextPage<{ megaColors: MegaColor[] }> = ({ megaColors }) => {
 const Home: NextPage<{}> = () => {
-  const megaColors: MegaColor[] = [];
-  const bookNames = getBookNames(megaColors);
-  console.log({ bookNames, megaColors });
-  const [selectedBookNames, setSelectedBookNames] = useLocalStorage<string[]>('selectedBookNames', Array.from(bookNames));
+  const [selectedBookNames, setSelectedBookNames] = useLocalStorage<string[]>('selectedBookNames', []);
   const [loadedMegaColors, setLoadedMegaColors] = useLocalStorage<MegaColor[]>('loadedMegaColors', []);
   const [megaColorsFilteredByBookNames, setMegaColorsFilteredByBookNames] = useState<MegaColor[]>([]);
   const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(80deg 50% 70%)');
@@ -125,6 +122,7 @@ const Home: NextPage<{}> = () => {
         <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
 
         <ColorLibraryFileChooser {...{ setLoadedMegaColors }} />
+        <SelectBookNames {...{ loadedMegaColors, selectedBookNames, setSelectedBookNames }} />
         <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
         <UploadAndDisplayImage maxWidth={'600px'} />
         <div className="eyedrop-wrapper">
