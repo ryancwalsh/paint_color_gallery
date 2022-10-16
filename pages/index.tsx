@@ -1,12 +1,12 @@
 /* eslint-disable canonical/filename-match-exported */
-// import fs from 'fs';
 
-import type { NextPage, GetServerSideProps } from 'next';
+import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
 import { useEyeDrop, EyeDropper, OnChangeEyedrop } from 'react-eyedrop';
 import { useDebounce, useLocalStorage } from 'usehooks-ts';
 
 import ClientOnly from '../components/ClientOnly';
+import ColorLibraryFileChooser from '../components/ColorLibraryFileChooser';
 import Layout from '../components/Layout';
 import Sliders from '../components/Sliders';
 import TaskList from '../components/TaskList';
@@ -14,21 +14,6 @@ import UploadAndDisplayImage from '../components/UploadAndDisplayImage';
 import { getFilteredColors, getHueTolerance, getColorDetailsObject, getBookNames, getMegaColorsFilteredByBookNames } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
-
-// function loadColorsFromColornerd() {
-//   const colornerdFile = './data/colornerd.json';
-//   // eslint-disable-next-line unicorn/prefer-json-parse-buffer
-//   const colorData = fs.readFileSync(colornerdFile, 'utf8');
-//   return JSON.parse(colorData);
-// }
-
-// export const getServerSideProps: GetServerSideProps = async () => {
-//   return {
-//     props: {
-//       megaColors: loadColorsFromColornerd(),
-//     },
-//   };
-// };
 
 function ColorCell({ megaColor }: { megaColor: MegaColor }): JSX.Element {
   // console.log({ megaColor });
@@ -106,6 +91,7 @@ const Home: NextPage<{}> = () => {
       <Layout>
         <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
 
+        <ColorLibraryFileChooser {...{ setLoadedMegaColors }} />
         <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
         <UploadAndDisplayImage maxWidth={'600px'} />
         <div className="eyedrop-wrapper">

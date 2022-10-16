@@ -1,7 +1,7 @@
 /* eslint-disable canonical/filename-match-exported */
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: 'assets', // See Readme about export script
+  assetPrefix: './', // See Readme about export script
   eslint: {
     ignoreDuringBuilds: true,
   },
