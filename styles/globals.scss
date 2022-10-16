@@ -25,6 +25,18 @@ h2 {
   margin-top: 3rem;
 }
 
-[type='range'] {
-  width: 100%;
+.sliders {
+  .flex {
+    // TODO: https://tailwindcss.com/docs/display#flex
+    display: flex;
+  }
+  [type='range'] {
+    // TODO: https://getbootstrap.com/docs/4.1/utilities/flex/#grow-and-shrink
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+  }
+  .label {
+    font-weight: bold;
+    margin-top: 5px;
+  }
 }
