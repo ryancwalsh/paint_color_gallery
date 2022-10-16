@@ -5,6 +5,8 @@ import colorLib from 'color'; // https://github.com/Qix-/color
 // eslint-disable-next-line import/extensions, import/no-unresolved
 import { type ColorDetailsObject, type ColorNerdRecord, type MegaColor } from '../types';
 
+export const defaultColorsJson = 'https://raw.githubusercontent.com/ryancwalsh/paint_color_gallery/main/data/colornerd.json';
+
 export function getColorDetailsObject(color: string): ColorDetailsObject {
   return colorLib(color);
 }
@@ -115,4 +117,11 @@ export function getBookNames(megaColors: MegaColor[]): Set<string> {
 
 export function getMegaColorsFilteredByBookNames(megaColors: MegaColor[], bookNames: string[]): MegaColor[] {
   return megaColors.filter((megaColor) => bookNames.includes(megaColor.book));
+}
+
+export async function getDefaultColors(): Promise<MegaColor[]> {
+  const response = await fetch(defaultColorsJson);
+  const json = await response.json();
+  // console.log({ json });
+  return json;
 }

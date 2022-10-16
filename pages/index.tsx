@@ -11,7 +11,7 @@ import Layout from '../components/Layout';
 import Sliders from '../components/Sliders';
 import TaskList from '../components/TaskList';
 import UploadAndDisplayImage from '../components/UploadAndDisplayImage';
-import { getFilteredColors, getHueTolerance, getColorDetailsObject, getBookNames, getMegaColorsFilteredByBookNames } from '../helpers/colors';
+import { getFilteredColors, getHueTolerance, getColorDetailsObject, getBookNames, getMegaColorsFilteredByBookNames, getDefaultColors } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
 
@@ -44,7 +44,8 @@ const Home: NextPage<{}> = () => {
   const bookNames = getBookNames(megaColors);
   console.log({ bookNames, megaColors });
   const [selectedBookNames, setSelectedBookNames] = useLocalStorage<string[]>('selectedBookNames', ['Sherwin Williams']);
-  const [loadedMegaColors, setLoadedMegaColors] = useLocalStorage<MegaColor[]>('loadedMegaColors', [...getMegaColorsFilteredByBookNames(megaColors, selectedBookNames)]); // Eventually, using the hard-coded file will be optional because the user will also be allowed to supply their own JSON.
+  const [loadedMegaColors, setLoadedMegaColors] = useLocalStorage<MegaColor[]>('loadedMegaColors', []);
+  const [megaColorsFilteredByBookNames, setMegaColorsFilteredByBookNames] = useState<MegaColor[]>([]);
   const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(80deg 50% 70%)');
   const [eyedropOnce, setEyedropOnce] = useLocalStorage<boolean>('eyedropOnce', false);
 
@@ -54,6 +55,8 @@ const Home: NextPage<{}> = () => {
   // console.log({ toleranceH, toleranceL, toleranceS });
 
   const [results, setResults] = useState<MegaColor[]>([]);
+
+  // const [previousColor, setPreviousColor] = useState<MegaColor>(null);
 
   const debouncedToleranceH = useDebounce<number>(toleranceH, 200);
   const debouncedToleranceS = useDebounce<number>(toleranceS, 200);
@@ -73,18 +76,38 @@ const Home: NextPage<{}> = () => {
   };
 
   useEffect(() => {
+    if (loadedMegaColors.length === 0) {
+      // eslint-disable-next-line promise/prefer-await-to-then
+      getDefaultColors().then((defaultMegaColors: MegaColor[]) => {
+        setLoadedMegaColors(defaultMegaColors);
+      });
+    }
+
+    return () => {
+      // console.log('cleanup');
+    };
+  }, [loadedMegaColors, setLoadedMegaColors]);
+
+  useEffect(() => {
+    setMegaColorsFilteredByBookNames(getMegaColorsFilteredByBookNames(loadedMegaColors, selectedBookNames));
+    return () => {
+      // console.log('cleanup');
+    };
+  }, [loadedMegaColors, selectedBookNames]);
+
+  useEffect(() => {
     console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceS });
     const targetColorDetailsObject = getColorDetailsObject(targetColor);
     console.log({ targetColorDetailsObject });
     const degreeTolerance = (360 / 100) * debouncedToleranceH;
     const [hueMin, hueMax] = getHueTolerance(targetColorDetailsObject.hue(), degreeTolerance);
-    const filteredColors = getFilteredColors(targetColorDetailsObject, loadedMegaColors, hueMin, hueMax, debouncedToleranceS, debouncedToleranceL);
+    const filteredColors = getFilteredColors(targetColorDetailsObject, megaColorsFilteredByBookNames, hueMin, hueMax, debouncedToleranceS, debouncedToleranceL);
     // console.log({ filteredColors });
     setResults(filteredColors);
     return () => {
       // console.log('cleanup');
     };
-  }, [targetColor, loadedMegaColors, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL]); // Only re-run the effect if a value changes.
+  }, [targetColor, megaColorsFilteredByBookNames, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL]); // Only re-run the effect if a value changes.
 
   return (
     <ClientOnly>

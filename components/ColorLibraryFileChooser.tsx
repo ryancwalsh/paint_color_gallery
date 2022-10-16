@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { defaultColorsJson } from '../helpers/colors';
+
 const ColorLibraryFileChooser = ({ setLoadedMegaColors }: any) => {
   // https://stackoverflow.com/a/68979570/470749
 
   return (
     <div className="colorLibraryFileChooser">
-      Load from https://raw.githubusercontent.com/ryancwalsh/paint_color_gallery/main/data/colornerd.json
+      Load from {defaultColorsJson}
       <input
         type="file"
         name="colorLibraryFileChooserInput"
