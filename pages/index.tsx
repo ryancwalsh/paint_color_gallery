@@ -6,38 +6,16 @@ import { useEyeDrop, EyeDropper, OnChangeEyedrop } from 'react-eyedrop';
 import { useDebounce, useLocalStorage } from 'usehooks-ts';
 
 import ClientOnly from '../components/ClientOnly';
+import ColorCell from '../components/ColorCell';
 import ColorLibraryFileChooser from '../components/ColorLibraryFileChooser';
 import Layout from '../components/Layout';
 import SelectBookNames from '../components/SelectBookNames';
 import Sliders from '../components/Sliders';
 import TaskList from '../components/TaskList';
 import UploadAndDisplayImage from '../components/UploadAndDisplayImage';
-import { getFilteredColors, getHueTolerance, getColorDetailsObject, getMegaColorsFilteredByBookNames, getDefaultColors } from '../helpers/colors';
+import { getFilteredColors, getHueTolerance, getColorDetailsObject, getMegaColorsFilteredByBookNames, getDefaultColors, getMegaColorFromCode } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
-
-function ColorCell({ megaColor }: { megaColor: MegaColor }): JSX.Element {
-  // console.log({ megaColor });
-  const { colorDetailsObject } = megaColor;
-
-  return (
-    <div
-      style={{ background: colorDetailsObject.hsl(), display: 'inline-block', height: '150px', margin: '2px', padding: '0.5rem', width: '150px' }}
-      data-json={JSON.stringify(megaColor)}
-    >
-      <div className="colorName">{megaColor.name}</div>
-      <div className="book" style={{ fontSize: '0.8rem' }}>
-        {megaColor.book}
-      </div>
-      <div className="hsl" style={{ fontSize: '0.7rem' }}>
-        {megaColor.colorDetailsObject
-          .hsl()
-          .color.map((value: number) => value.toFixed(1))
-          .join(', ')}
-      </div>
-    </div>
-  );
-}
 
 const Home: NextPage<{}> = () => {
   const [selectedBookNames, setSelectedBookNames] = useLocalStorage<string[]>('selectedBookNames', []);
@@ -52,6 +30,7 @@ const Home: NextPage<{}> = () => {
   // console.log({ toleranceH, toleranceL, toleranceS });
 
   const [results, setResults] = useState<MegaColor[]>([]);
+  const [targetMegaColor, setTargetMegaColor] = useState<MegaColor | null>(null);
 
   const [previousColor, setPreviousColor] = useLocalStorage<string | null>('previousColor', null);
 
@@ -116,6 +95,15 @@ const Home: NextPage<{}> = () => {
     };
   }, [targetColor, megaColorsFilteredByBookNames, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL]); // Only re-run the effect if a value changes.
 
+  useEffect(() => {
+    const foundTargetMegaColor = getMegaColorFromCode(targetColor, megaColorsFilteredByBookNames);
+    console.log({ foundTargetMegaColor });
+    setTargetMegaColor(foundTargetMegaColor ?? null);
+    return () => {
+      // console.log('cleanup');
+    };
+  }, [targetColor, megaColorsFilteredByBookNames]); // Only re-run the effect if a value changes.
+
   return (
     <ClientOnly>
       <Layout>
@@ -135,6 +123,7 @@ const Home: NextPage<{}> = () => {
           <button onClick={usePreviousColor}>Use previous color</button>
         </div>
         <div style={{ backgroundColor: targetColor, marginTop: '1rem', padding: '1rem' }}>
+          {targetMegaColor && <ColorCell key={`${targetMegaColor.book}_${targetMegaColor.code}`} megaColor={targetMegaColor} />}
           <div className="colors">
             {results.map((colorInMap: MegaColor) => (
               <ColorCell key={`${colorInMap.book}_${colorInMap.code}`} megaColor={colorInMap} />

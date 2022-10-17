@@ -125,3 +125,10 @@ export async function getDefaultColors(): Promise<MegaColor[]> {
   // console.log({ json });
   return json;
 }
+
+export function getMegaColorFromCode(colorCode: string, megaColorsFilteredByBookNames: MegaColor[]): MegaColor | undefined {
+  const item = megaColorsFilteredByBookNames.find((megaColor) => megaColor.code === colorCode);
+  const result = item ? { ...item, colorDetailsObject: getColorDetailsObject(colorCode) } : undefined;
+  console.log('getMegaColorFromName', { colorCode, result });
+  return result;
+}

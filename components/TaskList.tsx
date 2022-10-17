@@ -5,8 +5,8 @@ export default function TaskList(): JSX.Element {
     <pre style={{ maxWidth: '900px', overflow: 'auto' }}>
       {`TODO: 
     - get color wheel working https://iro.js.org/
-    - support loading new JSON book to localStorage 
-    - filter which books to include 
+    - add history
+    - add favorites
     - allow clustering by book 
     - add 2 other styles of color picker, synched with the first 
     - add Google Analytics 
