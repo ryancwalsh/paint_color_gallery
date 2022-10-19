@@ -301,6 +301,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@~7.18.0":
+  version "7.18.9"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.9.tgz#b4fcfce55db3d2e5e080d2490f608a3b9f407f4a"
+  integrity sha512-lkqXDcvlFT5rvEjiu6+QYO+1GXrEHRo2LOtS7E4GtX5ESIZOgepqsZBVIj6Pv+a6zqsya9VCgiK1KAK4BvJDAw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.18.10", "@babel/template@^7.3.3":
   version "7.18.10"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.18.10.tgz#6f9134835970d1dbf0835c0d100c9f38de0c5e71"
@@ -1369,6 +1376,18 @@
   dependencies:
     "@typescript-eslint/types" "5.40.0"
     eslint-visitor-keys "^3.3.0"
+
+"@uiw/color-convert@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@uiw/color-convert/-/color-convert-1.1.0.tgz#8027186e4f60c390c586954c8f2c7a2097c18f33"
+  integrity sha512-UelT6X9J1/fPj1aYrslHQC4UutxX93LCPo0o4CT2HD7YiXcfes1ICU7ZucKT1ewMkhPWbAInO2lUNhr4qYO0XQ==
+
+"@uiw/react-drag-event-interactive@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@uiw/react-drag-event-interactive/-/react-drag-event-interactive-1.1.0.tgz#4248b7576ba633e06f9ddb460ae95ba0043c468b"
+  integrity sha512-rXSCKW9V6pd+zkJMVSDEG+con5m5e+D6zj78HcCf5e5nj5xK66NmiTfS3FY3g8md8/GM/RgawMTmdVBEPOsASg==
+  dependencies:
+    "@babel/runtime" "~7.18.0"
 
 "@whatwg-node/fetch@^0.4.0":
   version "0.4.7"

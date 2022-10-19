@@ -12,6 +12,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@uiw/color-convert": "^1.1.0",
+    "@uiw/react-drag-event-interactive": "^1.1.0",
     "color": "^4.2.3",
     "colornerd": "https://github.com/ryancwalsh/paintcolornerd#main",
     "next": "12.3.1",

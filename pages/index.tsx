@@ -1,5 +1,6 @@
 /* eslint-disable canonical/filename-match-exported */
 
+import { hexToHsva } from '@uiw/color-convert';
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
 import { useEyeDrop, EyeDropper, OnChangeEyedrop } from 'react-eyedrop';
@@ -8,6 +9,7 @@ import { useDebounce, useLocalStorage } from 'usehooks-ts';
 import ClientOnly from '../components/ClientOnly';
 import ColorCell from '../components/ColorCell';
 import ColorLibraryFileChooser from '../components/ColorLibraryFileChooser';
+import ColorWheel from '../components/ColorWheel';
 import History from '../components/History';
 import Layout from '../components/Layout';
 import SelectBookNames from '../components/SelectBookNames';
@@ -46,13 +48,14 @@ const Home: NextPage<{}> = () => {
 
   function selectColor(colorCode: string) {
     const mostRecent = colorHistory.length > 0 ? colorHistory[0] : null;
-    if (colorCode !== mostRecent) {
+    const foundTargetMegaColor = getMegaColorFromCode(targetColor, megaColorsFilteredByBookNames);
+    setTargetColor(colorCode);
+    if (foundTargetMegaColor && colorCode !== mostRecent) {
       setColorHistory((existingItems) => {
         const result = [colorCode, ...existingItems];
         console.log('setColorHistory', JSON.stringify(result));
         return result;
       });
-      setTargetColor(colorCode);
     }
   }
 
@@ -98,7 +101,13 @@ const Home: NextPage<{}> = () => {
     <ClientOnly>
       <Layout>
         <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
-
+        <ColorWheel
+          color={hexToHsva(targetColor)}
+          onChange={(color) => {
+            console.log(color.hsl);
+            selectColor(color.hex);
+          }}
+        />
         <ColorLibraryFileChooser {...{ loadedMegaColors, setLoadedMegaColors }} />
         <SelectBookNames {...{ loadedMegaColors, selectedBookNames, setSelectedBookNames }} />
         <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />

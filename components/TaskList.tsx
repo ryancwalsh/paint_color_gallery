@@ -4,7 +4,11 @@ export default function TaskList(): JSX.Element {
   return (
     <pre style={{ maxWidth: '900px', overflow: 'auto' }}>
       {`TODO: 
-    - get color wheel working https://iro.js.org/
+      - figure out why history gets messed up
+      - figure out why color wheel doesn't always have white at the center
+      - make color wheel fade to black at edges
+      - re-enable hot-reloading
+    - add search
     - add favorites
     - allow clustering by book 
     - add 2 other styles of color picker, synched with the first 
