@@ -1,14 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-import { defaultColorsJson } from '../helpers/colors';
+import { defaultColorsJson, getDefaultColors } from '../helpers/colors';
+import { MegaColor } from '../types';
 
-const ColorLibraryFileChooser = ({ setLoadedMegaColors }: any) => {
+const ColorLibraryFileChooser = ({ loadedMegaColors, setLoadedMegaColors }: any) => {
   // https://stackoverflow.com/a/68979570/470749
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   function toggleIsVisible() {
     setIsVisible(!isVisible);
   }
+
+  useEffect(() => {
+    if (loadedMegaColors.length === 0) {
+      // eslint-disable-next-line promise/prefer-await-to-then
+      getDefaultColors().then((defaultMegaColors: MegaColor[]) => {
+        setLoadedMegaColors(defaultMegaColors);
+      });
+    }
+
+    return () => {
+      // console.log('cleanup');
+    };
+  }, [loadedMegaColors, setLoadedMegaColors]);
 
   if (isVisible) {
     return (

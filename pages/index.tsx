@@ -13,7 +13,7 @@ import SelectBookNames from '../components/SelectBookNames';
 import Sliders from '../components/Sliders';
 import TaskList from '../components/TaskList';
 import UploadAndDisplayImage from '../components/UploadAndDisplayImage';
-import { getFilteredColors, getHueTolerance, getColorDetailsObject, getMegaColorsFilteredByBookNames, getDefaultColors, getMegaColorFromCode } from '../helpers/colors';
+import { getFilteredColors, getHueTolerance, getColorDetailsObject, getMegaColorsFilteredByBookNames, getMegaColorFromCode } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
 
@@ -62,19 +62,6 @@ const Home: NextPage<{}> = () => {
   }
 
   useEffect(() => {
-    if (loadedMegaColors.length === 0) {
-      // eslint-disable-next-line promise/prefer-await-to-then
-      getDefaultColors().then((defaultMegaColors: MegaColor[]) => {
-        setLoadedMegaColors(defaultMegaColors);
-      });
-    }
-
-    return () => {
-      // console.log('cleanup');
-    };
-  }, [loadedMegaColors, setLoadedMegaColors]);
-
-  useEffect(() => {
     setMegaColorsFilteredByBookNames(getMegaColorsFilteredByBookNames(loadedMegaColors, selectedBookNames));
     return () => {
       // console.log('cleanup');
@@ -109,7 +96,7 @@ const Home: NextPage<{}> = () => {
       <Layout>
         <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
 
-        <ColorLibraryFileChooser {...{ setLoadedMegaColors }} />
+        <ColorLibraryFileChooser {...{ loadedMegaColors, setLoadedMegaColors }} />
         <SelectBookNames {...{ loadedMegaColors, selectedBookNames, setSelectedBookNames }} />
         <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
         <UploadAndDisplayImage maxWidth={'600px'} />
