@@ -113,10 +113,10 @@ const Home: NextPage<{}> = () => {
         </div>
         <History {...{ colorHistory, megaColorsFilteredByBookNames, selectColor }} />
         <div style={{ backgroundColor: targetColor, marginTop: '1rem', padding: '1rem' }}>
-          {targetMegaColor && <ColorCell key={`${targetMegaColor.book}_${targetMegaColor.code}`} megaColor={targetMegaColor} isSelectedColor={true} />}
+          {targetMegaColor && <ColorCell key={`${targetMegaColor.book}_${targetMegaColor.code}`} megaColor={targetMegaColor} isSelectedColor={true} selectColor={selectColor} />}
           <div className="colors">
             {results.map((colorInMap: MegaColor) => (
-              <ColorCell key={`${colorInMap.book}_${colorInMap.code}`} megaColor={colorInMap} />
+              <ColorCell key={`${colorInMap.book}_${colorInMap.code}`} megaColor={colorInMap} selectColor={selectColor} />
             ))}
           </div>
           <TaskList />

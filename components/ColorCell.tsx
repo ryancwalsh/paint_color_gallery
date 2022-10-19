@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { MegaColor } from '../types';
 
-export default function ColorCell({ megaColor, isSelectedColor }: { megaColor: MegaColor; isSelectedColor?: boolean }): JSX.Element {
+export default function ColorCell({ megaColor, isSelectedColor, selectColor }: { megaColor: MegaColor; isSelectedColor?: boolean; selectColor: any }): JSX.Element {
   // console.log({ megaColor });
   const { colorDetailsObject } = megaColor;
 
@@ -13,7 +13,14 @@ export default function ColorCell({ megaColor, isSelectedColor }: { megaColor: M
   }
 
   return (
-    <div style={{ background: colorDetailsObject.hsl() }} data-json={JSON.stringify(megaColor)} className={isFullscreen ? 'fullscreen colorCell' : 'colorCell'}>
+    <div
+      style={{ background: colorDetailsObject.hsl() }}
+      data-json={JSON.stringify(megaColor)}
+      className={isFullscreen ? 'fullscreen colorCell' : 'colorCell'}
+      onClick={() => {
+        selectColor(megaColor.code);
+      }}
+    >
       {isSelectedColor && (
         <div className="toggleIsFullscreen" onClick={() => toggleIsFullscreen()} style={{ cursor: 'pointer', float: 'right' }}>
           ⤢
