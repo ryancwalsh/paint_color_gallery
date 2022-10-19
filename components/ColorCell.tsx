@@ -1,14 +1,24 @@
+import { useState } from 'react';
+
 import { MegaColor } from '../types';
 
-export default function ColorCell({ megaColor }: { megaColor: MegaColor }): JSX.Element {
+export default function ColorCell({ megaColor, isSelectedColor }: { megaColor: MegaColor; isSelectedColor?: boolean }): JSX.Element {
   // console.log({ megaColor });
   const { colorDetailsObject } = megaColor;
 
+  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
+
+  function toggleIsFullscreen() {
+    setIsFullscreen(!isFullscreen);
+  }
+
   return (
-    <div
-      style={{ background: colorDetailsObject.hsl(), display: 'inline-block', height: '150px', margin: '2px', padding: '0.5rem', width: '150px' }}
-      data-json={JSON.stringify(megaColor)}
-    >
+    <div style={{ background: colorDetailsObject.hsl() }} data-json={JSON.stringify(megaColor)} className={isFullscreen ? 'fullscreen colorCell' : 'colorCell'}>
+      {isSelectedColor && (
+        <div className="toggleIsFullscreen" onClick={() => toggleIsFullscreen()} style={{ float: 'right' }}>
+          ⤢
+        </div>
+      )}
       <div className="colorName">{megaColor.name}</div>
       <div className="book" style={{ fontSize: '0.8rem' }}>
         {megaColor.book}

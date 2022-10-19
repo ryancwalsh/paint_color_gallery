@@ -110,7 +110,7 @@ const Home: NextPage<{}> = () => {
           <button onClick={usePreviousColor}>Use previous color</button>
         </div>
         <div style={{ backgroundColor: targetColor, marginTop: '1rem', padding: '1rem' }}>
-          {targetMegaColor && <ColorCell key={`${targetMegaColor.book}_${targetMegaColor.code}`} megaColor={targetMegaColor} />}
+          {targetMegaColor && <ColorCell key={`${targetMegaColor.book}_${targetMegaColor.code}`} megaColor={targetMegaColor} isSelectedColor={true} />}
           <div className="colors">
             {results.map((colorInMap: MegaColor) => (
               <ColorCell key={`${colorInMap.book}_${colorInMap.code}`} megaColor={colorInMap} />
