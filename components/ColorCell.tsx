@@ -15,7 +15,7 @@ export default function ColorCell({ megaColor, isSelectedColor }: { megaColor: M
   return (
     <div style={{ background: colorDetailsObject.hsl() }} data-json={JSON.stringify(megaColor)} className={isFullscreen ? 'fullscreen colorCell' : 'colorCell'}>
       {isSelectedColor && (
-        <div className="toggleIsFullscreen" onClick={() => toggleIsFullscreen()} style={{ float: 'right' }}>
+        <div className="toggleIsFullscreen" onClick={() => toggleIsFullscreen()} style={{ cursor: 'pointer', float: 'right' }}>
           ⤢
         </div>
       )}

@@ -8,6 +8,7 @@ import { useDebounce, useLocalStorage } from 'usehooks-ts';
 import ClientOnly from '../components/ClientOnly';
 import ColorCell from '../components/ColorCell';
 import ColorLibraryFileChooser from '../components/ColorLibraryFileChooser';
+import History from '../components/History';
 import Layout from '../components/Layout';
 import SelectBookNames from '../components/SelectBookNames';
 import Sliders from '../components/Sliders';
@@ -32,7 +33,7 @@ const Home: NextPage<{}> = () => {
   const [results, setResults] = useState<MegaColor[]>([]);
   const [targetMegaColor, setTargetMegaColor] = useState<MegaColor | null>(null);
 
-  const [previousColor, setPreviousColor] = useLocalStorage<string | null>('previousColor', null);
+  const [colorHistory, setColorHistory] = useLocalStorage<string[]>('colorHistory', []);
 
   const debouncedToleranceH = useDebounce<number>(toleranceH, 200);
   const debouncedToleranceS = useDebounce<number>(toleranceS, 200);
@@ -43,23 +44,25 @@ const Home: NextPage<{}> = () => {
     once: eyedropOnce,
   });
 
+  function selectColor(colorCode: string) {
+    const mostRecent = colorHistory.length > 0 ? colorHistory[0] : null;
+    if (colorCode !== mostRecent) {
+      setColorHistory((existingItems) => {
+        const result = [colorCode, ...existingItems];
+        console.log('setColorHistory', JSON.stringify(result));
+        return result;
+      });
+      setTargetColor(colorCode);
+    }
+  }
+
   const onChangeEyedropperColor = ({ hex }: OnChangeEyedrop) => {
-    setPreviousColor(targetColor);
-    setTargetColor(hex);
+    selectColor(hex);
   };
 
   const toggleOnce = () => {
     setEyedropOnce(!eyedropOnce);
   };
-
-  function usePreviousColor() {
-    // TODO: Fix this.
-    if (previousColor) {
-      const colorToSave = targetColor;
-      setTargetColor(previousColor);
-      setPreviousColor(colorToSave);
-    }
-  }
 
   useEffect(() => {
     setMegaColorsFilteredByBookNames(getMegaColorsFilteredByBookNames(loadedMegaColors, selectedBookNames));
@@ -107,8 +110,8 @@ const Home: NextPage<{}> = () => {
 
           <p>Once: {eyedropOnce.toString()}</p>
           <button onClick={toggleOnce}>Toggle `once` prop</button>
-          <button onClick={usePreviousColor}>Use previous color</button>
         </div>
+        <History {...{ colorHistory, megaColorsFilteredByBookNames, selectColor }} />
         <div style={{ backgroundColor: targetColor, marginTop: '1rem', padding: '1rem' }}>
           {targetMegaColor && <ColorCell key={`${targetMegaColor.book}_${targetMegaColor.code}`} megaColor={targetMegaColor} isSelectedColor={true} />}
           <div className="colors">
