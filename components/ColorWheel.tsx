@@ -22,29 +22,13 @@ export interface WheelProps extends Omit<React.HTMLAttributes<HTMLDivElement>, '
   /**
    * Direction of the color wheel's hue gradient; either clockwise or anticlockwise. Default: `anticlockwise`
    */
-  direction?: 'clockwise' | 'anticlockwise';
+
   pointer?: ({ prefixCls, left, top, color }: PointerProps) => JSX.Element;
   onChange?: (color: ColorResult) => void;
 }
 
-const HUE_GRADIENT_CLOCKWISE = 'conic-gradient(red, yellow, lime, aqua, blue, magenta, red)';
-const HUE_GRADIENT_ANTICLOCKWISE = 'conic-gradient(red, magenta, blue, aqua, lime, yellow, red)';
-
 const Wheel = React.forwardRef<HTMLDivElement, WheelProps>((props, ref) => {
-  const {
-    prefixCls = 'w-color-wheel',
-    radius = 0,
-    pointer,
-    className,
-    style,
-    width = 200,
-    height = 200,
-    direction = 'anticlockwise',
-    angle = 180,
-    color,
-    onChange,
-    ...other
-  } = props;
+  const { prefixCls = 'w-color-wheel', pointer, className, style, width = 200, height = 200, angle = 180, color, onChange, ...other } = props;
   const hsva = (typeof color === 'string' && validHex(color) ? hexToHsva(color) : color || {}) as HsvaColor;
   const hex = color ? hsvaToHex(hsva) : '';
   const positions = getWheelHandlePosition({ width }, hsva);
@@ -88,7 +72,9 @@ const Wheel = React.forwardRef<HTMLDivElement, WheelProps>((props, ref) => {
       })}
       <div
         style={{
-          background: direction === 'anticlockwise' ? HUE_GRADIENT_CLOCKWISE : HUE_GRADIENT_ANTICLOCKWISE,
+          background:
+            'conic-gradient(hsl(0deg 100% 50%), hsl(10deg 100% 50%), hsl(20deg 100% 50%), hsl(30deg 100% 50%), hsl(40deg 100% 50%), hsl(50deg 100% 50%), hsl(60deg 100% 50%), hsl(70deg 100% 50%), hsl(80deg 100% 50%), hsl(90deg 100% 50%), hsl(100deg 100% 50%), hsl(110deg 100% 50%), hsl(120deg 100% 50%), hsl(130deg 100% 50%), hsl(140deg 100% 50%), hsl(150deg 100% 50%), hsl(160deg 100% 50%), hsl(170deg 100% 50%), hsl(180deg 100% 50%), hsl(190deg 100% 50%), hsl(200deg 100% 50%), hsl(210deg 100% 50%), hsl(220deg 100% 50%), hsl(230deg 100% 50%), hsl(240deg 100% 50%), hsl(250deg 100% 50%), hsl(260deg 100% 50%), hsl(270deg 100% 50%), hsl(280deg 100% 50%), hsl(290deg 100% 50%), hsl(300deg 100% 50%), hsl(310deg 100% 50%), hsl(320deg 100% 50%), hsl(330deg 100% 50%), hsl(340deg 100% 50%), hsl(350deg 100% 50%))',
+          backgroundBlendMode: 'hue', // Tells the browser to use the hue values from this gradient. https://stackoverflow.com/a/74133683/
           borderRadius: '50%',
           inset: 0,
           position: 'absolute',
@@ -97,13 +83,54 @@ const Wheel = React.forwardRef<HTMLDivElement, WheelProps>((props, ref) => {
       />
       <div
         style={{
-          background: 'radial-gradient(circle closest-side, white, transparent)',
+          background: 'radial-gradient(white, black)',
+          borderRadius: '50%',
+          inset: 0,
+          mixBlendMode: 'luminosity', // Tells the browser to use the luminosity values from this gradient. https://stackoverflow.com/a/74133683/
+          position: 'absolute',
+        }}
+      />
+      {/* <div
+        style={{
+          background: `radial-gradient(circle closest-side, hsl(0deg 0% 100% / 100%),
+hsl(0deg 0% 100% / 100%),
+hsl(0deg 0% 100% / 100%),
+hsl(0deg 0% 95% / 90%),
+hsl(0deg 0% 90% / 80%),
+hsl(0deg 0% 85% / 70%),
+hsl(0deg 0% 80% / 60%),
+hsl(0deg 0% 75% / 50%),
+hsl(0deg 0% 70% / 40%),
+hsl(0deg 0% 65% / 30%),
+hsl(0deg 0% 60% / 20%),
+hsl(0deg 0% 55% / 10%),
+hsl(0deg 0% 50% / 0%),
+hsl(0deg 0% 45% / 10%),
+hsl(0deg 0% 40% / 20%),
+hsl(0deg 0% 35% / 30%),
+hsl(0deg 0% 30% / 40%),
+hsl(0deg 0% 25% / 50%),
+hsl(0deg 0% 20% / 60%),
+hsl(0deg 0% 15% / 70%),
+hsl(0deg 0% 10% / 80%),
+hsl(0deg 0% 5% / 90%),
+hsl(0deg 0% 1% / 100%)), conic-gradient(hsl(0deg 100% 50%), hsl(10deg 100% 50%), hsl(20deg 100% 50%), hsl(30deg 100% 50%), hsl(40deg 100% 50%), hsl(50deg 100% 50%), hsl(60deg 100% 50%), hsl(70deg 100% 50%), hsl(80deg 100% 50%), hsl(90deg 100% 50%), hsl(100deg 100% 50%), hsl(110deg 100% 50%), hsl(120deg 100% 50%), hsl(130deg 100% 50%), hsl(140deg 100% 50%), hsl(150deg 100% 50%), hsl(160deg 100% 50%), hsl(170deg 100% 50%), hsl(180deg 100% 50%), hsl(190deg 100% 50%), hsl(200deg 100% 50%), hsl(210deg 100% 50%), hsl(220deg 100% 50%), hsl(230deg 100% 50%), hsl(240deg 100% 50%), hsl(250deg 100% 50%), hsl(260deg 100% 50%), hsl(270deg 100% 50%), hsl(280deg 100% 50%), hsl(290deg 100% 50%), hsl(300deg 100% 50%), hsl(310deg 100% 50%), hsl(320deg 100% 50%), hsl(330deg 100% 50%), hsl(340deg 100% 50%), hsl(350deg 100% 50%))`,
+          borderRadius: '50%',
+          inset: 0,
+          position: 'absolute',
+          transform: `rotateZ(${angle + 90}deg)`,
+        }}
+      /> */}
+      {/* <div
+        style={{
+          background:
+            'radial-gradient(circle closest-side, hsl(0deg 0% 100% / 100%), hsl(0deg 0% 100% / 50%), hsl(0deg 0% 100% / 0%), hsl(0deg 0% 0% / 0%), hsl(0deg 0% 0% / 100%))',
           borderRadius: '50%',
           inset: 0,
           position: 'absolute',
         }}
-      />
-      <div
+      /> */}
+      {/* <div
         style={{
           backgroundColor: 'black',
           borderRadius: '50%',
@@ -111,7 +138,7 @@ const Wheel = React.forwardRef<HTMLDivElement, WheelProps>((props, ref) => {
           opacity: typeof hsva.v === 'number' ? 1 - hsva.v / 100 : 0,
           position: 'absolute',
         }}
-      />
+      /> */}
     </Interactive>
   );
 });
