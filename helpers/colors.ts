@@ -134,7 +134,9 @@ export function getMegaColorFromCode(colorCode: string, megaColorsFilteredByBook
 
 export function getOklch(code: string): string {
   const betterColor = from(code);
-  // eslint-disable-next-line id-length
-  const [l, c, h] = betterColor.oklchVal;
-  return [l, c, h].map((value: number) => value.toFixed(1)).join(', ');
+  // eslint-disable-next-line prefer-const
+  let [lightness, chroma, hue] = betterColor.oklchVal;
+  lightness *= 100;
+  chroma *= 100;
+  return [lightness, chroma, hue].map((value: number) => value.toFixed(1)).join(', ');
 }

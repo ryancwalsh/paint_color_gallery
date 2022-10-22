@@ -78,6 +78,11 @@ h2 {
     cursor: pointer;
   }
 
+  .colorName {
+    display: inline-block;
+    min-height: 1rem;
+  }
+
   max-height: 200px;
   overflow: auto;
 }
