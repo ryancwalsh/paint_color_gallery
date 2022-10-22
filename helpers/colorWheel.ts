@@ -49,7 +49,7 @@ export function getWheelHandlePosition(props: Partial<WheelProps>, hsv: HsvColor
   const handleRange = getHandleRange(props);
   const handleAngle = (180 + translateWheelAngle(props, hsv.h, true)) * (TAU / 360);
   const handleDistribution = (hsv.s / 100) * handleRange;
-  const direction = props.direction === 'clockwise' ? -1 : 1;
+  const direction = 1;
   return {
     x: cx + handleDistribution * Math.cos(handleAngle) * direction,
     y: cy + handleDistribution * Math.sin(handleAngle) * direction,
@@ -68,7 +68,7 @@ export function getHandleRange({ width = 0 }: Partial<WheelProps>) {
  */
 export function translateWheelAngle(props: Partial<WheelProps>, angle: number, invert?: boolean) {
   const wheelAngle = props.angle ?? 0;
-  const direction = props.direction;
+  const direction = 'clockwise';
   // inverted and clockwisee
   if (invert && direction === 'clockwise') angle = wheelAngle + angle;
   // clockwise (input handling)
