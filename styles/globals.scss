@@ -41,6 +41,12 @@ h2 {
   }
 }
 
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .colorCell {
   display: inline-block;
   height: 150px;
@@ -55,6 +61,15 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .colorName {
+    height: 3rem;
+  }
+
+  .book,
+  .oklch {
+    margin-left: 4px;
   }
 }
 

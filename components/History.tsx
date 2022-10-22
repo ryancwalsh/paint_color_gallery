@@ -1,4 +1,4 @@
-import { getMegaColorFromCode } from '../helpers/colors';
+import { getMegaColorFromCode, getOklch } from '../helpers/colors';
 import { MegaColor } from '../types';
 
 function HistoryColorCell({
@@ -20,7 +20,10 @@ function HistoryColorCell({
       }}
       style={{ backgroundColor: colorCode, padding: '3px' }}
     >
-      {megaColor?.name}
+      <span>{megaColor?.name}</span>
+      <span className="oklch" style={{ float: 'right', fontSize: '0.7rem' }}>
+        {getOklch(colorCode)}
+      </span>
     </div>
   );
 }

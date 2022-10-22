@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
+import { from } from 'better-color-tools';
 import colorLib from 'color'; // https://github.com/Qix-/color
 
 // eslint-disable-next-line import/extensions, import/no-unresolved
@@ -131,4 +130,11 @@ export function getMegaColorFromCode(colorCode: string, megaColorsFilteredByBook
   const result = item ? { ...item, colorDetailsObject: getColorDetailsObject(colorCode) } : undefined;
   console.log('getMegaColorFromName', { colorCode, result });
   return result;
+}
+
+export function getOklch(code: string): string {
+  const betterColor = from(code);
+  // eslint-disable-next-line id-length
+  const [l, c, h] = betterColor.oklchVal;
+  return [l, c, h].map((value: number) => value.toFixed(1)).join(', ');
 }

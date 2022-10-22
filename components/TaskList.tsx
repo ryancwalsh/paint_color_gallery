@@ -3,12 +3,13 @@ export default function TaskList(): JSX.Element {
   // prettier-ignore
   return (
     <pre style={{ maxWidth: '900px', overflow: 'auto' }}>
-      {`TODO: 
-      - figure out why history gets messed up
-      - OKLCH sliders
-      - re-enable hot-reloading
-    - add search
+      {`TODO:
+    - OKLCH sliders
+    - re-enable hot-reloading
+    - read from URL
     - add favorites
+    - figure out why history gets messed up
+    - add search
     - allow clustering by book 
     - add 2 other styles of color picker, synched with the first 
     - add Google Analytics 

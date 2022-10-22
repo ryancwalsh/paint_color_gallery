@@ -30,5 +30,5 @@ export default function SelectBookNames({ selectedBookNames, setSelectedBookName
 
   const options = getOptionsFromNames(Array.from(getBookNames(loadedMegaColors)));
 
-  return <Select options={options} onChange={onChange} isMulti={true} defaultValue={defaultValue} />;
+  return <Select options={options} onChange={onChange} isMulti={true} defaultValue={defaultValue} placeholder="Choose 1 or more brands (or leave blank for all)" />;
 }

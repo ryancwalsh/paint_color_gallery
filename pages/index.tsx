@@ -16,7 +16,6 @@ import TaskList from '../components/TaskList';
 import TextInputs from '../components/TextInputs';
 import UploadAndDisplayImage from '../components/UploadAndDisplayImage';
 import { getFilteredColors, getHueTolerance, getColorDetailsObject, getMegaColorsFilteredByBookNames, getMegaColorFromCode } from '../helpers/colors';
-import styles from '../styles/Home.module.scss';
 import { MegaColor } from '../types';
 
 const Home: NextPage<{}> = () => {
@@ -98,13 +97,20 @@ const Home: NextPage<{}> = () => {
 
   return (
     <ClientOnly>
-      <Layout>
-        <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
-
-        <ColorLibraryFileChooser {...{ loadedMegaColors, setLoadedMegaColors }} />
-        <SelectBookNames {...{ loadedMegaColors, selectedBookNames, setSelectedBookNames }} />
+      <Layout {...{ backgroundColor: targetColor }}>
         <TextInputs {...{ setTargetColor, targetColor }} />
         <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
+
+        <History {...{ colorHistory, megaColorsFilteredByBookNames, selectColor }} />
+        <div style={{ marginTop: '1rem', padding: '1rem' }}>
+          {targetMegaColor && <ColorCell key={`${targetMegaColor.book}_${targetMegaColor.code}`} megaColor={targetMegaColor} isSelectedColor={true} selectColor={selectColor} />}
+          <div className="colors">
+            {results.map((colorInMap: MegaColor) => (
+              <ColorCell key={`${colorInMap.book}_${colorInMap.code}`} megaColor={colorInMap} selectColor={selectColor} />
+            ))}
+          </div>
+        </div>
+        <TaskList />
         <UploadAndDisplayImage maxWidth={'600px'} />
         <div className="eyedrop-wrapper">
           <EyeDropper once={eyedropOnce} onChange={onChangeEyedropperColor}>
@@ -114,16 +120,8 @@ const Home: NextPage<{}> = () => {
           <p>Once: {eyedropOnce.toString()}</p>
           <button onClick={toggleOnce}>Toggle `once` prop</button>
         </div>
-        <History {...{ colorHistory, megaColorsFilteredByBookNames, selectColor }} />
-        <div style={{ backgroundColor: targetColor, marginTop: '1rem', padding: '1rem' }}>
-          {targetMegaColor && <ColorCell key={`${targetMegaColor.book}_${targetMegaColor.code}`} megaColor={targetMegaColor} isSelectedColor={true} selectColor={selectColor} />}
-          <div className="colors">
-            {results.map((colorInMap: MegaColor) => (
-              <ColorCell key={`${colorInMap.book}_${colorInMap.code}`} megaColor={colorInMap} selectColor={selectColor} />
-            ))}
-          </div>
-          <TaskList />
-        </div>
+        <ColorLibraryFileChooser {...{ loadedMegaColors, setLoadedMegaColors }} />
+        <SelectBookNames {...{ loadedMegaColors, selectedBookNames, setSelectedBookNames }} />
       </Layout>
     </ClientOnly>
   );

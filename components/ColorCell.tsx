@@ -1,14 +1,11 @@
-import { from } from 'better-color-tools';
 import { useState } from 'react';
 
+import { getOklch } from '../helpers/colors';
 import { MegaColor } from '../types';
 
 export default function ColorCell({ megaColor, isSelectedColor, selectColor }: { megaColor: MegaColor; isSelectedColor?: boolean; selectColor: any }): JSX.Element {
   // console.log({ megaColor });
   const { colorDetailsObject } = megaColor;
-  const betterColor = from(colorDetailsObject.hsl().string());
-  // eslint-disable-next-line id-length
-  const [l, c, h] = betterColor.oklchVal;
 
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
 
@@ -41,7 +38,7 @@ export default function ColorCell({ megaColor, isSelectedColor, selectColor }: {
           .join(', ')}
       </div> */}
       <div className="oklch" style={{ fontSize: '0.7rem' }}>
-        {[l, c, h].map((value: number) => value.toFixed(1)).join(', ')}
+        {getOklch(colorDetailsObject.hsl().string())}
       </div>
     </div>
   );
