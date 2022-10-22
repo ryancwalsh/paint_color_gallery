@@ -1648,6 +1648,11 @@ base64-arraybuffer@^1.0.2:
   resolved "https://registry.yarnpkg.com/base64-arraybuffer/-/base64-arraybuffer-1.0.2.tgz#1c37589a7c4b0746e34bd1feb951da2df01c1bdc"
   integrity sha512-I3yl4r9QB5ZRY3XuJVEPfc2XhZO6YweFPI+UovAzn+8/hb3oJ6lnysaFcjVpkCPfVWFUDvoZ8kmVDP7WyRtYtQ==
 
+better-color-tools@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/better-color-tools/-/better-color-tools-0.9.1.tgz#a5b58479e5d8f7ffa31a79cff12109e356724f65"
+  integrity sha512-fpwBbI/Tl0/vMGq89KO37xz6TWm92nVoIu8f5Iqc70GWFebPc/F59DtGrA03TtW/0wv99lFDD29z8TyrUg/vjA==
+
 binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"

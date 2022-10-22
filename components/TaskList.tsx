@@ -5,8 +5,7 @@ export default function TaskList(): JSX.Element {
     <pre style={{ maxWidth: '900px', overflow: 'auto' }}>
       {`TODO: 
       - figure out why history gets messed up
-      - figure out why color wheel doesn't always have white at the center
-      - make color wheel fade to black at edges
+      - OKLCH sliders
       - re-enable hot-reloading
     - add search
     - add favorites

@@ -1,6 +1,5 @@
 /* eslint-disable canonical/filename-match-exported */
 
-import { hexToHsva } from '@uiw/color-convert';
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
 import { useEyeDrop, EyeDropper, OnChangeEyedrop } from 'react-eyedrop';
@@ -9,12 +8,12 @@ import { useDebounce, useLocalStorage } from 'usehooks-ts';
 import ClientOnly from '../components/ClientOnly';
 import ColorCell from '../components/ColorCell';
 import ColorLibraryFileChooser from '../components/ColorLibraryFileChooser';
-import ColorWheel from '../components/ColorWheel';
 import History from '../components/History';
 import Layout from '../components/Layout';
 import SelectBookNames from '../components/SelectBookNames';
 import Sliders from '../components/Sliders';
 import TaskList from '../components/TaskList';
+import TextInputs from '../components/TextInputs';
 import UploadAndDisplayImage from '../components/UploadAndDisplayImage';
 import { getFilteredColors, getHueTolerance, getColorDetailsObject, getMegaColorsFilteredByBookNames, getMegaColorFromCode } from '../helpers/colors';
 import styles from '../styles/Home.module.scss';
@@ -101,15 +100,10 @@ const Home: NextPage<{}> = () => {
     <ClientOnly>
       <Layout>
         <h1 className={styles.title}>paint_color_gallery using colornerd</h1>
-        <ColorWheel
-          color={hexToHsva(targetColor)}
-          onChange={(color) => {
-            console.log(color.hsl);
-            selectColor(color.hex);
-          }}
-        />
+
         <ColorLibraryFileChooser {...{ loadedMegaColors, setLoadedMegaColors }} />
         <SelectBookNames {...{ loadedMegaColors, selectedBookNames, setSelectedBookNames }} />
+        <TextInputs {...{ setTargetColor, targetColor }} />
         <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
         <UploadAndDisplayImage maxWidth={'600px'} />
         <div className="eyedrop-wrapper">
