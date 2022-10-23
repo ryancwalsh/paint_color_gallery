@@ -38,7 +38,8 @@ export default function History({
   selectColor: any;
 }): JSX.Element {
   return (
-    <div className="colorHistory">
+    <div className="colorHistory card">
+      History:
       {colorHistory.map((colorCode, index) => (
         <HistoryColorCell key={`${index}_${colorCode}`} {...{ colorCode, megaColorsFilteredByBookNames, selectColor }} />
       ))}

@@ -91,3 +91,10 @@ input {
   width: 100%;
   font-size: 1.1rem;
 }
+
+.card {
+  border: 1px solid hsl(0, 0%, 47%);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+}

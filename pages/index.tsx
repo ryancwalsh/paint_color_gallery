@@ -25,9 +25,10 @@ const Home: NextPage<{}> = () => {
   const [targetColor, setTargetColor] = useLocalStorage<string>('targetColor', 'hsl(80deg 50% 70%)');
   const [eyedropOnce, setEyedropOnce] = useLocalStorage<boolean>('eyedropOnce', false);
 
-  const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3); // https://stackoverflow.com/questions/74022328/how-to-solve-react-hydration-error-in-next-js-when-using-uselocalstorage-and
-  const [toleranceS, setToleranceS] = useLocalStorage<number>('toleranceS', 3);
-  const [toleranceL, setToleranceL] = useLocalStorage<number>('toleranceL', 3);
+  const [toleranceL, setToleranceL] = useLocalStorage<number>('toleranceL', 3); // https://stackoverflow.com/questions/74022328/how-to-solve-react-hydration-error-in-next-js-when-using-uselocalstorage-and
+  const [toleranceC, setToleranceC] = useLocalStorage<number>('toleranceC', 3);
+  const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3);
+
   // console.log({ toleranceH, toleranceL, toleranceS });
 
   const [results, setResults] = useState<MegaColor[]>([]);
@@ -36,7 +37,7 @@ const Home: NextPage<{}> = () => {
   const [colorHistory, setColorHistory] = useLocalStorage<string[]>('colorHistory', []);
 
   const debouncedToleranceH = useDebounce<number>(toleranceH, 200);
-  const debouncedToleranceS = useDebounce<number>(toleranceS, 200);
+  const debouncedToleranceS = useDebounce<number>(toleranceC, 200);
   const debouncedToleranceL = useDebounce<number>(toleranceL, 200);
   // console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceS });
 
@@ -98,8 +99,11 @@ const Home: NextPage<{}> = () => {
   return (
     <ClientOnly>
       <Layout {...{ backgroundColor: targetColor }}>
-        <TextInputs {...{ setTargetColor, targetColor }} />
-        <Sliders {...{ setToleranceH, setToleranceL, setToleranceS, toleranceH, toleranceL, toleranceS }} />
+        <div className="card">
+          Choose color:
+          <TextInputs {...{ setTargetColor, targetColor }} />
+        </div>
+        <Sliders {...{ setToleranceC, setToleranceH, setToleranceL, toleranceC, toleranceH, toleranceL }} />
 
         <History {...{ colorHistory, megaColorsFilteredByBookNames, selectColor }} />
         <div style={{ marginTop: '1rem', padding: '1rem' }}>
