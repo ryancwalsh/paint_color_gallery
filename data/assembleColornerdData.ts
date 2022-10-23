@@ -14,7 +14,8 @@ export function getMegaColorsFromColornerdJsonFiles() {
   const bookFileDetailObjects: BookFileDetailObject[] = JSON.parse(booksJsonString);
   // console.log({ bookFileDetailObjects });
   const megaColors: MegaColor[] = [];
-  const keys = new Set<string>();
+  const bookHexKeys = new Set<string>();
+  // TODO: Create another composite key based on book and color name. This will catch errors such as "Forest" occurring many times in Benjamin Moore.
   for (const bookFileDetailObject of bookFileDetailObjects) {
     const filename = `${colornerdDirectory}/json/${bookFileDetailObject.filename}.json`;
     // console.log({ filename });
@@ -25,11 +26,11 @@ export function getMegaColorsFromColornerdJsonFiles() {
     for (const record of recordsInBook) {
       // const colorDetailsObject = getColorLibObject(record);
       const entry = { ...record, book: bookFileDetailObject.title };
-      const key = `${entry.book}-${entry.hex}`;
-      // console.log({ key, entry });
-      if (!keys.has(key)) {
+      const bookHexKey = `${entry.book}-${entry.hex}`;
+      // console.log({ bookHexKey, entry });
+      if (!bookHexKeys.has(bookHexKey)) {
         megaColors.push(entry);
-        keys.add(key);
+        bookHexKeys.add(bookHexKey);
       }
     }
   }
