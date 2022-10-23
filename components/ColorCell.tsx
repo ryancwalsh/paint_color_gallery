@@ -15,7 +15,7 @@ export default function ColorCell({ megaColor, isSelectedColor, selectColor }: {
 
   return (
     <div
-      style={{ background: colorDetailsObject.hsl() }}
+      style={{ background: colorDetailsObject.hex }}
       data-json={JSON.stringify(megaColor)}
       className={isFullscreen ? 'fullscreen colorCell' : 'colorCell'}
       onClick={() => {
@@ -38,7 +38,7 @@ export default function ColorCell({ megaColor, isSelectedColor, selectColor }: {
           .join(', ')}
       </div> */}
       <div className="oklch" style={{ fontSize: '0.7rem' }}>
-        {getOklch(colorDetailsObject.hsl().string())}
+        {getOklch(colorDetailsObject.hex)}
       </div>
     </div>
   );

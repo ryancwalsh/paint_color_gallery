@@ -15,7 +15,7 @@ import Sliders from '../components/Sliders';
 import TaskList from '../components/TaskList';
 import TextInputs from '../components/TextInputs';
 import UploadAndDisplayImage from '../components/UploadAndDisplayImage';
-import { getFilteredColors, getHueTolerance, getColorDetailsObject, getMegaColorsFilteredByBookNames, getMegaColorFromCode } from '../helpers/colors';
+import { getFilteredColors, getColorDetailsObject, getMegaColorsFilteredByBookNames, getMegaColorFromCode } from '../helpers/colors';
 import { MegaColor } from '../types';
 
 const Home: NextPage<{}> = () => {
@@ -29,17 +29,17 @@ const Home: NextPage<{}> = () => {
   const [toleranceC, setToleranceC] = useLocalStorage<number>('toleranceC', 3);
   const [toleranceH, setToleranceH] = useLocalStorage<number>('toleranceH', 3);
 
-  // console.log({ toleranceH, toleranceL, toleranceS });
+  // console.log({ toleranceH, toleranceL, toleranceC });
 
   const [results, setResults] = useState<MegaColor[]>([]);
   const [targetMegaColor, setTargetMegaColor] = useState<MegaColor | null>(null);
 
   const [colorHistory, setColorHistory] = useLocalStorage<string[]>('colorHistory', []);
 
-  const debouncedToleranceH = useDebounce<number>(toleranceH, 200);
-  const debouncedToleranceS = useDebounce<number>(toleranceC, 200);
   const debouncedToleranceL = useDebounce<number>(toleranceL, 200);
-  // console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceS });
+  const debouncedToleranceC = useDebounce<number>(toleranceC, 200);
+  const debouncedToleranceH = useDebounce<number>(toleranceH, 200);
+  // console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceC });
 
   const [colors, pickColor, cancelPickColor] = useEyeDrop({
     once: eyedropOnce,
@@ -74,18 +74,17 @@ const Home: NextPage<{}> = () => {
   }, [loadedMegaColors, selectedBookNames]);
 
   useEffect(() => {
-    console.log({ debouncedToleranceH, debouncedToleranceL, debouncedToleranceS });
+    console.log({ debouncedToleranceC, debouncedToleranceH, debouncedToleranceL });
     const targetColorDetailsObject = getColorDetailsObject(targetColor);
     console.log({ targetColorDetailsObject });
-    const degreeTolerance = (360 / 100) * debouncedToleranceH;
-    const [hueMin, hueMax] = getHueTolerance(targetColorDetailsObject.hue(), degreeTolerance);
-    const filteredColors = getFilteredColors(targetColorDetailsObject, megaColorsFilteredByBookNames, hueMin, hueMax, debouncedToleranceS, debouncedToleranceL);
+
+    const filteredColors = getFilteredColors(targetColorDetailsObject, megaColorsFilteredByBookNames, debouncedToleranceL, debouncedToleranceC, debouncedToleranceH);
     // console.log({ filteredColors });
     setResults(filteredColors);
     return () => {
       // console.log('cleanup');
     };
-  }, [targetColor, megaColorsFilteredByBookNames, debouncedToleranceH, debouncedToleranceS, debouncedToleranceL]); // Only re-run the effect if a value changes.
+  }, [targetColor, megaColorsFilteredByBookNames, debouncedToleranceH, debouncedToleranceC, debouncedToleranceL]); // Only re-run the effect if a value changes.
 
   useEffect(() => {
     const foundTargetMegaColor = getMegaColorFromCode(targetColor, megaColorsFilteredByBookNames);

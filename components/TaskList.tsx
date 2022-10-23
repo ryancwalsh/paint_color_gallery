@@ -6,6 +6,7 @@ export default function TaskList(): JSX.Element {
       {`TODO:
     - OKLCH sliders
     - re-enable hot-reloading
+    - fix tests
     - read from URL
     - add favorites
     - figure out why history gets messed up
