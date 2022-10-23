@@ -7,13 +7,13 @@ import { useDebounce, useLocalStorage } from 'usehooks-ts';
 
 import ClientOnly from '../components/ClientOnly';
 import ColorCell from '../components/ColorCell';
+import ColorInputs from '../components/ColorInputs';
 import ColorLibraryFileChooser from '../components/ColorLibraryFileChooser';
 import History from '../components/History';
 import Layout from '../components/Layout';
 import SelectBookNames from '../components/SelectBookNames';
 import Sliders from '../components/Sliders';
 import TaskList from '../components/TaskList';
-import TextInputs from '../components/TextInputs';
 import UploadAndDisplayImage from '../components/UploadAndDisplayImage';
 import { getFilteredColors, getColorDetailsObject, getMegaColorsFilteredByBookNames, getMegaColorFromCode } from '../helpers/colors';
 import { MegaColor } from '../types';
@@ -98,10 +98,7 @@ const Home: NextPage<{}> = () => {
   return (
     <ClientOnly>
       <Layout {...{ backgroundColor: targetColor }}>
-        <div className="card">
-          Choose color:
-          <TextInputs {...{ setTargetColor, targetColor }} />
-        </div>
+        <ColorInputs {...{ setTargetColor, targetColor }} />
         <Sliders {...{ setToleranceC, setToleranceH, setToleranceL, toleranceC, toleranceH, toleranceL }} />
 
         <History {...{ colorHistory, megaColorsFilteredByBookNames, selectColor }} />
