@@ -21,7 +21,7 @@ function HistoryColorCell({
       style={{ backgroundColor: colorCode, padding: '3px' }}
     >
       <span className="colorName">{megaColor?.name}</span>
-      <span className="oklch" style={{ float: 'right', fontSize: '0.7rem' }}>
+      <span className="oklch" style={{ float: 'right', fontFamily: 'monospace', fontSize: '0.7rem' }}>
         {getOklch(colorCode)}
       </span>
     </div>

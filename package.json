@@ -2,7 +2,6 @@
   "name": "paint_color_gallery",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "assembleColornerdData": "yarn ts-node ./data/assembleColornerdData.ts",
     "dev": "next dev",

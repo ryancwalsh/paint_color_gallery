@@ -28,9 +28,9 @@ export default function ColorCell({ megaColor, isSelectedColor, selectColor }: {
         </div>
       )}
       <div className="colorName">{megaColor.name}</div>
-      <div className="book" style={{ fontSize: '0.8rem' }}>
+      <a className="book" style={{ fontSize: '0.8rem' }} target="_blank" href={`https://duckduckgo.com?q=inurl:"${megaColor.book} ${megaColor.name}"`} rel="noreferrer">
         {megaColor.book}
-      </div>
+      </a>
       {/* <div className="hsl" style={{ fontSize: '0.7rem' }}>
         {megaColor.colorDetailsObject
           .hsl()
@@ -39,6 +39,9 @@ export default function ColorCell({ megaColor, isSelectedColor, selectColor }: {
       </div> */}
       <div className="oklch" style={{ fontSize: '0.7rem' }}>
         {getOklch(colorDetailsObject.hex)}
+      </div>
+      <div className="hex" style={{ fontSize: '0.7rem' }}>
+        {colorDetailsObject.hex.toUpperCase()}
       </div>
     </div>
   );
